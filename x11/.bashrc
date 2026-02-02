@@ -10,6 +10,7 @@ PS1='[\u@\h \W]\$ '
 
 export PATH="$PATH:~/repository/PWSH-Collection/scripts/"
 export PATH="$PATH:~/repository/bash-collection/"
+export PATH="$PATH:~/repository/lib/"
 
 export ASAN_SYMBOLIZER_PATH=/usr/bin/llvm-symbolizer
 
