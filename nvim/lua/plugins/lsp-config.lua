@@ -32,7 +32,11 @@ return {
 		"neovim/nvim-lspconfig",
 		lazy = true,
 		event = { "BufReadPre", "BufNewFile" },
-		dependencies = { "williamboman/mason.nvim", "williamboman/mason-lspconfig.nvim", "hrsh7th/cmp-nvim-lsp" },
+		dependencies = {
+            "williamboman/mason.nvim",
+            "williamboman/mason-lspconfig.nvim",
+            "hrsh7th/cmp-nvim-lsp"
+        },
 		--TODO: find out how to quickly jump to next reference/definition
 		config = function()
 			local lspconfig = require("lspconfig")
@@ -50,7 +54,14 @@ return {
 
 			lspconfig.clangd.setup({
 				capabilities = capabilities,
-				cmd = { "clangd", "--background-index" },
+				cmd = {
+                    "clangd",
+                    "--background-index",
+                    "--clang-tidy=false"
+                },
+                on_attach = function(client)
+                  client.server_capabilities.semanticTokensProvider = nil
+                end
 			})
 
 			lspconfig.lemminx.setup({ capabilities = capabilities })
