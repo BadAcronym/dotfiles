@@ -42,6 +42,8 @@ xrandr  \
         --output HDMI-2 --auto --pos 0x1440                 \
         --output DP-1   --auto --pos 0x0                    \
 
+mount //192.168.0.217/Fede
+
 nitrogen --restore &
 picom -b --config ~/.config/picom/picom.conf &
 ~/repository/bash-collection/start-aw.sh &
