@@ -7,7 +7,7 @@ return{
 				enable_cmp_integration = true,
 			})
             local ts = require("telescope").load_extension("emoji")
-			vim.keymap.set("n", "<leader>se", ts.emoji, { desc = "[S]earch [Emoji]" })
+			vim.keymap.set("n", "<leader>se", ts.emoji, { desc = "[S]earch [E]moji" })
 		end,
 	},
 }
