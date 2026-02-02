@@ -1,6 +1,6 @@
 # ===== WINFETCH CONFIGURATION =====
 
-$image = ""
+$image = "" 
 
 $noimage = $false
 
@@ -11,7 +11,7 @@ $ascii = $true
 $logo = "Windows 11"
 
 # Specify width for image/logo
-$imgwidth = 50
+$imgwidth = 96
 
 # Specify minimum alpha value for image pixels to be visible
 $alphathreshold = 0
@@ -123,5 +123,4 @@ $batterystyle = 'bartext'
     "dashes"
     "blank"
     "custom_time"
-    "custom_weather"
 )
