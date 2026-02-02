@@ -8,12 +8,12 @@ return {
 	},
 	{
 		"nvim-treesitter/nvim-treesitter-context",
-		-- config = function()
-		--     require("treesitter-context").setup({
-		--         enable = true,
-		--         line_numbers = true,
-		--     })
-		-- end,
+		config = function()
+		    require("treesitter-context").setup({
+		        enable = true,
+		        line_numbers = true,
+		    })
+		end,
 		vim.keymap.set("n", "[c", function()
 			require("treesitter-context").go_to_context(vim.v.count1)
 		end, { silent = true }),
