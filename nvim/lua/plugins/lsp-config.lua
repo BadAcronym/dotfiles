@@ -13,6 +13,7 @@ return {
 		"williamboman/mason-lspconfig.nvim",
 		lazy = true,
 		event = { "BufReadPre", "BufNewFile" },
+		dependencies = { "williamboman/mason.nvim" },
 		config = function()
 			require("mason-lspconfig").setup({
 				ensure_installed = {
@@ -31,6 +32,7 @@ return {
 		"neovim/nvim-lspconfig",
 		lazy = true,
 		event = { "BufReadPre", "BufNewFile" },
+		dependencies = { "williamboman/mason.nvim", "williamboman/mason-lspconfig.nvim", "hrsh7th/cmp-nvim-lsp" },
 		--TODO: find out how to quickly jump to next reference/definition
 		config = function()
 			local lspconfig = require("lspconfig")
@@ -47,9 +49,9 @@ return {
 			lspconfig.lua_ls.setup({ capabilities = capabilities })
 
 			lspconfig.clangd.setup({
-                capabilities = capabilities,
-                cmd = { "clangd", "--background-index" },
-            })
+				capabilities = capabilities,
+				cmd = { "clangd", "--background-index" },
+			})
 
 			lspconfig.lemminx.setup({ capabilities = capabilities })
 
