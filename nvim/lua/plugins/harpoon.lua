@@ -15,9 +15,6 @@ return {
             { "<C-e>", function() HarpoonUI.nav_file(2) end, desc = "harpoon to file 2", },
             { "<C-i>", function() HarpoonUI.nav_file(3) end, desc = "harpoon to file 3", },
             { "<C-o>", function() HarpoonUI.nav_file(4) end, desc = "harpoon to file 4", },
-            { "<C-a>", function() HarpoonUI.nav_file(5) end, desc = "harpoon to file 5", },
-            { "<C-r>", function() HarpoonUI.nav_file(6) end, desc = "harpoon to file 6", },
-            { "<C-s>", function() HarpoonUI.nav_file(7) end, desc = "harpoon to file 7", },
         },
     }
 }
