@@ -1,7 +1,8 @@
 return {
 	{
 		"williamboman/mason.nvim",
-		lazy = false,
+		lazy = true,
+        event = {"BufRead", "BufNewFile"},
 		config = function()
 			require("mason").setup({
 				log_level = vim.log.levels.DEBUG,
