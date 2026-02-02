@@ -10,15 +10,9 @@ alias dir='ls -la'
 alias vi='nvim'
 alias lazy='lazygit'
 alias fetch='fastfetchconfig'
+alias cdskse='cd ~/.local/share/Steam/steamapps/compatdata/489830/pfx/drive_c/users/steamuser/My\ Documents/My\ Games/Skyrim\ Special\ Edition/SKSE'
 
 #for when oh-my-posh is unavailable
 PS1='[\u@\h \W]\$ '
-
-export PATH="$PATH:~/repository/bash-collection/"
-export PATH="$PATH:~/repository/lib/"
-
-export ASAN_SYMBOLIZER_PATH=/usr/bin/llvm-symbolizer
-
-export EDITOR=nvim
 
 eval "$(oh-my-posh init bash --config '/home/mandi/repository/dotfiles/oh-my-posh/config.omp.json')"
