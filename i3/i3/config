@@ -89,6 +89,7 @@ bindsym Mod1+Shift+period    exec --no-startup-id "~/repository/bash-collection/
 bindsym Mod1+Shift+slash     exec --no-startup-id "~/repository/bash-collection/nitrogen-profile 15"
 
 bindsym Mod1+space   exec --no-startup-id "playerctl play-pause"
+bindsym Mod1+Shift+g exec --no-startup-id "~/repository/lib/boomer"
 
 # change focus
 bindsym Mod1+$left  focus left
@@ -128,11 +129,14 @@ bindsym Mod1+s layout stacking
 bindsym Mod1+w layout tabbed
 bindsym Mod1+t layout toggle split
 
+# tabbing by default
+workspace_layout tabbed
+
 # toggle tiling / floating
 bindsym Mod1+Shift+space floating toggle
 
 # change focus between tiling / floating windows
-# bindsym Mod1+space focus mode_toggle
+# bindsym Mod1+ctrl+space focus mode_toggle
 
 # focus the parent container
 bindsym Mod1+a focus parent
