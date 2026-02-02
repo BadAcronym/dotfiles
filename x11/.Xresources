@@ -1,0 +1,11 @@
+Xft.antialias:  true
+Xft.hinting:    true
+Xft.hintstyle:  hintslight
+Xft.rgba:       rgb
+Xft.dpi:        96
+Xft.scale:      2
+Xft.lcdfilter:  lcddefault
+
+Xft.serif.family:      Fira Code Nerd Font Regular
+Xft.sans.serif.family: Fira Code Nerd Font Regular
+Xft.monospace.family:  Fira Code Nerd Font Mono
