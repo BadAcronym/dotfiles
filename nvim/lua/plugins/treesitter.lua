@@ -6,4 +6,10 @@ return {
 		highlight = { enable = true },
 		indent = { enable = true },
 	},
+    {
+        "nvim-treesitter/nvim-treesitter-context",
+        require("treesitter-context").setup({
+            line_numbers = true,
+        })
+    },
 }
