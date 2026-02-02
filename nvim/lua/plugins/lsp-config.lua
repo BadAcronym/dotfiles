@@ -21,32 +21,18 @@ return {
         "neovim/nvim-lspconfig",
         lazy = false,
         config = function()
-            --local capabilities = require("cmp_nvim_lsp").default_capabilities()
             local lspconfig = require("lspconfig")
 
-            lspconfig.glsl_analyzer.setup({
-                --capabilities = capabilities,
-            })
+            lspconfig.glsl_analyzer.setup{}
+            lspconfig.lua_ls.setup{}
+            lspconfig.clangd.setup{}
+            lspconfig.jdtls.setup{}
+            lspconfig.lemminx.setup{}
 
-            lspconfig.lua_ls.setup({
-                --capabilities = capabilities,
-            })
-            lspconfig.clangd.setup({
-                --capabilities = capabilities,
-            })
-
-            lspconfig.powershell_es.setup({
-                --capabilities = capabilities,
+            lspconfig.powershell_es.setup{
                 bundle_path = vim.fn.stdpath("data") .. "/mason/packages/powershell-editor-services/",
-            })
+            }
 
-            lspconfig.jdtls.setup({
-                --capabilities = capabilities,
-            })
-
-            lspconfig.lemminx.setup({
-                --capabilities = capabilities,
-            })
 
             vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
             vim.keymap.set("n", "def", vim.lsp.buf.definition, {})
