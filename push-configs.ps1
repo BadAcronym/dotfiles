@@ -7,8 +7,8 @@ $WinGlazepath = Join-Path -PATH $env:USERPROFILE -ChildPath "\.glzr\glazewm\conf
 $RepoGlazepath = Join-Path -PATH $RepoPath -ChildPath "\glazewm\config.yaml"
 
 $WinTermpath = Join-Path -PATH $env:LOCALAPPDATA -ChildPath "\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json"
-$RepoTermpath = Join-Path -PATH $RepoPath -ChildPath "\wt\settings.json"
 
+$RepoTermpath = Join-Path -PATH $RepoPath -ChildPath "\wt\settings.json"
 $RepoPSpath = Join-Path -PATH $RepoPath -ChildPath "PowerShell\Microsoft.PowerShell_profile.ps1"
 
 
