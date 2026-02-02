@@ -2,7 +2,7 @@ return {
 	{
 		"williamboman/mason.nvim",
 		lazy = true,
-        event = {"BufRead", "BufNewFile"},
+		event = { "BufRead", "BufNewFile" },
 		config = function()
 			require("mason").setup({
 				log_level = vim.log.levels.DEBUG,
@@ -15,7 +15,7 @@ return {
 		event = "LspAttach",
 		config = function()
 			require("mason-lspconfig").setup({
-				ensure_installed = { "lua_ls", "clangd", "powershell_es", "jdtls", "lemminx" },
+				ensure_installed = { "asm_lsp", "lua_ls", "clangd", "powershell_es", "jdtls", "lemminx" },
 			})
 		end,
 	},
@@ -43,6 +43,8 @@ return {
 			lspconfig.jdtls.setup({ capabilities = capabilities })
 
 			lspconfig.lemminx.setup({ capabilities = capabilities })
+
+			lspconfig.asm_lsp.setup({ capabilities = capabilities })
 
 			lspconfig.powershell_es.setup({
 				capabilities = capabilities,
