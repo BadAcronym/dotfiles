@@ -3,19 +3,34 @@ $RepoPath = "T:\Repository\dotfiles"
 $WinVimpath = Join-Path -PATH $env:LOCALAPPDATA -ChildPath "\nvim\"
 $RepoVimpath = Join-Path -PATH $RepoPath -ChildPath "\nvim\"
 
-$WinGlazepath = Join-Path -PATH $env:USERPROFILE -ChildPath "\.glzr\glazewm\"
-$RepoGlazepath = Join-Path -PATH $RepoPath -ChildPath "\glazewm\"
+$WinGlazepath = Join-Path -PATH $env:USERPROFILE -ChildPath "\.glzr\glazewm\config.yaml"
+$RepoGlazepath = Join-Path -PATH $RepoPath -ChildPath "\glazewm\config.yaml"
 
-Write-Output "Writing nvim config from $RepoVimpath to $WinVimpath"
+$WinTermpath = Join-Path -PATH $env:LOCALAPPDATA -ChildPath "\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json"
+$RepoTermpath = Join-Path -PATH $RepoPath -ChildPath "\wt\settings.json"
 
-if ( Test-Path -Path $WinVimpath ){
-    Remove-Item -Path $WinVimpath -Recurse
+function Push-Config {
+    param (
+        $inputPath,
+        $outputPath
+    )
+
+    Write-Output "`nWriting config from $inputPath to $outputPath..."
+
+    if ( Test-Path $outputPath ) {
+        Remove-Item -PATH $outputPath -Recurse
+        Write-Host "Deleted existing config in " -ForegroundColor Red -NoNewline
+        Write-Host "$outputPath."
+    }
+    else{
+        Write-Host "No existing config found, pushing..."
+    }
+    Copy-Item -PATH $inputPath -Destination $outputPath -Recurse
+    Write-Host "Pushed config to " -ForegroundColor Green -NoNewline
+    Write-Host $outputPath -ForegroundColor White -NoNewline
+    Write-Host " successfully." -ForegroundColor green
 }
-Copy-Item -PATH $RepoVimpath -Destination $WinVimpath -Recurse 
 
-Write-Output "Writing glazeWM config from $RepoGlazepath to $WinGlazepath"
-
-if ( Test-Path -Path $WinGlazepath) {
-    Remove-Item -Path $WinGlazepath -Recurse
-}
-Copy-Item -PATH $RepoGlazepath -Destination $WinGlazepath -Recurse
+Push-Config $RepoVimpath $WinVimpath
+Push-Config $Repoglazepath $WinGlazepath
+Push-Config $RepoTermpath $WinTermpath
