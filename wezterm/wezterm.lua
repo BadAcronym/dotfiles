@@ -1,23 +1,24 @@
 local wezterm = require("wezterm")
 local config = {}
 
-config.front_end = "OpenGL"
+config.initial_cols = 100
+config.initial_rows = 50
+
+config.front_end = "Software"
 config.term = "xterm-256color"
 config.prefer_egl = true
 config.font = wezterm.font("FiraCode Nerd Font Propo SemBd")
-config.window_background_opacity = 0.75
+config.window_background_opacity = 1
 config.window_decorations = "NONE"
-config.font_size = 15
+config.font_size = 18
 config.default_cursor_style = "SteadyBlock"
-
-config.default_prog = { "pwsh" }
 
 config.hide_tab_bar_if_only_one_tab = true
 config.use_fancy_tab_bar = false
 
 config.colors = {
   foreground = '#FFCC70',
-  background = '#000000',
+  background = '#09090A',
 
   -- Overrides the cell background color when the current cell is occupied by the
   -- cursor and the cursor style is set to Block
@@ -42,20 +43,20 @@ config.colors = {
 
   ansi = {
     '#000000',
-    '#EE2020',
-    '#00FF00',
-    '#FFCC70',
-    '#0000FF',
-    '#FF00FF',
-    '#00FFFF',
+    '#CC2025',
+    '#10AA10',
+    '#CCAA45',
+    '#1010AA',
+    '#AA40AA',
+    '#20C0C0',
     '#AAAAAA',
   },
   brights = {
     '#757575',
-    '#EE2020',
+    '#FF4040',
     '#00FF00',
     '#FFCC70',
-    '#0000FF',
+    '#2020FF',
     '#FF00FF',
     '#00FFFF',
     '#FFFFFF',
