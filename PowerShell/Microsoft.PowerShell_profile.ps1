@@ -7,6 +7,7 @@ New-Alias fetch fastfetchconfig
 New-Alias csh cheatsheet
 New-Alias gw Get-Weather
 New-Alias vim nvim
+New-Alias vi nvim
 
 Invoke-Expression "subst R: $env:Repo\river\"               *>$null
 Invoke-Expression "subst M: $env:Repo\marino\"              *>$null
