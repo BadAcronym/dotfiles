@@ -19,6 +19,7 @@ require("lazy").setup("plugins")
 
 vim.cmd([[colorscheme gruvbox]])
 require("nvimoptions")
+require("lspconfig")
 
 vim.api.nvim_create_autocmd("BufWritePre", {
 	pattern = "*",
