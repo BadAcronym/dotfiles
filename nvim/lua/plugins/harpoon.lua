@@ -6,6 +6,7 @@ return {
             HarpoonUI = require("harpoon.ui")
             local harpoon = require("harpoon")
             harpoon.setup()
+            vim.keymap.set("n", "<Esc>", "<ESC>")
         end,
         keys = {
             { "<leader>a", function() require("harpoon.mark").add_file() end, desc = "harpoon file", },
