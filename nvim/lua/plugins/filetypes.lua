@@ -1,3 +1,8 @@
 return {
-    "tikhomirov/vim-glsl",
+    {
+        "nathom/filetype.nvim",
+    },
+    {
+        "tikhomirov/vim-glsl",
+    },
 }
