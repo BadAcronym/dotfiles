@@ -1,27 +1,35 @@
 return {
 	{
 		"nvim-treesitter/nvim-treesitter",
-		lazy = true,
-		event = { "BufReadPre", "BufNewFile" },
-		auto_install = true,
-		highlight = { enable = true },
-		ensure_installed = {
-			"cpp",
-			"c",
-			"glsl",
-			"lua",
-			"java",
-			"c",
-			"vim",
-			"html",
-			"json",
-			"markdown",
-			"powershell",
-			"python",
-			"xml",
-            "yaml",
-		},
-		indent = { enable = true },
+		lazy = false,
+		-- event = { "BufReadPre", "BufNewFile" },
+		build = ":TSUpdate",
+        config = function()
+            require("nvim-treesitter.configs").setup({
+                auto_install = true,
+                highlight = {
+                    enable = true,
+                    additional_vim_regex_highlighting = false
+                },
+                ensure_installed = {
+                    "cpp",
+                    "c",
+                    "cpp",
+                    "glsl",
+                    "lua",
+                    "java",
+                    "vim",
+                    "html",
+                    "json",
+                    "markdown",
+                    "powershell",
+                    "python",
+                    "xml",
+                    "yaml",
+                },
+                indent = { enable = true },
+            })
+        end
 	},
 	{
 		"nvim-treesitter/nvim-treesitter-context",
