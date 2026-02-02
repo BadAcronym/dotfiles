@@ -62,9 +62,6 @@ return {
                     "--background-index",
                     "--clang-tidy=false"
                 },
-                on_attach = function(client)
-                  client.server_capabilities.semanticTokensProvider = nil
-                end
 			})
 
 			lspconfig.lemminx.setup({ capabilities = capabilities })
