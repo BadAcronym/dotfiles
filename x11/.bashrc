@@ -21,5 +21,5 @@ export ASAN_SYMBOLIZER_PATH=/usr/bin/llvm-symbolizer
 
 export EDITOR=nvim
 
-# must be last
+fetch default
 eval "$(oh-my-posh init bash --config '/home/mandi/repository/dotfiles/oh-my-posh/config.omp.json')"
