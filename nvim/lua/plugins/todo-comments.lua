@@ -16,7 +16,7 @@ return {
 			PERF  = { icon = " ", color = "perf",    alt = { "PERFORMANCE", "OPTIMIZATION", "OPTIM"    }},
 			NOTE  = { icon = " ", color = "hint",    alt = { "INFO",        "COMMENT",      "HINT"     }},
 			TEST  = { icon = "⏲ ", color = "test",    alt = { "TESTING",     "PASSED",       "FAILED"   }},
-			TODAY = { icon = "! ", color = "today",   alt = { "DAY",         "CURRENT",      "2DAY"     }},
+			TODAY = { icon = "! ", color = "today",   alt = { "URGENT",      "CURRENT",      "PRIORITY" }},
 			WORK  = { icon = "⅄ ", color = "work",    alt = { "WIP",         "DOING",        "WORKING"  }},
 			LEAK  = { icon = "🗲 ", color = "leak",    alt = { "MEMLEAK",     "LEAKING",      "ASAN"     }},
 			BACK  = { icon = "🗓", color = "back",    alt = { "BACKLOG",     "FUTURE",       "MAYBE"    }},
@@ -24,7 +24,7 @@ return {
 		},
         merge_keywords = true,
         colors = {
-            error   = { "DiagnosticError",   "ErrorMsg",   "#DD4550" },
+            error   = { "DiagnosticError",   "ErrorMsg",   "#DA3530" },
             warn    = { "DiagnosticWarn",    "WarningMsg", "#FBBF24" },
             hack    = { "DiagnosticWarn",                  "#AA5025" },
             perf    = { "DiagnosticPerf",                  "#A1CC40" },
