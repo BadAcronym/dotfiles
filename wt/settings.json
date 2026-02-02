@@ -166,12 +166,12 @@
                 "hidden": false,
                 "intenseTextStyle": "all",
                 "name": "Mandi's Terminal",
-                "opacity": 75,
+                "opacity": 100,
                 "scrollbarState": "hidden",
                 "startingDirectory": "T:\\Repository\\",
                 "suppressApplicationTitle": true,
                 "tabTitle": "Mandi's Terminal",
-                "useAcrylic": false
+                "useAcrylic": true
             },
             {
                 "font": 
