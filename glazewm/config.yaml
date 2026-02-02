@@ -237,8 +237,6 @@ keybindings:
   - commands: ['shell-exec wt']
     bindings: ['alt+enter']
 
-  #//TODO: change this to launch WezTerm :))
-
   # Focus the next/previous workspace defined in `workspaces` config.
   - commands: ['focus --next-workspace']
     bindings: ['alt+s']
@@ -272,13 +270,13 @@ keybindings:
   # Move the focused window's parent workspace to a monitor in a given
   # direction.
   - commands: ['move-workspace --direction left']
-    bindings: ['alt+shift+left']
+    bindings: ['ctrl+shift+left']
   - commands: ['move-workspace --direction right']
-    bindings: ['alt+shift+right']
+    bindings: ['ctrl+shift+right']
   - commands: ['move-workspace --direction up']
-    bindings: ['alt+shift+up']
+    bindings: ['ctrl+shift+up']
   - commands: ['move-workspace --direction down']
-    bindings: ['alt+shift+down']
+    bindings: ['ctrl+shift+down']
 
   # Move focused window to a workspace defined in `workspaces` config.
   - commands: ['move --workspace 1', 'focus --workspace 1']
