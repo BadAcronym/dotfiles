@@ -40,7 +40,22 @@ return {
 
             lspconfig.clangd.setup({ capabilities = capabilities })
 
-            lspconfig.jdtls.setup({ capabilities = capabilities })
+            lspconfig.jdtls.setup({
+                capabilities = capabilities,
+                settings = {
+                    java = {
+                        configuration = {
+                            runtimes = {
+                                {
+                                    name = "JavaSE-23",
+                                    path = "%{PROGRAMFILES}/java/jdk-23/",
+                                    default = true,
+                                }
+                            }
+                        }
+                    }
+                }
+            })
 
             lspconfig.lemminx.setup({ capabilities = capabilities })
 
