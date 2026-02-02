@@ -2,8 +2,7 @@ return {
 	{
 		"allaman/emoji.nvim",
 		lazy = true,
-		ft = "markdown",
-		event = "InsertEnter",
+		ft = "md",
 		config = function()
 			require("emoji").setup({
 				enable_cmp_integration = true,
