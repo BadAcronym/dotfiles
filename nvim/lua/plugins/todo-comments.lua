@@ -5,7 +5,7 @@ return {
 	dependencies = { "nvim-lua/plenary.nvim", "nvim-telescope/telescope.nvim" },
 	opts = {
 		highlight = {
-			comments_only = false,
+			comments_only = true,
 		},
 		keywords = {
 			FIX = { icon = " ", color = "error", alt = { "FIXME", "BUG", "FIXIT", "ISSUE" } },
