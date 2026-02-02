@@ -4,6 +4,7 @@ Set-PSReadlineOption -PredictionSource None
 
 New-Alias Goto Set-Location
 New-Alias fetch winfetchconfig
+New-Alias csh cheatsheet
 New-Alias vim nvim
 
 function Get-Weather {
