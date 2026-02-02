@@ -48,7 +48,7 @@ return {
                             runtimes = {
                                 {
                                     name = "JavaSE-23",
-                                    path = "%{PROGRAMFILES}/java/jdk-23/",
+                                    path = os.getenv("JAVA_HOME"),
                                     default = true,
                                 }
                             }
