@@ -43,7 +43,7 @@ $blink = $false
  function info_custom_time {
      return @{
          title = "Time"
-         content = (Get-Date -Format "hh:mm:ss, dd MMMM")
+         content = (Get-Date -Format "HH:mm:ss, dd MMMM")
      }
 }
 
