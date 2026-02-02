@@ -39,7 +39,8 @@ return {
                     ["@constant"] = { fg = "#00AAD0" },
                     ["Identifier"] = { fg = "#75EEFF" },
 
-                    ["StorageClass"] = { fg = "#C070FF" },
+                    ["Boolean"] = { fg = "#FF20FF" },
+                    ["StorageClass"] = { fg = "#E950A0" },
                 },
 				dim_inactive = false,
 				transparent_mode = false,
