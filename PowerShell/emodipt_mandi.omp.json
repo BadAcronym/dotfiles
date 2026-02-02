@@ -6,7 +6,7 @@
         "newline": true,
         "segments": [
           {
-            "foreground": "#E5C07B",
+            "foreground": "#FFAB56",
             "properties": {
               "time_format": "15:04"
             },
@@ -29,10 +29,10 @@
             "template": " \ue795 {{ .Name }}"
           },
           {
-            "foreground": "#F3E200",
+            "foreground": "#00ff45",
             "foreground_templates": [
-              "{{ if or (.Working.Changed) (.Staging.Changed) }}#FF9248{{ end }}",
-              "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#ff4500{{ end }}",
+              "{{ if or (.Working.Changed) (.Staging.Changed) }}#FF5530{{ end }}",
+              "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#ff1000 {{ end }}",
               "{{ if gt .Ahead 0 }}#B388FF{{ end }}",
               "{{ if gt .Behind 0 }}#B388FF{{ end }}"
             ],
