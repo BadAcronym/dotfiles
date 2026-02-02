@@ -29,7 +29,7 @@ general:
 
 gaps:
   # Whether to scale the gaps with the DPI of the monitor.
-  scale_with_dpi: true 
+  scale_with_dpi: true
 
   # Gap between adjacent windows.
   inner_gap: '3px'
@@ -47,7 +47,7 @@ window_effects:
     # Highlight the window with a colored border.
     # ** Exclusive to Windows 11 due to API limitations.
     border:
-      enabled: false 
+      enabled: false
       color: '#8dbcff'
 
     # Remove the title bar from the window's frame. Note that this can
@@ -58,7 +58,7 @@ window_effects:
     # Change the corner style of the window's frame.
     # ** Exclusive to Windows 11 due to API limitations.
     corner_style:
-      enabled: false 
+      enabled: false
       # Allowed values: 'square', 'rounded', 'small_rounded'.
       style: 'rounded'
 
@@ -70,7 +70,7 @@ window_effects:
     hide_title_bar:
       enabled: true
     corner_style:
-      enabled: true 
+      enabled: true
       style: 'square'
 
 window_behavior:
@@ -125,11 +125,11 @@ window_rules:
         window_title: { regex: '.*? - Peek' }
       - window_process: { equals: 'Lively' }
         window_class: { regex: 'HwndWrapper' }
-    
+
       # Ignore stuff I'm working on that doesn't allow resizing (yet)
       - window_process: { equals: 'Cnake' }
       # Because I like using .\vs2022 and am tired of moving it to main screen
-      - window_process: { equals: 'devenv' } 
+      - window_process: { equals: 'devenv' }
 
 binding_modes:
   # When enabled, the focused window can be resized via arrow keys or HJKL.
@@ -239,7 +239,7 @@ keybindings:
   # Launch CMD terminal. Alternatively, use `shell-exec wt` or
   # `shell-exec %ProgramFiles%/Git/git-bash.exe` to start Windows
   # Terminal and Git Bash respectively.
-  - commands: ['shell-exec %shims%/wezterm-gui.exe']
+  - commands: ['shell-exec %scoop%/apps/wezterm-nightly/nightly-20250702/wezterm-gui.exe']
     bindings: ['alt+enter']
 
   # Focus the next/previous workspace defined in `workspaces` config.
