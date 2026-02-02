@@ -3,20 +3,31 @@ return {
 	lazy = true,
 	event = "LspAttach",
 	dependencies = { "nvim-lua/plenary.nvim", "nvim-telescope/telescope.nvim" },
+    main = "todo-comments",
 	opts = {
 		highlight = {
 			comments_only = true,
 		},
 		keywords = {
-			FIX   = { icon = " ", color = "error", alt = { "FIXME", "BUG", "FIXIT", "ISSUE" } },
+			FIX   = { icon = " ", color = "error",   alt = { "FIXME", "BUG", "FIXIT", "ISSUE" } },
 			TODO  = { icon = " ", color = "info" },
 			HACK  = { icon = " ", color = "warning" },
 			WARN  = { icon = " ", color = "warning", alt = { "WARNING", "XXX" } },
-			PERF  = { icon = " ", color = "perf", alt = { "OPTIM", "PERFORMANCE", "OPTIMIZE" } },
-			NOTE  = { icon = " ", color = "hint", alt = { "INFO", "COMMENT", "HINT" } },
-			TEST  = { icon = "⏲ ", color = "test", alt = { "TESTING", "PASSED", "FAILED", "RESULT" } },
-			TODAY = { icon = "! ", color = "#AA20AA", alt = {"DAY", "CURRENT", "2DAY"} },
+			PERF  = { icon = " ",                    alt = { "OPTIM", "PERFORMANCE", "OPTIMIZE" } },
+			NOTE  = { icon = " ", color = "hint",    alt = { "INFO", "COMMENT", "HINT" } },
+			TEST  = { icon = "⏲ ", color = "test",    alt = { "TESTING", "PASSED", "FAILED", "RESULT" } },
+			TODAY = { icon = "! ", color = "today",   alt = {"DAY", "CURRENT", "2DAY"} },
 		},
+        merge_keywords = true,
+        colors = {
+            error = { "DiagnosticError", "ErrorMsg", "#DC2626" },
+            warning = { "DiagnosticWarn", "WarningMsg", "#FBBF24" },
+            info = { "DiagnosticInfo", "#2563EB" },
+            hint = { "DiagnosticHint", "#10B981" },
+            today = { "DiagnosticUrgent", "#AA10CC" },
+            default = { "Identifier", "#7C3AED" },
+            test = { "Identifier", "#FF00FF" }
+        },
 	},
 	keys = {
 		{ "]]t", "<cmd>lua require('todo-comments').jump_next()<CR>" },
@@ -73,7 +84,4 @@ return {
 		{ "<leader>tl", "<cmd>TodoTelescope<CR>" },
 		{ "<leader>tq", "<cmd>TodoQuickFix<CR>" },
 	},
-	config = function()
-		require("todo-comments").setup()
-	end,
 }
