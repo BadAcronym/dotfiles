@@ -6,7 +6,7 @@
         "newline": false,
         "segments": [
           {
-            "foreground": "#DDAA50",
+            "foreground": "#FFCC70",
             "properties": {
               "time_format": "15:04"
             },
@@ -15,7 +15,7 @@
             "type": "time"
           },
           {
-            "foreground": "#DDAA50",
+            "foreground": "#FFCC70",
             "foreground_templates": [
               "{{ if or (.Working.Changed) (.Staging.Changed) }}#EE2020{{ end }}",
               "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#EE2020{{ end }}",
@@ -41,14 +41,14 @@
           {
             "type": "status",
             "style": "plain",
-            "foreground": "#DDAA50",
+            "foreground": "#FFCC70",
             "foreground_templates": [
               "{{ if gt .Code 0 }}#EE2020{{ end }}"
             ],
             "template": " x{{ reason .Code }}"
           },
           {
-            "foreground": "#DDAA50",
+            "foreground": "#FFCC70",
             "foreground_templates": [
               "{{ if gt .Code 0 }}#EE2020{{ end }}"
             ],
@@ -68,7 +68,7 @@
         "newline": false,
         "segments": [
           {
-            "foreground": "#DDAA50",
+            "foreground": "#FFCC70",
             "properties": {
               "style": "full"
             },
@@ -84,13 +84,13 @@
         "newline": true,
         "segments": [
           {
-            "foreground": "#DDAA50",
+            "foreground": "#FFCC70",
             "style": "plain",
             "template": "\u0021",
             "type": "root"
           },
           {
-            "foreground": "#DDAA50",
+            "foreground": "#FFCC70",
             "style": "plain",
             "template": "\u276f",
             "type": "text"

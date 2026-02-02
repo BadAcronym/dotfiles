@@ -15,18 +15,18 @@ config.hide_tab_bar_if_only_one_tab = true
 config.use_fancy_tab_bar = false
 
 config.colors = {
-  foreground = '#DDAA50',
+  foreground = '#FFCC70',
   background = '#000000',
 
   -- Overrides the cell background color when the current cell is occupied by the
   -- cursor and the cursor style is set to Block
-  cursor_bg = '#DDAA50',
+  cursor_bg = '#FFCC70',
   -- Overrides the text color when the current cell is occupied by the cursor
-  cursor_fg = '#DDFFFF',
+  cursor_fg = '#101010',
   -- Specifies the border color of the cursor when the cursor style is set to Block,
   -- or the color of the vertical or horizontal bar when the cursor style is set to
   -- Bar or Underline.
-  cursor_border = '#DDAA50',
+  cursor_border = '#FFCC70',
 
   -- the foreground color of selected text
   selection_fg = '#000000',
@@ -43,7 +43,7 @@ config.colors = {
     '#000000',
     '#EE2020',
     '#00FF00',
-    '#DDAA50',
+    '#FFCC70',
     '#0000FF',
     '#FF00FF',
     '#00FFFF',
@@ -53,7 +53,7 @@ config.colors = {
     '#DCDCDC',
     '#EE2020',
     '#00FF00',
-    '#DDAA50',
+    '#FFCC70',
     '#0000FF',
     '#FF00FF',
     '#00FFFF',
