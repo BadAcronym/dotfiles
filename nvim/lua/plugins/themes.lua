@@ -46,7 +46,7 @@ return {
                     ["@type.builtin"] = { fg = "#3AFFE6"},
                     ["@type.definition"] = { fg = "#3AFFE6"},
 
-                    ["@string"] = { fg = "#99DD10"},
+                    ["@string"] = { fg = "#99DD20"},
                     ["@string.regexp"] = { fg = "#F080FF"},
                     ["@string.escape"] = { fg = "#F080FF"},
 
