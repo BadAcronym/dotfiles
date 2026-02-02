@@ -18,7 +18,7 @@ config.use_fancy_tab_bar = false
 
 config.colors = {
   foreground = '#FFCC70',
-  background = '#09090A',
+  background = '#0F0E0F',
 
   -- Overrides the cell background color when the current cell is occupied by the
   -- cursor and the cursor style is set to Block
