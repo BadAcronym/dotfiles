@@ -52,15 +52,24 @@ function Get-Weather
     Write-Host ""
 }
 
-$pwshCollectionModulePath = (Join-Path $env:Repo -ChildPath "\PWSH-Collection\modules\")
-if(Test-Path "$env:Repo\PWSH-Collection")
+$pwshCollectionPath = (Join-Path $env:Repo -ChildPath "/PWSH-Collection/")
+$pwshCollectionModulePath = (Join-Path $pwshCollectionPath -ChildPath "/modules/")
+$pwshCollectionScriptPath = (Join-Path $pwshCollectionPath -ChildPath "/scripts/")
+
+if(Test-Path $pwshCollectionPath)
 {
     $pwshCollectionModules = Get-ChildItem $pwshCollectionModulePath
     foreach($module in $pwshCollectionModules)
     {
         Import-Module $module
     }
+
+    if((Test-Path $pwshCollectionScriptPath) -And -Not([Environment]::GetEnvironmentVariable("Path", [EnvironmentVariableTarget]::User) -like "*$pwshCollectionScriptPath*"))
+    {
+        [Environment]::SetEnvironmentVariable("Path", [Environment]::GetEnvironmentVariable("Path", [EnvironmentVariableTarget]::User) + ";$pwshCollectionScriptPath",[EnvironmentVariableTarget]::User)
+        Write-Host "Added $pwshCollectionScriptPath to path!" -ForegroundColor Green
+    }
 }
 
-oh-my-posh init pwsh --config (Join-Path -PATH $env:Repo -ChildPath "\dotfiles\PowerShell\config.omp.json") | Invoke-Expression
+oh-my-posh init pwsh --config (Join-Path -PATH $env:Repo -ChildPath "/dotfiles/PowerShell/config.omp.json") | Invoke-Expression
 Set-Location $env:Repo
