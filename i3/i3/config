@@ -66,13 +66,8 @@ bindsym Mod1+Return exec --no-startup-id wezterm
 # kill focused window
 bindsym Mod1+Shift+q kill
 
-# start dmenu (a program launcher)
-bindsym Mod1+d exec --no-startup-id dmenu_run
 bindsym ctrl+0 exec --no-startup-id "rofi -show recursivebrowser -theme android_notification"
 bindsym ctrl+backslash exec --no-startup-id "rofi -show drun -theme android_notification"
-# There also is i3-dmenu-desktop which only displays applications shipping a
-# .desktop file. It is a wrapper around dmenu, so you need that installed.
-# bindsym Mod1+d exec --no-startup-id i3-dmenu-desktop
 
 # other hotkeys:
 bindsym Mod1+Shift+s         exec --no-startup-id "~/repository/bash-collection/take-screenshot.sh"
@@ -92,6 +87,8 @@ bindsym Mod1+Shift+m         exec --no-startup-id "~/repository/bash-collection/
 bindsym Mod1+Shift+comma     exec --no-startup-id "~/repository/bash-collection/nitrogen-profile 13"
 bindsym Mod1+Shift+period    exec --no-startup-id "~/repository/bash-collection/nitrogen-profile 14"
 bindsym Mod1+Shift+slash     exec --no-startup-id "~/repository/bash-collection/nitrogen-profile 15"
+
+bindsym Mod1+space   exec --no-startup-id "playerctl play-pause"
 
 # change focus
 bindsym Mod1+$left  focus left
@@ -135,7 +132,7 @@ bindsym Mod1+t layout toggle split
 bindsym Mod1+Shift+space floating toggle
 
 # change focus between tiling / floating windows
-bindsym Mod1+space focus mode_toggle
+# bindsym Mod1+space focus mode_toggle
 
 # focus the parent container
 bindsym Mod1+a focus parent
