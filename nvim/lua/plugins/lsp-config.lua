@@ -41,6 +41,10 @@ return {
                 bundle_path = vim.fn.stdpath("data") .. "/mason/packages/powershell-editor-services/",
             })
 
+            lspconfig.jdtls.setup({
+                capabilities = capabilities,
+            })
+
             vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
             vim.keymap.set("n", "def", vim.lsp.buf.definition, {})
             vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, {})
