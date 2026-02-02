@@ -57,7 +57,8 @@ return {
 				cmd = {
                     "clangd",
                     "--background-index",
-                    "--clang-tidy=false"
+                    "--clang-tidy=false",
+                    "--header-insertion=never"
                 },
 			})
 
