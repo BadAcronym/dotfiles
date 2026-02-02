@@ -1,6 +1,8 @@
+-- set <leader> key
+vim.g.mapleader=" "
+
 -- set options & keybindings
 require("nvimoptions")
-require("nvimbindings")
 
 -- lazy.nvim setup
   local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
@@ -16,7 +18,7 @@ require("nvimbindings")
   end
   vim.opt.rtp:prepend(lazypath)
 
--- load plugins & configure
+-- load all plugins in lua\plugins
   require("lazy").setup("plugins")
 
 -- treesitter config
@@ -58,7 +60,6 @@ require("nvimbindings")
     require("todo-comments").jump_next({keywords = { "ERROR", "WARNING" }})
   end, { desc = "Next error/warning todo comment" })  
 
--- set colour scheme
--- available themes:
+-- set colour scheme from available themes:
 -- tokyonight-night, toykonight-storm, tokyonight-moon, gruvbox
   vim.cmd[[colorscheme gruvbox]]
