@@ -1,6 +1,7 @@
 return {
 	"nvimtools/none-ls.nvim",
-	dependencies = {
+	event = "VeryLazy",
+    dependencies = {
         "nvimtools/none-ls-extras.nvim",
     },
 	config = function()
