@@ -11,26 +11,48 @@ general {
         interval = 1
 }
 
+order += "battery 0"
 order += "path_exists uni-qis"
 order += "path_exists uk-edi"
 order += "ethernet _first_"
+order += "wireless _first_"
 order += "disk /"
 order += "cpu_usage"
 order += "memory"
 order += "tztime date"
 order += "tztime local"
 
+# TODO: update VPNs to work without nmcli and on gentoo
 path_exists uni-qis {
         path = "/proc/sys/net/ipv4/conf/wgtuk-Full-Arch"
+        format_down = ""
 }
 
 path_exists uk-edi {
         path = "/proc/sys/net/ipv4/conf/uk-edi"
+        format_down = ""
+}
+
+battery 0 {
+        format = "%status %percentage (%emptytime %consumption)"
+        format_down = ""
+        status_chr = "🔌CHR"
+        status_bat = "BAT"
+        status_unk = "UNK"
+        status_full = "🔋FULL"
+        low_threshold = "25"
+        threshold_type = "percentage"
+        format_percentage = "%.02f%s"
 }
 
 ethernet _first_ {
         format_up = "E: (%speed)"
-        format_down = "E: down"
+        format_down = ""
+}
+
+wireless _first_ {
+        format_up = "W:%quality @ %bitrate, %frequency"
+        format_down = "W: down"
 }
 
 disk "/" {
