@@ -46,7 +46,7 @@
     {
         "defaults": 
         {
-            "startingDirectory": "C:/Repository/"
+            "startingDirectory": "%Repo%"
         },
         "list": 
         [
@@ -55,7 +55,7 @@
                 "antialiasingMode": "grayscale",
                 "closeOnExit": "never",
                 "colorScheme": "IBM 5153",
-                "commandline": "C:\\Program Files\\PowerShell\\7\\pwsh",
+                "commandline": "%ProgramFiles%\\PowerShell\\7\\pwsh",
                 "cursorShape": "filledBox",
                 "font": 
                 {
@@ -69,7 +69,7 @@
                 "name": "Mandi's Terminal",
                 "padding": "8, 8, 8, 8",
                 "snapOnInput": true,
-                "startingDirectory": "C:\\Repository\\",
+                "startingDirectory": "%Repo%",
                 "tabTitle": "Mandi's Terminal",
                 "useAcrylic": false
             },
