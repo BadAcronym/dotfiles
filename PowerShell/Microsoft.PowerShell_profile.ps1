@@ -64,19 +64,6 @@ if(Test-Path $pwshCollectionPath)
     {
         Import-Module $module
     }
-
-    if((Test-Path $pwshCollectionScriptPath) -And -Not($env:PATH -like "*$pwshCollectionScriptPath*"))
-    {
-        if($isLinux)
-        {
-            $env:PATH += ":$pwshCollectionScriptPath"
-        }
-        elseIf($isWindows)
-        {
-            $env:PATH += ";$pwshCollectionScriptPath"
-        }
-        Write-Host "Added $pwshCollectionScriptPath to path!" -ForegroundColor Green
-    }
 }
 
 oh-my-posh init pwsh --config (Join-Path -PATH $env:Repo -ChildPath "/dotfiles/PowerShell/config.omp.json") | Invoke-Expression
