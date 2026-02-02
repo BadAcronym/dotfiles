@@ -13,7 +13,9 @@ return {
 		"williamboman/mason-lspconfig.nvim",
 		lazy = true,
 		event = { "BufReadPre", "BufNewFile" },
-		dependencies = { "williamboman/mason.nvim" },
+		dependencies = {
+            "williamboman/mason.nvim"
+        },
 		config = function()
 			require("mason-lspconfig").setup({
 				ensure_installed = {
@@ -25,6 +27,7 @@ return {
 					"jdtls",
 					"tinymist",
 				},
+                automatic_enable = false
 			})
 		end,
 	},
