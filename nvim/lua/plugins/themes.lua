@@ -29,30 +29,18 @@ return {
 				contrast = "hard",
 				palette_overrides = {},
 				overrides = {
-                    ["@label"] = { fg = "#FF1020"},
+                    ["@string"] = { fg = "#99FF20" },
+                    ["String"] = { fg  = "#99FF20" },
 
-                    ["@constant"] = { fg = "#f080ff"},
-                    ["@variable"] = { fg = "#209faa"},
-                    ["@variable.member"] = { fg = "#30ffaa" },
-                    ["@variable.parameter"] = { fg = "#3090ff"},
+                    ["Type"] = { fg  = "#9090FF" },
+                    ["@type"] = { fg  = "#3AFFFF" },
 
-                    ["@keyword.conditional"] = { fg = "#d8b2ff" },
-                    ["@boolean"] = { fg = "#bb45ff" },
+                    ["Function"] = { fg = "#FFDD25" },
+                    ["@function"] = { fg = "#FFDD25" },
 
-                    ["@number"] = { fg = "#3aaae6" },
+                    ["Operator"] = { fg = "#FFFFFF" },
 
-
-                    ["@type"] = { fg = "#3affe6"},
-                    ["@type.builtin"] = { fg = "#3affe6"},
-                    ["@type.definition"] = { fg = "#3affe6"},
-
-                    ["@string"] = { fg = "#99dd20"},
-                    ["@string.regexp"] = { fg = "#f080ff"},
-                    ["@string.escape"] = { fg = "#f080ff"},
-
-                    ["@punctuation.delimiter"] = { fg = "#FFFFFF"},
-                    ["@punctuation.bracket"] = { fg = "#d65d0e"},
-                    ["@punctuation.special"] = { fg = "#F0C0FA"},
+                    ["StorageClass"] = { fg = "#C070FF" },
                 },
 				dim_inactive = false,
 				transparent_mode = false,
