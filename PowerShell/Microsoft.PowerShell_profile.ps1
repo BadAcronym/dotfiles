@@ -12,7 +12,16 @@ if($IsWindows)
 {
     Import-Module gsudoModule
 
-    $env:Repo = "T:\Repository"
+    if(Test-Path "T:\Repository")
+    {
+        $env:Repo = "T:\Repository"
+    }
+
+    if(Test-Path "C:\Repository")
+    {
+        $env:Repo = "C:\Repository"
+    }
+
     Invoke-Expression "subst R: $env:Repo\river\"               *>$null
     Invoke-Expression "subst M: $env:Repo\marino\"              *>$null
     Invoke-Expression "subst U: $env:Repo\RPTU\5_Semester\"     *>$null
