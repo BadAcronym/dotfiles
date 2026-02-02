@@ -6,7 +6,7 @@
         "newline": false,
         "segments": [
           {
-            "foreground": "#FFAB56",
+            "foreground": "#DDAA50",
             "properties": {
               "time_format": "15:04"
             },
@@ -15,10 +15,10 @@
             "type": "time"
           },
           {
-            "foreground": "#00ff45",
+            "foreground": "#DDAA50",
             "foreground_templates": [
-              "{{ if or (.Working.Changed) (.Staging.Changed) }}#FF5530{{ end }}",
-              "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#ff1000 {{ end }}",
+              "{{ if or (.Working.Changed) (.Staging.Changed) }}#EE2020{{ end }}",
+              "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#EE2020{{ end }}",
               "{{ if gt .Ahead 0 }}#B388FF{{ end }}",
               "{{ if gt .Behind 0 }}#B388FF{{ end }}"
             ],
@@ -41,16 +41,16 @@
           {
             "type": "status",
             "style": "plain",
-            "foreground": "#b8ff75",
+            "foreground": "#DDAA50",
             "foreground_templates": [
-              "{{ if gt .Code 0 }}#E06C75{{ end }}"
+              "{{ if gt .Code 0 }}#EE2020{{ end }}"
             ],
             "template": " x{{ reason .Code }}"
           },
           {
-            "foreground": "#b8ff75",
+            "foreground": "#DDAA50",
             "foreground_templates": [
-              "{{ if gt .Code 0 }}#E06C75{{ end }}"
+              "{{ if gt .Code 0 }}#EE2020{{ end }}"
             ],
             "properties": {
               "style": "roundrock",
@@ -68,7 +68,7 @@
         "newline": false,
         "segments": [
           {
-            "foreground": "#61AFEF",
+            "foreground": "#DDAA50",
             "properties": {
               "style": "full"
             },
@@ -84,13 +84,13 @@
         "newline": true,
         "segments": [
           {
-            "foreground": "#E06C75",
+            "foreground": "#DDAA50",
             "style": "plain",
             "template": "\u0021",
             "type": "root"
           },
           {
-            "foreground": "#E06C75",
+            "foreground": "#DDAA50",
             "style": "plain",
             "template": "\u276f",
             "type": "text"
