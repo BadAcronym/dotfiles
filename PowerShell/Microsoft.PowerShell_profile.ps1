@@ -19,5 +19,5 @@ function Get-Graph {
     Invoke-RestMethod wttr.in/Kaiserslautern?format=v2
 }
 
-oh-my-posh init pwsh --config (Join-Path -PATH $repo -ChildPath "\wt\Mandi.omp.json") | Invoke-Expression
+oh-my-posh init pwsh --config (Join-Path -PATH $repo -ChildPath "\dotfiles\wt\Mandi.omp.json") | Invoke-Expression
 
