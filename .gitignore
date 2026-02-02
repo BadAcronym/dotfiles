@@ -1,0 +1,4 @@
+winfetch/*
+
+!winfetch/default*
+
