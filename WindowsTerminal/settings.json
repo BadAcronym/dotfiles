@@ -8,12 +8,12 @@
     "keybindings": 
     [
         {
-            "id": "Terminal.CopyToClipboard",
-            "keys": "ctrl+c"
-        },
-        {
             "id": "Terminal.OpenNewTab",
             "keys": "ctrl+t"
+        },
+        {
+            "id": "Terminal.CopyToClipboard",
+            "keys": "ctrl+c"
         },
         {
             "id": "Terminal.PasteFromClipboard",
@@ -28,7 +28,7 @@
             "keys": "ctrl+shift+t"
         },
         {
-            "id": "Terminal.OpenNewWindow",
+ "id": "Terminal.OpenNewWindow",
             "keys": "ctrl+n"
         },
         {
@@ -94,7 +94,7 @@
             {
                 "altGrAliasing": true,
                 "antialiasingMode": "grayscale",
-                "closeOnExit": "automatic",
+                "closeOnExit": "never",
                 "colorScheme": "Mandi's Scheme",
                 "commandline": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
                 "cursorShape": "filledBox",
@@ -144,5 +144,6 @@
             "yellow": "#C19C00"
         }
     ],
+    "startOnUserLogin": true,
     "themes": []
 }
