@@ -1,7 +1,6 @@
 return {
 	{
 		"nvim-treesitter/nvim-treesitter",
-		--build = "TSUpdate",
         auto_install = true,
 		highlight = { enable = true },
         ensure_installed = {"cpp", "lua"},
@@ -11,6 +10,7 @@ return {
         "nvim-treesitter/nvim-treesitter-context",
         config = function()
             require("treesitter-context").setup({
+                enable = true,
                 line_numbers = true,
             })
         end,
