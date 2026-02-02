@@ -12,7 +12,6 @@ return {
     {
         "williamboman/mason-lspconfig.nvim",
         lazy = true,
-        event = { "BufRead", "BufNewFile" },
         config = function()
             require("mason-lspconfig").setup({
                 ensure_installed = { "asm_lsp", "lua_ls", "clangd", "powershell_es", "lemminx", "jdtls"},
@@ -22,11 +21,9 @@ return {
     {
         "neovim/nvim-lspconfig",
         lazy = true,
-        event = { "BufRead", "BufNewFile" },
         --TODO: find out how to quickly jump to next reference/definition
         config = function()
             local lspconfig = require("lspconfig")
-            lspconfig
             local capabilities = vim.tbl_deep_extend(
                 "force",
                 vim.lsp.protocol.make_client_capabilities(),

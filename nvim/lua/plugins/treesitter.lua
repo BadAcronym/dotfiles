@@ -2,7 +2,7 @@ return {
 	{
 		"nvim-treesitter/nvim-treesitter",
 		lazy = true,
-		event = { "BufRead", "BufNewFile" },
+		event = { "BufReadPre", "BufNewFile" },
 		auto_install = true,
 		highlight = { enable = true },
 		ensure_installed = {
