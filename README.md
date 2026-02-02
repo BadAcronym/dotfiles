@@ -4,6 +4,8 @@ Remember kids, make your config files cross-platform and cross-hardware, so that
 
 This repo will inevitably be most useful to myself, but I guess I'll add sample pictures and stuff later so you can copy any config of mine you fancy. (You can still do that right now, but you just don't have any previews, lol)
 
+Plans are to add a version of the script below, but for linux. I just can't be bothered this instant.
+
 For an immediate and automated setup, I simply run this PWSH script that will automatically install all of my desired package managers, apps, their dependencies, pull my configs from this repo and push them to their respective places.
 Currently written for windows (will run from powershell 1 but update to 7 immediately)
 and it will include installing winget, scoop and wezterm.
