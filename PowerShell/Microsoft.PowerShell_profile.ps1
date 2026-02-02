@@ -21,4 +21,3 @@ function Get-Graph {
 }
 
 oh-my-posh init pwsh --config (Join-Path -PATH $env:Repo -ChildPath "\dotfiles\PowerShell\Mandi.omp.json") | Invoke-Expression
-
