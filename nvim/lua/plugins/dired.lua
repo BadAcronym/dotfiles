@@ -22,7 +22,7 @@ return{
                 dired_back                = "-",
                 dired_up                  = "_",
                 dired_rename              = "R",
-                dired_create              = "d",
+                dired_create              = "o",
                 dired_delete              = "D",
                 dired_delete_range        = "D",
                 dired_copy                = "C",
