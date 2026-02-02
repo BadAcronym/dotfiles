@@ -36,8 +36,8 @@ call : mod + c : centre_window
 call : mod + shift + x : quit
 
 # Focus Movement:
-call : mod + n : focus_next
-call : mod + i : focus_prev
+call : mod + i : focus_next
+call : mod + n : focus_prev
 
 # Monitor Focus:
 call : mod + period : focus_next_mon
