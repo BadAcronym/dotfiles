@@ -1,5 +1,6 @@
 vim.wo.number = true
 vim.wo.relativenumber = true
+vim.wo.wrap = false
 
 vim.cmd("set expandtab")
 vim.cmd("set tabstop=4")
