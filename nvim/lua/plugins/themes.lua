@@ -29,16 +29,15 @@ return {
 				contrast = "hard",
 				palette_overrides = {},
 				overrides = {
-                    ["@string"] = { fg = "#99FF20" },
                     ["String"] = { fg  = "#99FF20" },
+                    ["@string"] = { fg = "#99FF20" },
 
                     ["Type"] = { fg  = "#9090FF" },
-                    ["@type"] = { fg  = "#3AFFFF" },
+                    ["Function"] = { fg = "#EED030" },
 
-                    ["Function"] = { fg = "#FFDD25" },
-                    ["@function"] = { fg = "#FFDD25" },
-
-                    ["Operator"] = { fg = "#FFFFFF" },
+                    ["@variable"] = { fg = "#00AAD0" },
+                    ["@constant"] = { fg = "#00AAD0" },
+                    ["Identifier"] = { fg = "#75EEFF" },
 
                     ["StorageClass"] = { fg = "#C070FF" },
                 },
