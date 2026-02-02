@@ -574,7 +574,7 @@
           ]
         ],
         "Enable": true,
-        "ForceApply": false,
+        "ForceApply": true,
         "Identifier": "NVApiWrapper/0-AD104-A/control/0",
         "IsHidden": false,
         "ManualControl": false,
@@ -656,7 +656,7 @@
           ]
         ],
         "Enable": true,
-        "ForceApply": false,
+        "ForceApply": true,
         "Identifier": "NVApiWrapper/0-AD104-A/control/1",
         "IsHidden": false,
         "ManualControl": false,
