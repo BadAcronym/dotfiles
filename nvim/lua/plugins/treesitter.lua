@@ -2,7 +2,6 @@ return {
 	{
 		"nvim-treesitter/nvim-treesitter",
 		lazy = false,
-		-- event = { "BufReadPre", "BufNewFile" },
 		build = ":TSUpdate",
         config = function()
             require("nvim-treesitter.configs").setup({
@@ -40,6 +39,9 @@ return {
 			require("treesitter-context").setup({
 				enable = true,
 				line_numbers = true,
+                max_lines = 5,
+                trim_scope = 'inner',
+                separator = '-'
 			})
 		end,
 		vim.keymap.set("n", "[c", function()
