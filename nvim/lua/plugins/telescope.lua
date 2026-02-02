@@ -1,8 +1,15 @@
 return {
 	{
 		"nvim-telescope/telescope.nvim",
-		tag = "0.1.8",
+		lazy = true,
 		dependencies = { "nvim-lua/plenary.nvim" },
+        keys = {
+            {"<leader>fb", ":Telescope file_browser<cr>"},
+            {"<leader>fg", "<cmd>lua require('telescope.builtin').live_grep()<CR>"},
+            {"<leader>fd", "<cmd>lua require('telescope.builtin').diagnostics()<CR>"},
+            {"<leader>fz", ":Telescope zoxide list<CR>"},
+            {"<C-p>", "<cmd>lua require'telescope.builtin'.find_files({ find_command = {'rg', '--files', '--hidden', '-g', '!.git' }})<CR>"}
+        },
 		config = function()
 			require("telescope").setup({
 				pickers = {
@@ -25,32 +32,18 @@ return {
 
 			require("telescope").load_extension("zoxide")
 
-			local builtin = require("telescope.builtin")
-
-			vim.keymap.set(
-				"n",
-				"<C-p>",
-				"<cmd>lua require'telescope.builtin'.find_files({ find_command = {'rg', '--files', '--hidden', '-g', '!.git' }})<CR>",
-				{}
-			)
-			vim.keymap.set("n", "<leader>fb", ":Telescope file_browser<cr>", {})
-			vim.keymap.set("n", "<leader>fg", builtin.live_grep, {})
-			vim.keymap.set("n", "<leader>fd", builtin.diagnostics, {})
-			vim.keymap.set("n", "<leader>fz", ":Telescope zoxide list<CR>", {})
 			require("telescope").load_extension("ui-select")
 		end,
 	},
 
-	-- telescope addons
 	{
 		"nvim-telescope/telescope-ui-select.nvim",
+        lazy = true,
 		config = function()
 			require("telescope").setup({
 				extensions = {
 					["ui-select"] = {
-						require("telescope.themes").get_dropdown({
-							-- even more opts
-						}),
+						require("telescope.themes").get_dropdown({}),
 					},
 				},
 			})
@@ -59,5 +52,6 @@ return {
 	},
 	{
 		"jvgrootveld/telescope-zoxide",
+        lazy = true
 	},
 }
