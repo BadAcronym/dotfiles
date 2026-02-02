@@ -29,6 +29,7 @@ bind : mod + Return : "wezterm"
 bind : mod + t : "qutebrowser"
 bind : ctrl + 0 : "rofi -show recursivebrowser"
 bind : ctrl + backslash : "rofi -show drun"
+bind : alt + shift + s : "~/repository/bash-collection/take-screenshot.sh"
 
 # Window Management:
 call : mod + shift + q : close_window
