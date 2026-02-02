@@ -1,4 +1,5 @@
 winfetch/*
-
 !winfetch/default*
 
+fastfetch/*
+!fastfetch/default*
