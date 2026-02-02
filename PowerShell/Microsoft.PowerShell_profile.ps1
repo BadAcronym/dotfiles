@@ -9,14 +9,22 @@ New-Alias gw Get-Weather
 New-Alias vim nvim
 New-Alias vi nvim
 
-Invoke-Expression "subst R: $env:Repo\river\"               *>$null
-Invoke-Expression "subst M: $env:Repo\marino\"              *>$null
-Invoke-Expression "subst U: $env:Repo\RPTU\5_Semester\"     *>$null
-
-function Get-Image
+if($IsWindows)
 {
-    param ( $image = "." )
-    Invoke-Expression "wezterm imgcat $image"
+    $env:Repo = "T:\Repository"
+    Invoke-Expression "subst R: $env:Repo\river\"               *>$null
+    Invoke-Expression "subst M: $env:Repo\marino\"              *>$null
+    Invoke-Expression "subst U: $env:Repo\RPTU\5_Semester\"     *>$null
+
+    function Get-Image
+    {
+        param ( $image = "." )
+        Invoke-Expression "wezterm imgcat $image"
+    }
+}
+elseIf($isLinux)
+{
+    $env:Repo = "~/repository/"
 }
 
 $toRemove = "Follow*"
