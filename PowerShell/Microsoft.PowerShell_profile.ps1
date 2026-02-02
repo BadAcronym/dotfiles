@@ -6,8 +6,9 @@ New-Alias Goto Set-Location
 New-Alias fetch fastfetchconfig
 New-Alias csh cheatsheet
 New-Alias gw Get-Weather
-New-Alias vim nvim
 New-Alias vi nvim
+New-Alias vim nvim
+New-Alias lazy lazygit
 
 if($IsWindows)
 {
