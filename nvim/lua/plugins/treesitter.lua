@@ -10,6 +10,7 @@ return {
 	},
 	{
 		"nvim-treesitter/nvim-treesitter-context",
+        build = ":TSUpdate",
 		lazy = true,
 		event = { "BufRead", "BufNewFile" },
 		config = function()
