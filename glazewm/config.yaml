@@ -68,7 +68,7 @@ window_effects:
       enabled: false
       color: '#c1c1f1'
     hide_title_bar:
-      enabled: false
+      enabled: true 
     corner_style:
       enabled: true 
       style: 'square'
