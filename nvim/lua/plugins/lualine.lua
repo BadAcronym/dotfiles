@@ -1,6 +1,7 @@
 return {
 	"nvim-lualine/lualine.nvim",
-    lazy = false,
+	lazy = true,
+	event = { "BufRead", "BufNewFile", "LspAttach" },
 	config = function()
 		require("lualine").setup({
 			options = {

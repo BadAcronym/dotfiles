@@ -1,20 +1,15 @@
 return {
-    {
-        "xiyaowong/transparent.nvim",
-        lazy = false,
-
-    },
 	{
-		"folke/tokyonight.nvim",
+		"xiyaowong/transparent.nvim",
 		lazy = false,
-		priority = 1000,
-		opts = {},
 	},
 	{
 		"ellisonleao/gruvbox.nvim",
+		lazy = false,
+		priority = 1000,
 		config = function()
 			require("gruvbox").setup({
-				terminal_colors = true, -- add neovim terminal colors
+				terminal_colors = true,
 				undercurl = true,
 				underline = true,
 				bold = true,

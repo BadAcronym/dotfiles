@@ -1,6 +1,8 @@
 return {
 	{
 		"nvim-treesitter/nvim-treesitter",
+		lazy = true,
+		event = { "BufRead", "BufNewFile" },
 		auto_install = true,
 		highlight = { enable = true },
 		ensure_installed = { "cpp", "lua" },
@@ -8,11 +10,13 @@ return {
 	},
 	{
 		"nvim-treesitter/nvim-treesitter-context",
+		lazy = true,
+		event = { "BufRead", "BufNewFile" },
 		config = function()
-		    require("treesitter-context").setup({
-		        enable = true,
-		        line_numbers = true,
-		    })
+			require("treesitter-context").setup({
+				enable = true,
+				line_numbers = true,
+			})
 		end,
 		vim.keymap.set("n", "[c", function()
 			require("treesitter-context").go_to_context(vim.v.count1)

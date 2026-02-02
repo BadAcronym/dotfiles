@@ -1,5 +1,7 @@
 return {
-    {
-        "tikhomirov/vim-glsl",
-    },
+	{
+		"tikhomirov/vim-glsl",
+		lazy = true,
+		ft = "glsl",
+	},
 }

@@ -10,7 +10,8 @@ return {
 	},
 	{
 		"williamboman/mason-lspconfig.nvim",
-		lazy = false,
+		lazy = true,
+		event = "LspAttach",
 		config = function()
 			require("mason-lspconfig").setup({
 				ensure_installed = { "lua_ls", "clangd", "powershell_es", "jdtls", "lemminx" },
@@ -19,7 +20,8 @@ return {
 	},
 	{
 		"neovim/nvim-lspconfig",
-		lazy = false,
+		lazy = true,
+		event = "LspAttach",
 		--TODO: find out how to quickly jump to next reference/definition
 		config = function()
 			local lspconfig = require("lspconfig")
