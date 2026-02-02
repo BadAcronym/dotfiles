@@ -14,4 +14,4 @@ export PATH="$PATH:~/repository/bash-collection/"
 
 export EDITOR=nvim
 
-setxkbmap us colemak
+setxkbmap us
