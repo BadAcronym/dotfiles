@@ -69,11 +69,6 @@ bindsym Mod1+Shift+q kill
 bindsym ctrl+0 exec --no-startup-id "rofi -show recursivebrowser -theme android_notification"
 bindsym ctrl+backslash exec --no-startup-id "rofi -show drun -theme android_notification"
 
-# speakers
-bindsym Mod1+Shift+k         exec --no-startup-id "pactl set-default-sink 59"
-# audio interface
-bindsym Mod1+Shift+m         exec --no-startup-id "pactl set-default-sink 61"
-
 bindsym Mod1+Shift+s         exec --no-startup-id "~/repository/bash-collection/take-screenshot"
 bindsym Mod1+Shift+h         exec --no-startup-id "~/repository/bash-collection/nitrogen-profile random"
 bindsym Mod1+Shift+o         exec --no-startup-id "~/repository/bash-collection/streamer-mode"
