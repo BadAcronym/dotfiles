@@ -8,27 +8,33 @@ New-Alias csh cheatsheet
 New-Alias gw Get-Weather
 New-Alias vim nvim
 
-Invoke-Expression "subst R: $env:Repo\river\"
+Invoke-Expression "subst R: $env:Repo\river\"               *>$null
+Invoke-Expression "subst U: $env:Repo\RPTU\5_Semester\"     *>$null
 
-function Get-Image{
-    param(
-        $image = "."
-    )
+function Get-Image
+{
+    param ( $image = "." )
     Invoke-Expression "wezterm imgcat $image"
 }
 
 $toRemove = "Follow*"
-function Get-Weather{
-    param(
+function Get-Weather
+{
+    param
+    (
         $city = "",
         [switch]$graph = $false
     )
 
-    if($graph){
+    if($graph)
+    {
         $output = Invoke-RestMethod "wttr.in/$city`?format=v2" | Out-String
-    }else{
+    }
+    else
+    {
         $output = Invoke-RestMethod "wttr.in/$city" | Out-String
     }
+
     $outputLines = $output -split "`n"
     $filteredLines = $outputLines | Where-Object {$_ -notmatch $toRemove}
     $cleanedlines = $filteredLines | Where-Object {$_.trim() -ne ""}
@@ -37,9 +43,11 @@ function Get-Weather{
 }
 
 $pwshCollectionModulePath = (Join-Path $env:Repo -ChildPath "\PWSH-Collection\modules\")
-if(Test-Path "$env:Repo\PWSH-Collection"){
+if(Test-Path "$env:Repo\PWSH-Collection")
+{
     $pwshCollectionModules = Get-ChildItem $pwshCollectionModulePath
-    foreach($module in $pwshCollectionModules){
+    foreach($module in $pwshCollectionModules)
+    {
         Import-Module $module
     }
 }
