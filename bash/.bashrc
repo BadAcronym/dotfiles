@@ -10,4 +10,6 @@ alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
 
 export PATH="$PATH:~/repository/PWSH-Collection/scripts/"
-#TODO: change editor to vim
+export PATH="$PATH:~/repository/bash-collection/"
+
+export EDITOR=nvim
