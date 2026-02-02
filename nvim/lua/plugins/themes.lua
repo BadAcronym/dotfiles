@@ -1,9 +1,5 @@
 return {
 	{
-		"xiyaowong/transparent.nvim",
-		lazy = false,
-	},
-	{
 		"ellisonleao/gruvbox.nvim",
 		lazy = false,
 		priority = 1000,
@@ -53,7 +49,7 @@ return {
 					["StorageClass"] = { fg = "#E950A0" },
 				},
 				dim_inactive = false,
-				transparent_mode = false,
+				transparent_mode = true,
 			})
 		end,
 	},
