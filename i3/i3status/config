@@ -22,7 +22,6 @@ order += "memory"
 order += "tztime date"
 order += "tztime local"
 
-# TODO: update VPNs to work without nmcli and on gentoo
 path_exists uni-qis {
         path = "/proc/sys/net/ipv4/conf/wgtuk-Full-Arch"
         format_down = ""
@@ -52,7 +51,7 @@ ethernet _first_ {
 
 wireless _first_ {
         format_up = "W:%quality @ %bitrate, %frequency"
-        format_down = "W: down"
+        format_down = ""
 }
 
 disk "/" {
