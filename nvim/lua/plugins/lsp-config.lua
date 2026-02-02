@@ -13,7 +13,7 @@ return {
         lazy = false,
         config = function()
             require("mason-lspconfig").setup({
-                ensure_installed = { "lua_ls", "clangd", "powershell_es"},
+                ensure_installed = { "lua_ls", "clangd", "powershell_es", "jdtls", "lemminx"},
             })
         end,
     },
@@ -42,6 +42,10 @@ return {
             })
 
             lspconfig.jdtls.setup({
+                capabilities = capabilities,
+            })
+
+            lspconfig.lemminx.setup({
                 capabilities = capabilities,
             })
 
