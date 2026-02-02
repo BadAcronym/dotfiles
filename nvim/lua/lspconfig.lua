@@ -44,21 +44,12 @@ vim.lsp.config("asm_lsp", {
 })
 vim.lsp.enable("asm_lsp")
 
---TODAY: fix powershell services not wanting to start, what the hell?
---find equiv to require.setup() thingy
-vim.lsp.config("powershell_es", {
-    capabilities = capabilities,
-    bundle_path = (vim.fn.stdpath("data") .. "/mason/packages/powershell-editor-services/PowershellEditorServices/"),
-    cmd = { 'pwsh', '-NoLogo', '-NoProfile', '-Command', (vim.fn.stdpath("data") .. "/mason/packages/powershell-editor-services/PowerShellEditorServices/Start-EditorServices.ps1") },
-    filetypes = { "ps1", "ps1m" },
-})
-vim.lsp.enable("powershell_es")
-
 vim.lsp.config("bashls", {
     capabilities = capabilities,
+    cmd = {'bash-language-server', 'start'},
     filetypes = { "sh", "bash" },
 })
-vim.lsp.enable("bashls")
+vim.lsp.enable('bashls')
 
 vim.lsp.config("tinymist", {
     capabilities = capabilities,
