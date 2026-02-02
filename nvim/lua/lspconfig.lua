@@ -18,9 +18,17 @@ vim.lsp.config("clangd", {
 })
 vim.lsp.enable("clangd")
 
-vim.lsp.config("glsl_analyzer", { capabilities = capabilities })
+vim.lsp.config("glsl_analyzer", {
+    capabilities = capabilities,
+    filetypes = { "glsl", "hlsl"},
+})
+vim.lsp.enable("glsl_analyzer")
 
-vim.lsp.config("lua_ls", { capabilities = capabilities })
+vim.lsp.config("lua_ls", {
+    capabilities = capabilities,
+    filetypes = { "lua" },
+})
+vim.lsp.enable("lua_ls")
 
 vim.lsp.config("asm_lsp", {
     capabilities = capabilities,
@@ -31,13 +39,26 @@ vim.lsp.config("asm_lsp", {
 vim.lsp.config("powershell_es", {
     capabilities = capabilities,
     bundle_path = vim.fn.stdpath("data") .. "/mason/packages/powershell-editor-services/",
+    filetypes = { "ps1", "ps1m" },
 })
 
-vim.lsp.config("bashls", { capabilities = capabilities })
+vim.lsp.config("bashls", {
+    capabilities = capabilities,
+    filetypes = { "sh", "bash" },
+})
+vim.lsp.enable("bashls")
 
-vim.lsp.config("tinymist", { capabilities = capabilities })
+vim.lsp.config("tinymist", {
+    capabilities = capabilities,
+    filetypes = { "typst" },
+})
+vim.lsp.enable("tinymist")
 
-vim.lsp.config("lemminx", { capabilities = capabilities })
+vim.lsp.config("lemminx", {
+    capabilities = capabilities,
+    filetypes = { "xml" },
+})
+vim.lsp.enable("lemminx")
 
 vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
 vim.keymap.set("n", "dec", vim.lsp.buf.declaration, {})
