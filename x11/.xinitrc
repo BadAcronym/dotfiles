@@ -36,6 +36,8 @@ xrandr  \
 
 mount //192.168.0.217/Fede
 
+setxkbmap us colemak
+
 nitrogen --restore &
 picom -b --config ~/.config/picom/picom.conf &
 ~/repository/bash-collection/start-aw.sh &

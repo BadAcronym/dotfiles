@@ -13,5 +13,3 @@ export PATH="$PATH:~/repository/PWSH-Collection/scripts/"
 export PATH="$PATH:~/repository/bash-collection/"
 
 export EDITOR=nvim
-
-setxkbmap us colemak
