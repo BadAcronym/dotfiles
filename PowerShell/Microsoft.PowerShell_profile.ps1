@@ -24,4 +24,12 @@ function Get-Weather{
     Write-Host ""
 }
 
+$pwshCollectionModulePath = (Join-Path $env:Repo -ChildPath "\PWSH-Collection\modules\")
+if(Test-Path "$env:Repo\PWSH-Collection"){
+    $pwshCollectionModules = Get-ChildItem $pwshCollectionModulePath
+    foreach($module in $pwshCollectionModules){
+        Import-Module $module
+    }
+}
+
 oh-my-posh init pwsh --config (Join-Path -PATH $env:Repo -ChildPath "\dotfiles\PowerShell\Mandi.omp.json") | Invoke-Expression
