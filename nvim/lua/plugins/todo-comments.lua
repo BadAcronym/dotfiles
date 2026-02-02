@@ -17,7 +17,7 @@ return {
 			NOTE  = { icon = " ", color = "hint",    alt = { "INFO", "COMMENT", "HINT" } },
 			TEST  = { icon = "⏲ ", color = "test",    alt = { "TESTING", "PASSED", "FAILED", "RESULT" } },
 			TODAY = { icon = "! ", color = "today",   alt = {"DAY", "CURRENT", "2DAY"} },
-			WORK  = { icon = "⅄ ", color = "work",    alt = {"WIP", "CURRENT", "WORKING"} },
+			WORK  = { icon = "⅄ ", color = "work",    alt = {"WIP", "DOING", "WORKING"} },
 			LOOK  = { icon = "🌐", color = "lookup",  alt = {"INVESTIGATE", "LOOKUP", "RESEARCH"} },
 		},
         merge_keywords = true,
