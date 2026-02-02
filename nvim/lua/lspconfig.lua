@@ -35,12 +35,14 @@ vim.lsp.config("asm_lsp", {
     cmd = { "asm-lsp" },
     filetypes = { "asm", "vmasm" },
 })
+vim.lsp.enable("asm_lsp")
 
 vim.lsp.config("powershell_es", {
     capabilities = capabilities,
     bundle_path = vim.fn.stdpath("data") .. "/mason/packages/powershell-editor-services/",
     filetypes = { "ps1", "ps1m" },
 })
+vim.lsp.enable("powershell_es")
 
 vim.lsp.config("bashls", {
     capabilities = capabilities,
