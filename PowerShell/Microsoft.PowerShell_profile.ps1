@@ -75,8 +75,5 @@ if(Test-Path $pwshCollectionPath)
 }
 
 oh-my-posh init pwsh --config (Join-Path -PATH $env:Repo -ChildPath "/dotfiles/PowerShell/config.omp.json") | Invoke-Expression
-Set-Location $env:Repo
-if($isLinux -and (Test-Path ~/smb/))
-{
-    Set-Location ~/smb/
-}
+# Set-Location $env:Repo
+Set-Location ~
