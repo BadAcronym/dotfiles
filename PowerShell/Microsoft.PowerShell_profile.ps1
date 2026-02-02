@@ -1,5 +1,3 @@
-Import-Module gsudoModule
-
 Set-PSReadlineOption -PredictionSource None
 
 New-Alias Goto Set-Location
@@ -12,6 +10,8 @@ New-Alias lazy lazygit
 
 if($IsWindows)
 {
+    Import-Module gsudoModule
+
     $env:Repo = "T:\Repository"
     Invoke-Expression "subst R: $env:Repo\river\"               *>$null
     Invoke-Expression "subst M: $env:Repo\marino\"              *>$null
