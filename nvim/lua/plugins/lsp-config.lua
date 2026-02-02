@@ -13,7 +13,7 @@ return {
         lazy = false,
         config = function()
             require("mason-lspconfig").setup({
-                ensure_installed = { "lua_ls", "clangd", },
+                ensure_installed = { "lua_ls", "clangd", "powershell_es"},
             })
         end,
     },
