@@ -55,7 +55,7 @@ config.colors = {
     '#AAAAAA',
   },
   brights = {
-    '#DCDCDC',
+    '#757575',
     '#EE2020',
     '#00FF00',
     '#FFCC70',
