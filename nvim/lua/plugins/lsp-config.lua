@@ -19,13 +19,14 @@ return {
 		config = function()
 			require("mason-lspconfig").setup({
 				ensure_installed = {
-					"asm_lsp",
-					"lua_ls",
 					"clangd",
+                    "glsl_analyzer",
+					"lua_ls",
+					"asm_lsp",
 					"powershell_es",
-					"lemminx",
-					"jdtls",
+                    "bashls",
 					"tinymist",
+					"lemminx",
 				},
                 automatic_enable = false
 			})
@@ -51,10 +52,6 @@ return {
 
 			capabilities.workspace.didChangeWatchedFiles.dynamicRegistration = false
 
-			lspconfig.glsl_analyzer.setup({ capabilities = capabilities })
-
-			lspconfig.lua_ls.setup({ capabilities = capabilities })
-
 			lspconfig.clangd.setup({
 				capabilities = capabilities,
 				cmd = {
@@ -64,7 +61,9 @@ return {
                 },
 			})
 
-			lspconfig.lemminx.setup({ capabilities = capabilities })
+			lspconfig.glsl_analyzer.setup({ capabilities = capabilities })
+
+			lspconfig.lua_ls.setup({ capabilities = capabilities })
 
 			lspconfig.asm_lsp.setup({
 				capabilities = capabilities,
@@ -78,7 +77,11 @@ return {
 				bundle_path = vim.fn.stdpath("data") .. "/mason/packages/powershell-editor-services/",
 			})
 
+			lspconfig.bashls.setup({ capabilities = capabilities })
+
 			lspconfig.tinymist.setup({ capabilities = capabilities })
+
+			lspconfig.lemminx.setup({ capabilities = capabilities })
 
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
 			vim.keymap.set("n", "dec", vim.lsp.buf.declaration, {})
