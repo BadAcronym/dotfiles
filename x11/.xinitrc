@@ -47,4 +47,4 @@ mount //192.168.0.217/Fede
 nitrogen --restore &
 picom -b --config ~/.config/picom/picom.conf &
 ~/repository/bash-collection/start-aw.sh &
-exec sxwm
+exec i3
