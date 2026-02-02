@@ -2,7 +2,7 @@ return {
     {
         "williamboman/mason.nvim",
         lazy = true,
-        event = { "BufRead", "BufNewFile" },
+        event = { "BufReadPre", "BufNewFile" },
         config = function()
             require("mason").setup({
                 log_level = vim.log.levels.DEBUG,
@@ -12,6 +12,7 @@ return {
     {
         "williamboman/mason-lspconfig.nvim",
         lazy = true,
+        event = { "BufReadPre", "BufNewFile" },
         config = function()
             require("mason-lspconfig").setup({
                 ensure_installed = { "asm_lsp", "lua_ls", "clangd", "powershell_es", "lemminx", "jdtls"},
@@ -21,6 +22,7 @@ return {
     {
         "neovim/nvim-lspconfig",
         lazy = true,
+        event = { "BufReadPre", "BufNewFile" },
         --TODO: find out how to quickly jump to next reference/definition
         config = function()
             local lspconfig = require("lspconfig")
