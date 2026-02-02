@@ -15,7 +15,7 @@ return {
         event = { "BufRead", "BufNewFile" },
         config = function()
             require("mason-lspconfig").setup({
-                ensure_installed = { "asm_lsp", "lua_ls", "clangd", "powershell_es", "lemminx" },
+                ensure_installed = { "asm_lsp", "lua_ls", "clangd", "powershell_es", "lemminx", "jdtls"},
             })
         end,
     },
@@ -62,4 +62,7 @@ return {
             vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, {})
         end,
     },
+    {
+        "mfussenegger/nvim-jdtls",
+    }
 }
