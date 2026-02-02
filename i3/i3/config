@@ -70,7 +70,7 @@ bindsym ctrl+0 exec --no-startup-id "rofi -show recursivebrowser -theme android_
 bindsym ctrl+backslash exec --no-startup-id "rofi -show drun -theme android_notification"
 
 # other hotkeys:
-bindsym Mod1+Shift+s         exec --no-startup-id "~/repository/bash-collection/take-screenshot.sh"
+bindsym Mod1+Shift+s         exec --no-startup-id "~/repository/bash-collection/take-screenshot"
 bindsym Mod1+Shift+6         exec --no-startup-id "~/repository/bash-collection/nitrogen-profile 0"
 bindsym Mod1+Shift+7         exec --no-startup-id "~/repository/bash-collection/nitrogen-profile 1"
 bindsym Mod1+Shift+8         exec --no-startup-id "~/repository/bash-collection/nitrogen-profile 2"
