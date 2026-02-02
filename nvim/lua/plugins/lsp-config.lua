@@ -15,7 +15,7 @@ return {
         event = { "BufRead", "BufNewFile" },
         config = function()
             require("mason-lspconfig").setup({
-                ensure_installed = { "asm_lsp", "lua_ls", "clangd", "powershell_es", "jdtls", "lemminx" },
+                ensure_installed = { "asm_lsp", "lua_ls", "clangd", "powershell_es", "lemminx" },
             })
         end,
     },
@@ -39,23 +39,6 @@ return {
             lspconfig.lua_ls.setup({ capabilities = capabilities })
 
             lspconfig.clangd.setup({ capabilities = capabilities })
-
-            lspconfig.jdtls.setup({
-                capabilities = capabilities,
-                settings = {
-                    java = {
-                        configuration = {
-                            runtimes = {
-                                {
-                                    name = "JavaSE-23",
-                                    path = os.getenv("JAVA_HOME"),
-                                    default = true,
-                                }
-                            }
-                        }
-                    }
-                }
-            })
 
             lspconfig.lemminx.setup({ capabilities = capabilities })
 
