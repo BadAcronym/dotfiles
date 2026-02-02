@@ -12,11 +12,17 @@ New-Alias fetch winfetchconfig
 New-Alias vim nvim
 
 function Get-Weather {
-    Invoke-RestMethod wttr.in/Kaiserslautern
+    param(
+        $city = ""
+    )
+    Invoke-RestMethod "wttr.in/$city"
 }
 
 function Get-Graph {
-    Invoke-RestMethod wttr.in/Kaiserslautern?format=v2
+    param(
+        $city = ""
+    )
+    Invoke-RestMethod "wttr.in/$city`?format=v2"
 }
 
 oh-my-posh init pwsh --config (Join-Path -PATH $repo -ChildPath "\dotfiles\wt\Mandi.omp.json") | Invoke-Expression
