@@ -64,7 +64,6 @@ function Get-Weather
 
 $pwshCollectionPath = (Join-Path $env:Repo -ChildPath "/PWSH-Collection/")
 $pwshCollectionModulePath = (Join-Path $pwshCollectionPath -ChildPath "/modules/")
-$pwshCollectionScriptPath = (Join-Path $pwshCollectionPath -ChildPath "/scripts/")
 
 if(Test-Path $pwshCollectionPath)
 {
@@ -77,3 +76,7 @@ if(Test-Path $pwshCollectionPath)
 
 oh-my-posh init pwsh --config (Join-Path -PATH $env:Repo -ChildPath "/dotfiles/PowerShell/config.omp.json") | Invoke-Expression
 Set-Location $env:Repo
+if($isLinux -and (Test-Path ~/smb/))
+{
+    Set-Location ~/smb/
+}
