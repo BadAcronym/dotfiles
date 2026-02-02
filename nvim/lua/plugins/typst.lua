@@ -9,6 +9,8 @@ return {
                 dependencies_bin = {
                     ["tinymist"] = "tinymist",
                 },
+                typst_bin = "typst",
+                tinymist_bin = "tinymist"
             })
         end,
 	},

@@ -66,6 +66,9 @@ return {
 				capabilities = capabilities,
 				bundle_path = vim.fn.stdpath("data") .. "/mason/packages/powershell-editor-services/",
 			})
+
+			lspconfig.tinymist.setup({ capabilities = capabilities })
+
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
 			vim.keymap.set("n", "dec", vim.lsp.buf.declaration, {})
 			vim.keymap.set("n", "def", vim.lsp.buf.definition, {})
