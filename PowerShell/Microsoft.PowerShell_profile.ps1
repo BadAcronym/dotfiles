@@ -1,9 +1,12 @@
 Import-Module gsudoModule
 
 Set-PSReadlineOption -PredictionSource None
-
-$repo = "T:\Repository\"
-
+if(Test-Path "T:\Repository\"){
+    $repo = "T:\Repository\"
+}
+elseIf(Test-Path "C:\Repository\"){
+    $repo = "C:\Repository\"
+}
 New-Alias Goto Set-Location
 New-Alias fetch winfetchconfig
 New-Alias vim nvim
@@ -16,5 +19,5 @@ function Get-Graph {
     Invoke-RestMethod wttr.in/Kaiserslautern?format=v2
 }
 
-oh-my-posh init pwsh --config (Join-Path -PATH $repo -ChildPath "\dotfiles\wt\Mandi.omp.json") | Invoke-Expression
+oh-my-posh init pwsh --config (Join-Path -PATH $repo -ChildPath "\wt\Mandi.omp.json") | Invoke-Expression
 
