@@ -8,5 +8,5 @@ For an immediate and automated setup, I simply run this PWSH script that will au
 Currently written for windows (will run from powershell 1 but update to 7 immediately) and it will include installing winget, scoop and windows terminal.
 Might write a linux version or an OS-agnostic one in the future.
 ```PowerShell
-irm "https://raw.githubusercontent.com/flymandi/pwsh-collection/master/scripts/push-configs.ps1" | iex
+irm "https://raw.githubusercontent.com/flymandi/pwsh-collection/master/scripts/config.ps1" | iex
 ```
