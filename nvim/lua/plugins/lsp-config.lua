@@ -11,7 +11,7 @@ return {
         lazy = false,
         config = function()
             require("mason-lspconfig").setup({
-                ensure_installed = { "lua_ls", "clangd" },
+                ensure_installed = { "lua_ls", "clangd", "glslls" },
             })
         end,
     },
@@ -32,6 +32,10 @@ return {
             lspconfig.powershell_es.setup({
                 capabilities = capabilities,
                 bundle_path = vim.fn.stdpath("data") .. "/mason/packages/powershell-editor-services/",
+            })
+
+            lspconfig.glslls.setup({
+                capabilities = capabilities,
             })
 
             vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
