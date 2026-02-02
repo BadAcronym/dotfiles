@@ -7,10 +7,8 @@ return {
 	opts = {},
 	cmd = "Trouble",
 	keys = {
-		{
-			"<leader>xx",
-			"<cmd>Trouble diagnostics toggle<cr>",
-			desc = "Diagnostics (Trouble)",
-		},
+		{"<leader>di", "<cmd>Trouble diagnostics toggle<CR>"},
+        {"<C-h>", "<cmd>Trouble diagnostics next focus=true<CR>"},
+        {"<C-d>", "<cmd>Trouble diagnostics prev focus=true<CR>"},
 	},
 }
