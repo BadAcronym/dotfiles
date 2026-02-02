@@ -65,9 +65,16 @@ if(Test-Path $pwshCollectionPath)
         Import-Module $module
     }
 
-    if((Test-Path $pwshCollectionScriptPath) -And -Not([Environment]::GetEnvironmentVariable("Path", [EnvironmentVariableTarget]::User) -like "*$pwshCollectionScriptPath*"))
+    if((Test-Path $pwshCollectionScriptPath) -And -Not($env:PATH -like "*$pwshCollectionScriptPath*"))
     {
-        [Environment]::SetEnvironmentVariable("Path", [Environment]::GetEnvironmentVariable("Path", [EnvironmentVariableTarget]::User) + ";$pwshCollectionScriptPath",[EnvironmentVariableTarget]::User)
+        if($isLinux)
+        {
+            $env:PATH += ":$pwshCollectionScriptPath"
+        }
+        elseIf($isWindows)
+        {
+            $env:PATH += ";$pwshCollectionScriptPath"
+        }
         Write-Host "Added $pwshCollectionScriptPath to path!" -ForegroundColor Green
     }
 }
