@@ -3,7 +3,7 @@ Import-Module gsudoModule
 Set-PSReadlineOption -PredictionSource None
 
 New-Alias Goto Set-Location
-New-Alias fetch winfetchconfig
+New-Alias fetch fastfetchconfig
 New-Alias csh cheatsheet
 New-Alias gw Get-Weather
 New-Alias vim nvim
