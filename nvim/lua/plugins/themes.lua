@@ -29,19 +29,29 @@ return {
 				contrast = "hard",
 				palette_overrides = {},
 				overrides = {
-                    ["String"] = { fg  = "#99FF20" },
-                    ["@string"] = { fg = "#99FF20" },
+					["String"] = { fg = "#99FF20" },
+					["@string"] = { fg = "#99FF20" },
 
-                    ["Type"] = { fg  = "#9090FF" },
-                    ["Function"] = { fg = "#EED030" },
+					["Type"] = { fg = "#9090FF" },
+					["Function"] = { fg = "#EED030" },
 
-                    ["@variable"] = { fg = "#00AAD0" },
-                    ["@constant"] = { fg = "#00AAD0" },
-                    ["Identifier"] = { fg = "#75EEFF" },
+					["Identifier"] = { fg = "#75EEFF" },
 
-                    ["Boolean"] = { fg = "#FF20FF" },
-                    ["StorageClass"] = { fg = "#E950A0" },
-                },
+					["@variable"] = { fg = "#00AAD0" },
+					["@variable.parameter"] = {
+						italic = true,
+						fg = "#b9d3eb",
+					},
+					["@lsp.type.parameter"] = {
+						italic = true,
+						fg = "#b9d3eb",
+					},
+
+					["@constant"] = { fg = "#00AAD0" },
+
+					["Boolean"] = { fg = "#FF20FF" },
+					["StorageClass"] = { fg = "#E950A0" },
+				},
 				dim_inactive = false,
 				transparent_mode = false,
 			})
