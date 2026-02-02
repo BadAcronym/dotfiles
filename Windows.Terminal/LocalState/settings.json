@@ -16,20 +16,12 @@
             "keys": "ctrl+c"
         },
         {
-            "id": null,
-            "keys": "ctrl+shift+w"
-        },
-        {
             "id": "Terminal.PasteFromClipboard",
             "keys": "ctrl+v"
         },
         {
             "id": "Terminal.DuplicatePaneAuto",
             "keys": "alt+shift+d"
-        },
-        {
-            "id": null,
-            "keys": "ctrl+shift+t"
         },
         {
             "id": "Terminal.ClosePane",
