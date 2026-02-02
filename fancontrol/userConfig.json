@@ -1,5 +1,5 @@
 {
-  "__VERSION__": "220",
+  "__VERSION__": "221",
   "Main": {
     "Controls": [
       {
@@ -64,15 +64,15 @@
           "Name": "CPU Fan",
           "NickName": "CPU Fan"
         },
-        "SelectedCommandStepDown": 8.0,
-        "SelectedCommandStepUp": 8.0,
+        "SelectedCommandStepDown": 8,
+        "SelectedCommandStepUp": 8,
         "SelectedFanCurve": {
           "CommandMode": 0,
           "IgnoreHysteresisAtLimits": true,
           "IsHidden": false,
           "MaximumCommand": 100,
-          "MaximumTemperature": 90.0,
-          "MinimumTemperature": 20.0,
+          "MaximumTemperature": 90,
+          "MinimumTemperature": 20,
           "Name": "CPU Graph",
           "OneWayHysteresis": false,
           "Points": [
@@ -80,7 +80,7 @@
             "54.54439875702313,29.920888888888882",
             "85.7,100"
           ],
-          "SelectedHysteresis": 0.0,
+          "SelectedHysteresis": 0,
           "SelectedResponseTime": 1,
           "SelectedTempSource": {
             "Identifier": "/amdcpu/0/temperature/2",
@@ -155,15 +155,15 @@
           "Name": "CPU Optional Fan",
           "NickName": "CPU Optional Fan"
         },
-        "SelectedCommandStepDown": 8.0,
-        "SelectedCommandStepUp": 8.0,
+        "SelectedCommandStepDown": 8,
+        "SelectedCommandStepUp": 8,
         "SelectedFanCurve": {
           "CommandMode": 0,
           "IgnoreHysteresisAtLimits": true,
           "IsHidden": false,
           "MaximumCommand": 100,
-          "MaximumTemperature": 90.0,
-          "MinimumTemperature": 20.0,
+          "MaximumTemperature": 90,
+          "MinimumTemperature": 20,
           "Name": "CPU Graph",
           "OneWayHysteresis": false,
           "Points": [
@@ -171,7 +171,7 @@
             "54.54439875702313,29.920888888888882",
             "85.7,100"
           ],
-          "SelectedHysteresis": 0.0,
+          "SelectedHysteresis": 0,
           "SelectedResponseTime": 1,
           "SelectedTempSource": {
             "Identifier": "/amdcpu/0/temperature/2",
@@ -242,22 +242,22 @@
           "Name": "System Fan #1",
           "NickName": "System Fan #1"
         },
-        "SelectedCommandStepDown": 8.0,
-        "SelectedCommandStepUp": 8.0,
+        "SelectedCommandStepDown": 8,
+        "SelectedCommandStepUp": 8,
         "SelectedFanCurve": {
           "CommandMode": 0,
           "IgnoreHysteresisAtLimits": true,
           "IsHidden": false,
           "MaximumCommand": 100,
-          "MaximumTemperature": 90.0,
-          "MinimumTemperature": 20.0,
+          "MaximumTemperature": 90,
+          "MinimumTemperature": 20,
           "Name": "MoBo",
           "OneWayHysteresis": false,
           "Points": [
             "30.201199033240215,0",
             "70.1,100"
           ],
-          "SelectedHysteresis": 2.0,
+          "SelectedHysteresis": 2,
           "SelectedResponseTime": 1,
           "SelectedTempSource": {
             "Identifier": "/lpc/it8689e/temperature/5",
@@ -332,22 +332,22 @@
           "Name": "System Fan #2",
           "NickName": "System Fan #2"
         },
-        "SelectedCommandStepDown": 8.0,
-        "SelectedCommandStepUp": 8.0,
+        "SelectedCommandStepDown": 8,
+        "SelectedCommandStepUp": 8,
         "SelectedFanCurve": {
           "CommandMode": 0,
           "IgnoreHysteresisAtLimits": true,
           "IsHidden": false,
           "MaximumCommand": 100,
-          "MaximumTemperature": 90.0,
-          "MinimumTemperature": 20.0,
+          "MaximumTemperature": 90,
+          "MinimumTemperature": 20,
           "Name": "MoBo",
           "OneWayHysteresis": false,
           "Points": [
             "30.201199033240215,0",
             "70.1,100"
           ],
-          "SelectedHysteresis": 2.0,
+          "SelectedHysteresis": 2,
           "SelectedResponseTime": 1,
           "SelectedTempSource": {
             "Identifier": "/lpc/it8689e/temperature/5",
@@ -418,22 +418,22 @@
           "Name": "System Fan #3",
           "NickName": "System Fan #3"
         },
-        "SelectedCommandStepDown": 8.0,
-        "SelectedCommandStepUp": 8.0,
+        "SelectedCommandStepDown": 8,
+        "SelectedCommandStepUp": 8,
         "SelectedFanCurve": {
           "CommandMode": 0,
           "IgnoreHysteresisAtLimits": true,
           "IsHidden": false,
           "MaximumCommand": 100,
-          "MaximumTemperature": 90.0,
-          "MinimumTemperature": 20.0,
+          "MaximumTemperature": 90,
+          "MinimumTemperature": 20,
           "Name": "MoBo",
           "OneWayHysteresis": false,
           "Points": [
             "30.201199033240215,0",
             "70.1,100"
           ],
-          "SelectedHysteresis": 2.0,
+          "SelectedHysteresis": 2,
           "SelectedResponseTime": 1,
           "SelectedTempSource": {
             "Identifier": "/lpc/it8689e/temperature/5",
@@ -508,22 +508,22 @@
           "Name": "System Fan #4 / Pump",
           "NickName": "System Fan #4 / Pump"
         },
-        "SelectedCommandStepDown": 8.0,
-        "SelectedCommandStepUp": 8.0,
+        "SelectedCommandStepDown": 8,
+        "SelectedCommandStepUp": 8,
         "SelectedFanCurve": {
           "CommandMode": 0,
           "IgnoreHysteresisAtLimits": true,
           "IsHidden": false,
           "MaximumCommand": 100,
-          "MaximumTemperature": 90.0,
-          "MinimumTemperature": 20.0,
+          "MaximumTemperature": 90,
+          "MinimumTemperature": 20,
           "Name": "MoBo",
           "OneWayHysteresis": false,
           "Points": [
             "30.201199033240215,0",
             "70.1,100"
           ],
-          "SelectedHysteresis": 2.0,
+          "SelectedHysteresis": 2,
           "SelectedResponseTime": 1,
           "SelectedTempSource": {
             "Identifier": "/lpc/it8689e/temperature/5",
@@ -590,22 +590,22 @@
           "Name": "Fan 1 - NVIDIA GeForce RTX 4070",
           "NickName": "Control 1 - NVIDIA GeForce RTX 4070"
         },
-        "SelectedCommandStepDown": 8.0,
-        "SelectedCommandStepUp": 8.0,
+        "SelectedCommandStepDown": 8,
+        "SelectedCommandStepUp": 8,
         "SelectedFanCurve": {
           "CommandMode": 0,
           "IgnoreHysteresisAtLimits": true,
           "IsHidden": false,
           "MaximumCommand": 100,
-          "MaximumTemperature": 100.0,
-          "MinimumTemperature": 20.0,
+          "MaximumTemperature": 100,
+          "MinimumTemperature": 20,
           "Name": "GPU Graph",
           "OneWayHysteresis": false,
           "Points": [
             "40.2,0",
             "84.5,100"
           ],
-          "SelectedHysteresis": 0.0,
+          "SelectedHysteresis": 0,
           "SelectedResponseTime": 1,
           "SelectedTempSource": {
             "Identifier": "NVApiWrapper/0-AD104-A/sensor/0",
@@ -672,22 +672,22 @@
           "Name": "Fan 2 - NVIDIA GeForce RTX 4070",
           "NickName": "Control 2 - NVIDIA GeForce RTX 4070"
         },
-        "SelectedCommandStepDown": 8.0,
-        "SelectedCommandStepUp": 8.0,
+        "SelectedCommandStepDown": 8,
+        "SelectedCommandStepUp": 8,
         "SelectedFanCurve": {
           "CommandMode": 0,
           "IgnoreHysteresisAtLimits": true,
           "IsHidden": false,
           "MaximumCommand": 100,
-          "MaximumTemperature": 100.0,
-          "MinimumTemperature": 20.0,
+          "MaximumTemperature": 100,
+          "MinimumTemperature": 20,
           "Name": "GPU Graph",
           "OneWayHysteresis": false,
           "Points": [
             "40.2,0",
             "84.5,100"
           ],
-          "SelectedHysteresis": 0.0,
+          "SelectedHysteresis": 0,
           "SelectedResponseTime": 1,
           "SelectedTempSource": {
             "Identifier": "NVApiWrapper/0-AD104-A/sensor/0",
@@ -709,8 +709,8 @@
         "IgnoreHysteresisAtLimits": true,
         "IsHidden": false,
         "MaximumCommand": 100,
-        "MaximumTemperature": 90.0,
-        "MinimumTemperature": 20.0,
+        "MaximumTemperature": 90,
+        "MinimumTemperature": 20,
         "Name": "CPU Graph",
         "OneWayHysteresis": false,
         "Points": [
@@ -718,7 +718,7 @@
           "54.54439875702313,29.920888888888882",
           "85.7,100"
         ],
-        "SelectedHysteresis": 0.0,
+        "SelectedHysteresis": 0,
         "SelectedResponseTime": 1,
         "SelectedTempSource": {
           "Identifier": "/amdcpu/0/temperature/2",
@@ -732,15 +732,15 @@
         "IgnoreHysteresisAtLimits": true,
         "IsHidden": false,
         "MaximumCommand": 100,
-        "MaximumTemperature": 100.0,
-        "MinimumTemperature": 20.0,
+        "MaximumTemperature": 100,
+        "MinimumTemperature": 20,
         "Name": "GPU Graph",
         "OneWayHysteresis": false,
         "Points": [
           "40.2,0",
           "84.5,100"
         ],
-        "SelectedHysteresis": 0.0,
+        "SelectedHysteresis": 0,
         "SelectedResponseTime": 1,
         "SelectedTempSource": {
           "Identifier": "NVApiWrapper/0-AD104-A/sensor/0",
@@ -754,15 +754,15 @@
         "IgnoreHysteresisAtLimits": true,
         "IsHidden": false,
         "MaximumCommand": 100,
-        "MaximumTemperature": 90.0,
-        "MinimumTemperature": 20.0,
+        "MaximumTemperature": 90,
+        "MinimumTemperature": 20,
         "Name": "MoBo",
         "OneWayHysteresis": false,
         "Points": [
           "30.201199033240215,0",
           "70.1,100"
         ],
-        "SelectedHysteresis": 2.0,
+        "SelectedHysteresis": 2,
         "SelectedResponseTime": 1,
         "SelectedTempSource": {
           "Identifier": "/lpc/it8689e/temperature/5",
