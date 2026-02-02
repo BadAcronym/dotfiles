@@ -1,5 +1,5 @@
 {
-  "__VERSION__": "218",
+  "__VERSION__": "220",
   "Main": {
     "Controls": [
       {
@@ -71,365 +71,14 @@
           "IgnoreHysteresisAtLimits": true,
           "IsHidden": false,
           "MaximumCommand": 100,
-          "MaximumTemperature": 120.0,
+          "MaximumTemperature": 90.0,
           "MinimumTemperature": 20.0,
           "Name": "CPU Graph",
           "OneWayHysteresis": false,
           "Points": [
-            "60.2,0",
-            "90.2,100"
-          ],
-          "SelectedHysteresis": 0.0,
-          "SelectedResponseTime": 1,
-          "SelectedTempSource": {
-            "Identifier": "/amdcpu/0/temperature/2",
-            "IsHidden": false,
-            "Name": "Core (Tctl/Tdie)",
-            "NickName": "Core (Tctl/Tdie)"
-          }
-        },
-        "SelectedOffset": 0,
-        "SelectedStart": 18,
-        "SelectedStop": 6
-      },
-      {
-        "Calibration": [
-          [
-            10,
-            0
-          ],
-          [
-            20,
-            383
-          ],
-          [
-            30,
-            560
-          ],
-          [
-            40,
-            740
-          ],
-          [
-            50,
-            872
-          ],
-          [
-            60,
-            997
-          ],
-          [
-            70,
-            1107
-          ],
-          [
-            80,
-            1213
-          ],
-          [
-            90,
-            1311
-          ],
-          [
-            100,
-            1372
-          ]
-        ],
-        "Enable": true,
-        "ForceApply": false,
-        "Identifier": "/lpc/it8689e/control/1",
-        "IsHidden": false,
-        "ManualControl": false,
-        "ManualControlValue": 50,
-        "MinimumPercent": 0,
-        "Name": "System Fan #1",
-        "NickName": "System Fan #1",
-        "PairedFanSensor": {
-          "Identifier": "/lpc/it8689e/fan/1",
-          "IsHidden": false,
-          "Name": "System Fan #1",
-          "NickName": "System Fan #1"
-        },
-        "SelectedCommandStepDown": 8.0,
-        "SelectedCommandStepUp": 8.0,
-        "SelectedFanCurve": {
-          "CommandMode": 0,
-          "IgnoreHysteresisAtLimits": true,
-          "IsHidden": false,
-          "MaximumCommand": 100,
-          "MaximumTemperature": 120.0,
-          "MinimumTemperature": 20.0,
-          "Name": "CPU Graph",
-          "OneWayHysteresis": false,
-          "Points": [
-            "60.2,0",
-            "90.2,100"
-          ],
-          "SelectedHysteresis": 0.0,
-          "SelectedResponseTime": 1,
-          "SelectedTempSource": {
-            "Identifier": "/amdcpu/0/temperature/2",
-            "IsHidden": false,
-            "Name": "Core (Tctl/Tdie)",
-            "NickName": "Core (Tctl/Tdie)"
-          }
-        },
-        "SelectedOffset": 0,
-        "SelectedStart": 31,
-        "SelectedStop": 16
-      },
-      {
-        "Calibration": [
-          [
-            0,
-            0
-          ],
-          [
-            10,
-            143
-          ],
-          [
-            20,
-            365
-          ],
-          [
-            30,
-            524
-          ],
-          [
-            40,
-            668
-          ],
-          [
-            50,
-            797
-          ],
-          [
-            60,
-            913
-          ],
-          [
-            70,
-            1010
-          ],
-          [
-            80,
-            1107
-          ],
-          [
-            90,
-            1198
-          ],
-          [
-            100,
-            1291
-          ]
-        ],
-        "Enable": true,
-        "ForceApply": false,
-        "Identifier": "/lpc/it8689e/control/2",
-        "IsHidden": false,
-        "ManualControl": false,
-        "ManualControlValue": 50,
-        "MinimumPercent": 0,
-        "Name": "System Fan #2",
-        "NickName": "System Fan #2",
-        "PairedFanSensor": {
-          "Identifier": "/lpc/it8689e/fan/2",
-          "IsHidden": false,
-          "Name": "System Fan #2",
-          "NickName": "System Fan #2"
-        },
-        "SelectedCommandStepDown": 8.0,
-        "SelectedCommandStepUp": 8.0,
-        "SelectedFanCurve": {
-          "CommandMode": 0,
-          "IgnoreHysteresisAtLimits": true,
-          "IsHidden": false,
-          "MaximumCommand": 100,
-          "MaximumTemperature": 120.0,
-          "MinimumTemperature": 20.0,
-          "Name": "CPU Graph",
-          "OneWayHysteresis": false,
-          "Points": [
-            "60.2,0",
-            "90.2,100"
-          ],
-          "SelectedHysteresis": 0.0,
-          "SelectedResponseTime": 1,
-          "SelectedTempSource": {
-            "Identifier": "/amdcpu/0/temperature/2",
-            "IsHidden": false,
-            "Name": "Core (Tctl/Tdie)",
-            "NickName": "Core (Tctl/Tdie)"
-          }
-        },
-        "SelectedOffset": 0,
-        "SelectedStart": 12,
-        "SelectedStop": 6
-      },
-      {
-        "Calibration": [
-          [
-            10,
-            0
-          ],
-          [
-            20,
-            392
-          ],
-          [
-            30,
-            547
-          ],
-          [
-            40,
-            680
-          ],
-          [
-            50,
-            794
-          ],
-          [
-            60,
-            902
-          ],
-          [
-            70,
-            997
-          ],
-          [
-            80,
-            1088
-          ],
-          [
-            90,
-            1173
-          ],
-          [
-            100,
-            1227
-          ]
-        ],
-        "Enable": true,
-        "ForceApply": false,
-        "Identifier": "/lpc/it8689e/control/3",
-        "IsHidden": false,
-        "ManualControl": false,
-        "ManualControlValue": 50,
-        "MinimumPercent": 0,
-        "Name": "System Fan #3",
-        "NickName": "System Fan #3",
-        "PairedFanSensor": {
-          "Identifier": "/lpc/it8689e/fan/3",
-          "IsHidden": false,
-          "Name": "System Fan #3",
-          "NickName": "System Fan #3"
-        },
-        "SelectedCommandStepDown": 8.0,
-        "SelectedCommandStepUp": 8.0,
-        "SelectedFanCurve": {
-          "CommandMode": 0,
-          "IgnoreHysteresisAtLimits": true,
-          "IsHidden": false,
-          "MaximumCommand": 100,
-          "MaximumTemperature": 120.0,
-          "MinimumTemperature": 20.0,
-          "Name": "CPU Graph",
-          "OneWayHysteresis": false,
-          "Points": [
-            "60.2,0",
-            "90.2,100"
-          ],
-          "SelectedHysteresis": 0.0,
-          "SelectedResponseTime": 1,
-          "SelectedTempSource": {
-            "Identifier": "/amdcpu/0/temperature/2",
-            "IsHidden": false,
-            "Name": "Core (Tctl/Tdie)",
-            "NickName": "Core (Tctl/Tdie)"
-          }
-        },
-        "SelectedOffset": 0,
-        "SelectedStart": 34,
-        "SelectedStop": 16
-      },
-      {
-        "Calibration": [
-          [
-            0,
-            0
-          ],
-          [
-            10,
-            140
-          ],
-          [
-            20,
-            303
-          ],
-          [
-            30,
-            479
-          ],
-          [
-            40,
-            635
-          ],
-          [
-            50,
-            782
-          ],
-          [
-            60,
-            921
-          ],
-          [
-            70,
-            1042
-          ],
-          [
-            80,
-            1168
-          ],
-          [
-            90,
-            1289
-          ],
-          [
-            100,
-            1400
-          ]
-        ],
-        "Enable": true,
-        "ForceApply": false,
-        "Identifier": "/lpc/it8689e/control/4",
-        "IsHidden": false,
-        "ManualControl": false,
-        "ManualControlValue": 50,
-        "MinimumPercent": 0,
-        "Name": "System Fan #4 / Pump",
-        "NickName": "System Fan #4 / Pump",
-        "PairedFanSensor": {
-          "Identifier": "/lpc/it8689e/fan/4",
-          "IsHidden": false,
-          "Name": "System Fan #4 / Pump",
-          "NickName": "System Fan #4 / Pump"
-        },
-        "SelectedCommandStepDown": 8.0,
-        "SelectedCommandStepUp": 8.0,
-        "SelectedFanCurve": {
-          "CommandMode": 0,
-          "IgnoreHysteresisAtLimits": true,
-          "IsHidden": false,
-          "MaximumCommand": 100,
-          "MaximumTemperature": 120.0,
-          "MinimumTemperature": 20.0,
-          "Name": "CPU Graph",
-          "OneWayHysteresis": false,
-          "Points": [
-            "60.2,0",
-            "90.2,100"
+            "54.4,0",
+            "54.54439875702313,29.920888888888882",
+            "85.7,100"
           ],
           "SelectedHysteresis": 0.0,
           "SelectedResponseTime": 1,
@@ -513,13 +162,14 @@
           "IgnoreHysteresisAtLimits": true,
           "IsHidden": false,
           "MaximumCommand": 100,
-          "MaximumTemperature": 120.0,
+          "MaximumTemperature": 90.0,
           "MinimumTemperature": 20.0,
           "Name": "CPU Graph",
           "OneWayHysteresis": false,
           "Points": [
-            "60.2,0",
-            "90.2,100"
+            "54.4,0",
+            "54.54439875702313,29.920888888888882",
+            "85.7,100"
           ],
           "SelectedHysteresis": 0.0,
           "SelectedResponseTime": 1,
@@ -532,6 +182,358 @@
         },
         "SelectedOffset": 0,
         "SelectedStart": 12,
+        "SelectedStop": 6
+      },
+      {
+        "Calibration": [
+          [
+            10,
+            0
+          ],
+          [
+            20,
+            383
+          ],
+          [
+            30,
+            560
+          ],
+          [
+            40,
+            740
+          ],
+          [
+            50,
+            872
+          ],
+          [
+            60,
+            997
+          ],
+          [
+            70,
+            1107
+          ],
+          [
+            80,
+            1213
+          ],
+          [
+            90,
+            1311
+          ],
+          [
+            100,
+            1372
+          ]
+        ],
+        "Enable": true,
+        "ForceApply": false,
+        "Identifier": "/lpc/it8689e/control/1",
+        "IsHidden": false,
+        "ManualControl": false,
+        "ManualControlValue": 50,
+        "MinimumPercent": 0,
+        "Name": "System Fan #1",
+        "NickName": "System Fan #1",
+        "PairedFanSensor": {
+          "Identifier": "/lpc/it8689e/fan/1",
+          "IsHidden": false,
+          "Name": "System Fan #1",
+          "NickName": "System Fan #1"
+        },
+        "SelectedCommandStepDown": 8.0,
+        "SelectedCommandStepUp": 8.0,
+        "SelectedFanCurve": {
+          "CommandMode": 0,
+          "IgnoreHysteresisAtLimits": true,
+          "IsHidden": false,
+          "MaximumCommand": 100,
+          "MaximumTemperature": 90.0,
+          "MinimumTemperature": 20.0,
+          "Name": "MoBo",
+          "OneWayHysteresis": false,
+          "Points": [
+            "30.201199033240215,0",
+            "70.1,100"
+          ],
+          "SelectedHysteresis": 2.0,
+          "SelectedResponseTime": 1,
+          "SelectedTempSource": {
+            "Identifier": "/lpc/it8689e/temperature/5",
+            "IsHidden": false,
+            "Name": "VSoC MOS",
+            "NickName": "VSoC MOS"
+          }
+        },
+        "SelectedOffset": 0,
+        "SelectedStart": 31,
+        "SelectedStop": 16
+      },
+      {
+        "Calibration": [
+          [
+            0,
+            0
+          ],
+          [
+            10,
+            143
+          ],
+          [
+            20,
+            365
+          ],
+          [
+            30,
+            524
+          ],
+          [
+            40,
+            668
+          ],
+          [
+            50,
+            797
+          ],
+          [
+            60,
+            913
+          ],
+          [
+            70,
+            1010
+          ],
+          [
+            80,
+            1107
+          ],
+          [
+            90,
+            1198
+          ],
+          [
+            100,
+            1291
+          ]
+        ],
+        "Enable": true,
+        "ForceApply": false,
+        "Identifier": "/lpc/it8689e/control/2",
+        "IsHidden": false,
+        "ManualControl": false,
+        "ManualControlValue": 50,
+        "MinimumPercent": 0,
+        "Name": "System Fan #2",
+        "NickName": "System Fan #2",
+        "PairedFanSensor": {
+          "Identifier": "/lpc/it8689e/fan/2",
+          "IsHidden": false,
+          "Name": "System Fan #2",
+          "NickName": "System Fan #2"
+        },
+        "SelectedCommandStepDown": 8.0,
+        "SelectedCommandStepUp": 8.0,
+        "SelectedFanCurve": {
+          "CommandMode": 0,
+          "IgnoreHysteresisAtLimits": true,
+          "IsHidden": false,
+          "MaximumCommand": 100,
+          "MaximumTemperature": 90.0,
+          "MinimumTemperature": 20.0,
+          "Name": "MoBo",
+          "OneWayHysteresis": false,
+          "Points": [
+            "30.201199033240215,0",
+            "70.1,100"
+          ],
+          "SelectedHysteresis": 2.0,
+          "SelectedResponseTime": 1,
+          "SelectedTempSource": {
+            "Identifier": "/lpc/it8689e/temperature/5",
+            "IsHidden": false,
+            "Name": "VSoC MOS",
+            "NickName": "VSoC MOS"
+          }
+        },
+        "SelectedOffset": 0,
+        "SelectedStart": 12,
+        "SelectedStop": 6
+      },
+      {
+        "Calibration": [
+          [
+            10,
+            0
+          ],
+          [
+            20,
+            392
+          ],
+          [
+            30,
+            547
+          ],
+          [
+            40,
+            680
+          ],
+          [
+            50,
+            794
+          ],
+          [
+            60,
+            902
+          ],
+          [
+            70,
+            997
+          ],
+          [
+            80,
+            1088
+          ],
+          [
+            90,
+            1173
+          ],
+          [
+            100,
+            1227
+          ]
+        ],
+        "Enable": true,
+        "ForceApply": false,
+        "Identifier": "/lpc/it8689e/control/3",
+        "IsHidden": false,
+        "ManualControl": false,
+        "ManualControlValue": 50,
+        "MinimumPercent": 0,
+        "Name": "System Fan #3",
+        "NickName": "System Fan #3",
+        "PairedFanSensor": {
+          "Identifier": "/lpc/it8689e/fan/3",
+          "IsHidden": false,
+          "Name": "System Fan #3",
+          "NickName": "System Fan #3"
+        },
+        "SelectedCommandStepDown": 8.0,
+        "SelectedCommandStepUp": 8.0,
+        "SelectedFanCurve": {
+          "CommandMode": 0,
+          "IgnoreHysteresisAtLimits": true,
+          "IsHidden": false,
+          "MaximumCommand": 100,
+          "MaximumTemperature": 90.0,
+          "MinimumTemperature": 20.0,
+          "Name": "MoBo",
+          "OneWayHysteresis": false,
+          "Points": [
+            "30.201199033240215,0",
+            "70.1,100"
+          ],
+          "SelectedHysteresis": 2.0,
+          "SelectedResponseTime": 1,
+          "SelectedTempSource": {
+            "Identifier": "/lpc/it8689e/temperature/5",
+            "IsHidden": false,
+            "Name": "VSoC MOS",
+            "NickName": "VSoC MOS"
+          }
+        },
+        "SelectedOffset": 0,
+        "SelectedStart": 34,
+        "SelectedStop": 16
+      },
+      {
+        "Calibration": [
+          [
+            0,
+            0
+          ],
+          [
+            10,
+            140
+          ],
+          [
+            20,
+            303
+          ],
+          [
+            30,
+            479
+          ],
+          [
+            40,
+            635
+          ],
+          [
+            50,
+            782
+          ],
+          [
+            60,
+            921
+          ],
+          [
+            70,
+            1042
+          ],
+          [
+            80,
+            1168
+          ],
+          [
+            90,
+            1289
+          ],
+          [
+            100,
+            1400
+          ]
+        ],
+        "Enable": true,
+        "ForceApply": false,
+        "Identifier": "/lpc/it8689e/control/4",
+        "IsHidden": false,
+        "ManualControl": false,
+        "ManualControlValue": 50,
+        "MinimumPercent": 0,
+        "Name": "System Fan #4 / Pump",
+        "NickName": "System Fan #4 / Pump",
+        "PairedFanSensor": {
+          "Identifier": "/lpc/it8689e/fan/4",
+          "IsHidden": false,
+          "Name": "System Fan #4 / Pump",
+          "NickName": "System Fan #4 / Pump"
+        },
+        "SelectedCommandStepDown": 8.0,
+        "SelectedCommandStepUp": 8.0,
+        "SelectedFanCurve": {
+          "CommandMode": 0,
+          "IgnoreHysteresisAtLimits": true,
+          "IsHidden": false,
+          "MaximumCommand": 100,
+          "MaximumTemperature": 90.0,
+          "MinimumTemperature": 20.0,
+          "Name": "MoBo",
+          "OneWayHysteresis": false,
+          "Points": [
+            "30.201199033240215,0",
+            "70.1,100"
+          ],
+          "SelectedHysteresis": 2.0,
+          "SelectedResponseTime": 1,
+          "SelectedTempSource": {
+            "Identifier": "/lpc/it8689e/temperature/5",
+            "IsHidden": false,
+            "Name": "VSoC MOS",
+            "NickName": "VSoC MOS"
+          }
+        },
+        "SelectedOffset": 0,
+        "SelectedStart": 18,
         "SelectedStop": 6
       },
       {
@@ -595,13 +597,13 @@
           "IgnoreHysteresisAtLimits": true,
           "IsHidden": false,
           "MaximumCommand": 100,
-          "MaximumTemperature": 120.0,
+          "MaximumTemperature": 100.0,
           "MinimumTemperature": 20.0,
           "Name": "GPU Graph",
           "OneWayHysteresis": false,
           "Points": [
             "40.2,0",
-            "90.6,100"
+            "84.5,100"
           ],
           "SelectedHysteresis": 0.0,
           "SelectedResponseTime": 1,
@@ -677,13 +679,13 @@
           "IgnoreHysteresisAtLimits": true,
           "IsHidden": false,
           "MaximumCommand": 100,
-          "MaximumTemperature": 120.0,
+          "MaximumTemperature": 100.0,
           "MinimumTemperature": 20.0,
           "Name": "GPU Graph",
           "OneWayHysteresis": false,
           "Points": [
             "40.2,0",
-            "90.6,100"
+            "84.5,100"
           ],
           "SelectedHysteresis": 0.0,
           "SelectedResponseTime": 1,
@@ -707,13 +709,14 @@
         "IgnoreHysteresisAtLimits": true,
         "IsHidden": false,
         "MaximumCommand": 100,
-        "MaximumTemperature": 120.0,
+        "MaximumTemperature": 90.0,
         "MinimumTemperature": 20.0,
         "Name": "CPU Graph",
         "OneWayHysteresis": false,
         "Points": [
-          "60.2,0",
-          "90.2,100"
+          "54.4,0",
+          "54.54439875702313,29.920888888888882",
+          "85.7,100"
         ],
         "SelectedHysteresis": 0.0,
         "SelectedResponseTime": 1,
@@ -729,13 +732,13 @@
         "IgnoreHysteresisAtLimits": true,
         "IsHidden": false,
         "MaximumCommand": 100,
-        "MaximumTemperature": 120.0,
+        "MaximumTemperature": 100.0,
         "MinimumTemperature": 20.0,
         "Name": "GPU Graph",
         "OneWayHysteresis": false,
         "Points": [
           "40.2,0",
-          "90.6,100"
+          "84.5,100"
         ],
         "SelectedHysteresis": 0.0,
         "SelectedResponseTime": 1,
@@ -744,6 +747,28 @@
           "IsHidden": false,
           "Name": "GPU",
           "NickName": "GPU"
+        }
+      },
+      {
+        "CommandMode": 0,
+        "IgnoreHysteresisAtLimits": true,
+        "IsHidden": false,
+        "MaximumCommand": 100,
+        "MaximumTemperature": 90.0,
+        "MinimumTemperature": 20.0,
+        "Name": "MoBo",
+        "OneWayHysteresis": false,
+        "Points": [
+          "30.201199033240215,0",
+          "70.1,100"
+        ],
+        "SelectedHysteresis": 2.0,
+        "SelectedResponseTime": 1,
+        "SelectedTempSource": {
+          "Identifier": "/lpc/it8689e/temperature/5",
+          "IsHidden": false,
+          "Name": "VSoC MOS",
+          "NickName": "VSoC MOS"
         }
       }
     ],
