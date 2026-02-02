@@ -10,3 +10,6 @@ Xft.font:              FiraCode Nerd Font
 Xft.serif.family:      FiraCode Nerd Font
 Xft.sans.serif.family: FiraCode Nerd Font
 Xft.monospace.family:  FiraCode Nerd Font Mono
+
+Sxiv.background: #000000
+Sxiv.foreground: #000000
