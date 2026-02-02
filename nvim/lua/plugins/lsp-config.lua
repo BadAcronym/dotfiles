@@ -1,4 +1,7 @@
 -- FIX: there's something still not working about the lua server startup sometimes.
+
+-- TODO: make separate lsp-config (or none) for android
+
 return {
 	{
 		"williamboman/mason.nvim",
