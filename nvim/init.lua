@@ -1,10 +1,7 @@
--- set <leader> key to spacebar
 vim.g.mapleader=" "
 
--- set options & keybindings
 require("nvimoptions")
 
--- lazy.nvim setup
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
     vim.fn.system({
@@ -17,8 +14,6 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
     })
 end
 vim.opt.rtp:prepend(lazypath)
-
--- load all plugins in lua\plugins
 require("lazy").setup("plugins")
 
 -- vim.cmd[[colorscheme tokyonight-night]]
