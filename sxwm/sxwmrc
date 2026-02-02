@@ -32,7 +32,9 @@ bind : ctrl + backslash : "rofi -show drun"
 bind : alt + shift + s : "~/repository/bash-collection/take-screenshot.sh"
 bind : mod + shift + 6 : "~/repository/bash-collection/nitrogen-profile-0"
 bind : mod + shift + 7 : "~/repository/bash-collection/nitrogen-profile-1"
-#probably use mod + 6-0 for stuff like audio outputs etc
+bind : mod + shift + 8 : "~/repository/bash-collection/nitrogen-profile-2"
+bind : mod + shift + 9 : "~/repository/bash-collection/nitrogen-profile-3"
+bind : mod + shift + 0 : "~/repository/bash-collection/nitrogen-profile-4"
 
 # Window Management:
 call : mod + shift + q : close_window
