@@ -35,6 +35,7 @@ if($IsWindows)
 elseIf($isLinux)
 {
     $env:Repo = "~/repository/"
+    $env:SKSE = "~/.local/share/Steam/steamapps/compatdata/489830/pfx/drive_c/users/steamuser/Documents/My Games/Skyrim Special Edition/SKSE"
 }
 
 $toRemove = "Follow*"
