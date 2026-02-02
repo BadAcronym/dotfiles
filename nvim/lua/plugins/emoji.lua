@@ -1,13 +1,15 @@
-return{
-	{
-		"allaman/emoji.nvim",
-		ft = "markdown",
-		config = function()
-			require("emoji").setup({
-				enable_cmp_integration = true,
-			})
-            local ts = require("telescope").load_extension("emoji")
-			vim.keymap.set("n", "<leader>se", ts.emoji, { desc = "[S]earch [E]moji" })
-		end,
-	},
+return {
+    {
+        "allaman/emoji.nvim",
+        lazy = true,
+        ft = "markdown",
+        config = function()
+            require("emoji").setup({
+                enable_cmp_integration = true,
+            })
+        end,
+        keys = {
+            {"<leader>se", "<cmd>lua require('telescope').load_extension('emoji').emoji()<CR>", desc = "[S]earch [E]moji" },
+        }
+    },
 }
