@@ -10,7 +10,7 @@ config.window_decorations = "NONE"
 config.font_size = 13
 config.default_cursor_style = "SteadyBlock"
 
-config.default_prog = { "pwsh.exe" }
+config.default_prog = { "pwsh" }
 
 config.hide_tab_bar_if_only_one_tab = true
 config.use_fancy_tab_bar = false
