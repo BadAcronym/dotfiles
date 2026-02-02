@@ -57,7 +57,35 @@ return {
         dap.adapters.gdb = {
             type = "executable",
             command = "gdb",
-            args = { "--interpreter=dap", "--eval-command", "set print pretty on" },
+            args = { "--interpreter=dap", "--eval-command", "set print pretty on"},
+        }
+
+        --FIXME: fix pending breakpoints (gdb issue?)
+        --"no source file named snek.asm" (path is correct). <-- probable root issue
+        dap.configurations.asm = {
+            {
+                name = "Launch",
+                type = "gdb",
+                request = "launch",
+                program = function()
+                    return vim.fn.input("Path to executable: ", vim.fn.getcwd() .. "\\bin\\", "file")
+                end,
+                cwd = "${workspaceFolder}\\bin\\",
+                stopAtBeginningOfMainSubprogram = false,
+            },
+            {
+                name = "Select and attach to process",
+                type = "gdb",
+                request = "attach",
+                program = function()
+                    return vim.fn.input("Path to executable: ", vim.fn.getcwd() .. "\\", "file")
+                end,
+                pid = function()
+                    local name = vim.fn.input("Executable name (filter): ")
+                    return require("dap.utils").pick_process({ filter = name })
+                end,
+                cwd = "${workspaceFolder}\\bin\\",
+            },
         }
 
         dap.configurations.c = {
@@ -66,9 +94,9 @@ return {
                 type = "gdb",
                 request = "launch",
                 program = function()
-                    return vim.fn.input("Path to executable: ", vim.fn.getcwd() .. "/", "file")
+                    return vim.fn.input("Path to executable: ", vim.fn.getcwd() .. "\\bin\\", "file")
                 end,
-                cwd = "${workspaceFolder}",
+                cwd = "${workspaceFolder}\\bin\\",
                 stopAtBeginningOfMainSubprogram = false,
             },
             {
@@ -76,13 +104,13 @@ return {
                 type = "gdb",
                 request = "attach",
                 program = function()
-                    return vim.fn.input("Path to executable: ", vim.fn.getcwd() .. "/", "file")
+                    return vim.fn.input("Path to executable: ", vim.fn.getcwd() .. "\\bin\\", "file")
                 end,
                 pid = function()
                     local name = vim.fn.input("Executable name (filter): ")
                     return require("dap.utils").pick_process({ filter = name })
                 end,
-                cwd = "${workspaceFolder}",
+                cwd = "${workspaceFolder}\\bin\\",
             },
         }
 
@@ -114,5 +142,7 @@ return {
         { "<leader>bk",  "<cmd>lua require('dap').step_back()<CR>" },
         { "<leader>re",  "<cmd>lua require('dap').restart()<CR>" },
         { "<leader>run", "<cmd>lua require('dap').run_to_cursor()<CR>" },
+
+        { "<leader>tui",  "<cmd>lua require('dapui').toggle()<CR>" },
     },
 }
