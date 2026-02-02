@@ -8,7 +8,7 @@ return {
 	cmd = "Trouble",
 	keys = {
 		{ "<leader>di", "<cmd>Trouble diagnostics toggle<CR>" },
-		{ "<C-h>", "<cmd>Trouble diagnostics next focus=true<CR>" },
-		{ "<C-d>", "<cmd>Trouble diagnostics prev focus=true<CR>" },
+		{ "]d", "<cmd>Trouble diagnostics next focus=true<CR>" },
+		{ "[d", "<cmd>Trouble diagnostics prev focus=true<CR>" },
 	},
 }
