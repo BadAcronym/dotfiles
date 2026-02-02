@@ -60,7 +60,7 @@ window_effects:
     corner_style:
       enabled: true 
       # Allowed values: 'square', 'rounded', 'small_rounded'.
-      style: 'square'
+      style: 'rounded'
 
   # Visual effects to apply to non-focused windows.
   other_windows:
@@ -196,12 +196,12 @@ keybindings:
     bindings: ['alt+v']
 
   # Change focus from tiling windows -> floating -> fullscreen.
-  - commands: ['wm-cycle-focus']
-    bindings: ['alt+space']
+  #- commands: ['wm-cycle-focus']
+  # bindings: ['alt+shift+space']
 
   # Change the focused window to be floating.
   - commands: ['toggle-floating --centered']
-    bindings: ['alt+shift+space']
+    bindings: ['alt+space']
 
   # Change the focused window to be tiling.
   - commands: ['toggle-tiling']
