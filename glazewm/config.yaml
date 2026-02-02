@@ -36,10 +36,10 @@ gaps:
 
   # Gap between windows and the screen edge.
   outer_gap:
-    top: '0px'
-    right: '0px'
-    bottom: '0px'
-    left: '0px'
+    top: '5px'
+    right: '8px'
+    bottom: '5px'
+    left: '8px'
 
 window_effects:
   # Visual effects to apply to the focused window.
@@ -60,7 +60,7 @@ window_effects:
     corner_style:
       enabled: true 
       # Allowed values: 'square', 'rounded', 'small_rounded'.
-      style: 'square'
+      style: 'rounded'
 
   # Visual effects to apply to non-focused windows.
   other_windows:
@@ -92,7 +92,7 @@ window_behavior:
     fullscreen:
       # Maximize the window if possible. If the window doesn't have a
       # maximize button, then it'll be fullscreen'ed normally instead.
-      maximized: true 
+      maximized: false
 
       # Whether to show fullscreen windows as always on top.
       shown_on_top: false
