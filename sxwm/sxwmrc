@@ -32,7 +32,7 @@ bind : ctrl + 0 : "rofi"
 # Window Management:
 call : mod + shift + q : close_window
 call : mod + c : centre_window
-call : mod + shift + e : quit
+call : mod + shift + x : quit
 
 # Focus Movement:
 call : mod + i : focus_next
