@@ -12,4 +12,6 @@ vim.opt.guicursor = "n-v-c-i:block-Cursor/lcursor"
 vim.opt.cursorline = true
 vim.opt.cursorlineopt = "line"
 
+vim.opt.fillchars = "eob: "
+
 vim.keymap.set({"n", "v"}, "<C-h>", "<C-u>")
