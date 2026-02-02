@@ -9,6 +9,8 @@ $RepoGlazepath = Join-Path -PATH $RepoPath -ChildPath "\glazewm\config.yaml"
 $WinTermpath = Join-Path -PATH $env:LOCALAPPDATA -ChildPath "\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json"
 $RepoTermpath = Join-Path -PATH $RepoPath -ChildPath "\wt\settings.json"
 
+$RepoPSpath = Join-Path -PATH $RepoPath -ChildPath "PowerShell\Microsoft.PowerShell_profile.ps1"
+
 function Push-Config {
     param (
         $inputPath,
@@ -32,5 +34,6 @@ function Push-Config {
 }
 
 Push-Config $RepoVimpath $WinVimpath
-Push-Config $Repoglazepath $WinGlazepath
+Push-Config $RepoGlazepath $WinGlazepath
 Push-Config $RepoTermpath $WinTermpath
+Push-Config $RepoPSpath $PROFILE
