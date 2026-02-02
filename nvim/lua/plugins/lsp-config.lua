@@ -26,6 +26,7 @@ return {
         --TODO: find out how to quickly jump to next reference/definition
         config = function()
             local lspconfig = require("lspconfig")
+            lspconfig
             local capabilities = vim.tbl_deep_extend(
                 "force",
                 vim.lsp.protocol.make_client_capabilities(),
