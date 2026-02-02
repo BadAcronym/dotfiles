@@ -52,7 +52,7 @@
                 "font": 
                 {
                     "face": "Cascadia Code NF",
-                    "size": 12
+                    "size": 14
                 },
                 "guid": "{803871e8-f992-4072-a9ad-403759d7be57}",
                 "hidden": false,
@@ -60,6 +60,7 @@
                 "icon": "ms-appx:///ProfileIcons/{61c54bbd-c2c6-5271-96e7-009a87ff44bf}.png",
                 "name": "Mandi's Terminal",
                 "padding": "8, 8, 8, 8",
+                "opacity": 78,
                 "snapOnInput": true,
                 "startingDirectory": "%Repo%",
                 "tabTitle": "Mandi's Terminal",
