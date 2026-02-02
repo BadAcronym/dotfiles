@@ -1,12 +1,16 @@
 local wezterm = require("wezterm")
+local fontdir = os.getenv("LOCALAPPDATA") .. "/Microsoft/Windows/Fonts/"
 local config = {}
 
 config.front_end = "OpenGL"
 config.term = "xterm-256color"
 config.prefer_egl = true
-config.font = wezterm.font("Cascadia Code NF")
+config.font = wezterm.font({
+    family = "FiraCode Nerd Font Propo Med",
+})
 config.window_background_opacity = 0.85
 config.font_size = 13.75
+config.font_dirs = {fontdir}
 config.default_cursor_style = "SteadyBlock"
 
 config.default_prog = { "pwsh.exe" }
