@@ -8,6 +8,13 @@ New-Alias csh cheatsheet
 New-Alias gw Get-Weather
 New-Alias vim nvim
 
+function Get-Image{
+    param(
+        $image = "."
+    )
+    Invoke-Expression "wezterm imgcat $image" 
+}
+
 $toRemove = "Follow*"
 function Get-Weather{
     param(
@@ -15,8 +22,11 @@ function Get-Weather{
         [switch]$graph = $false
     )
     
-    if ( $graph ){ $output = Invoke-RestMethod "wttr.in/$city`?format=v2" | Out-String }
-    else { $output = Invoke-RestMethod "wttr.in/$city" | Out-String }
+    if($graph){
+        $output = Invoke-RestMethod "wttr.in/$city`?format=v2" | Out-String 
+    }else{ 
+        $output = Invoke-RestMethod "wttr.in/$city" | Out-String 
+    }
     $outputLines = $output -split "`n"
     $filteredLines = $outputLines | Where-Object {$_ -notmatch $toRemove}
     $cleanedlines = $filteredLines | Where-Object {$_.trim() -ne ""}
