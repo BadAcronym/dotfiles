@@ -13,8 +13,8 @@
 # is used in the bar {} block below.
 font pango:monospace 8
 
-default_border          pixel 2
-default_floating_border pixel 2
+default_border          pixel 4
+default_floating_border pixel 4
 
 focus_follows_mouse     no
 
