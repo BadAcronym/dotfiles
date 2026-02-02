@@ -46,6 +46,5 @@ xrandr  \
         --output HDMI-2 --auto --pos 0x0                    \
         --output DP-1   --off                               \
 
-exec --no-startup-id nitrogen --restore
-
+nitrogen --restore &
 exec sxwm
