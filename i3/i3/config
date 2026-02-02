@@ -75,11 +75,6 @@ bindsym Mod1+Shift+k         exec --no-startup-id "pactl set-default-sink 59"
 bindsym Mod1+Shift+m         exec --no-startup-id "pactl set-default-sink 61"
 
 bindsym Mod1+Shift+s         exec --no-startup-id "~/repository/bash-collection/take-screenshot"
-bindsym Mod1+Shift+6         exec --no-startup-id "~/repository/bash-collection/nitrogen-profile 0"
-bindsym Mod1+Shift+7         exec --no-startup-id "~/repository/bash-collection/nitrogen-profile 1"
-bindsym Mod1+Shift+8         exec --no-startup-id "~/repository/bash-collection/nitrogen-profile 2"
-bindsym Mod1+Shift+9         exec --no-startup-id "~/repository/bash-collection/nitrogen-profile 3"
-bindsym Mod1+Shift+0         exec --no-startup-id "~/repository/bash-collection/nitrogen-profile 4"
 bindsym Mod1+Shift+h         exec --no-startup-id "~/repository/bash-collection/nitrogen-profile random"
 bindsym Mod1+Shift+o         exec --no-startup-id "~/repository/bash-collection/streamer-mode"
 
@@ -165,11 +160,11 @@ bindsym Mod1+2 workspace number $ws2
 bindsym Mod1+3 workspace number $ws3
 bindsym Mod1+4 workspace number $ws4
 bindsym Mod1+5 workspace number $ws5
-# bindsym Mod1+6 workspace number $ws6
-# bindsym Mod1+7 workspace number $ws7
-# bindsym Mod1+8 workspace number $ws8
-# bindsym Mod1+9 workspace number $ws9
-# bindsym Mod1+0 workspace number $ws10
+bindsym Mod1+6 workspace number $ws6
+bindsym Mod1+7 workspace number $ws7
+bindsym Mod1+8 workspace number $ws8
+bindsym Mod1+9 workspace number $ws9
+bindsym Mod1+0 workspace number $ws10
 
 # move focused container to workspace
 bindsym Mod1+Shift+1 move container to workspace number $ws1
@@ -177,11 +172,11 @@ bindsym Mod1+Shift+2 move container to workspace number $ws2
 bindsym Mod1+Shift+3 move container to workspace number $ws3
 bindsym Mod1+Shift+4 move container to workspace number $ws4
 bindsym Mod1+Shift+5 move container to workspace number $ws5
-# bindsym Mod1+Shift+6 move container to workspace number $ws6
-# bindsym Mod1+Shift+7 move container to workspace number $ws7
-# bindsym Mod1+Shift+8 move container to workspace number $ws8
-# bindsym Mod1+Shift+9 move container to workspace number $ws9
-# bindsym Mod1+Shift+0 move container to workspace number $ws10
+bindsym Mod1+Shift+6 move container to workspace number $ws6
+bindsym Mod1+Shift+7 move container to workspace number $ws7
+bindsym Mod1+Shift+8 move container to workspace number $ws8
+bindsym Mod1+Shift+9 move container to workspace number $ws9
+bindsym Mod1+Shift+0 move container to workspace number $ws10
 
 # reload the configuration file
 bindsym Mod1+Shift+r reload
