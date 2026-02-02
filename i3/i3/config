@@ -41,8 +41,8 @@ exec --no-startup-id nm-applet
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
-bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
+bindsym XF86AudioMute        exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
+bindsym XF86AudioMicMute     exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
 # use these keys for focus, movement, and resize directions when reaching for
 # the arrows is not convenient
@@ -73,12 +73,18 @@ bindsym ctrl+backslash exec --no-startup-id "rofi -show drun"
 # bindsym Mod1+d exec --no-startup-id i3-dmenu-desktop
 
 # other hotkeys:
-bindsym Mod1+Shift+s exec --no-startup-id "~/repository/bash-collection/take-screenshot.sh"
-bindsym Mod1+Shift+6 exec --no-startup-id "~/repository/bash-collection/nitrogen-profile-0"
-bindsym Mod1+Shift+7 exec --no-startup-id "~/repository/bash-collection/nitrogen-profile-1"
-bindsym Mod1+Shift+8 exec --no-startup-id "~/repository/bash-collection/nitrogen-profile-2"
-bindsym Mod1+Shift+9 exec --no-startup-id "~/repository/bash-collection/nitrogen-profile-3"
-bindsym Mod1+Shift+0 exec --no-startup-id "~/repository/bash-collection/nitrogen-profile-4"
+bindsym Mod1+Shift+s         exec --no-startup-id "~/repository/bash-collection/take-screenshot.sh"
+bindsym Mod1+Shift+6         exec --no-startup-id "~/repository/bash-collection/nitrogen-profile 0"
+bindsym Mod1+Shift+7         exec --no-startup-id "~/repository/bash-collection/nitrogen-profile 1"
+bindsym Mod1+Shift+8         exec --no-startup-id "~/repository/bash-collection/nitrogen-profile 2"
+bindsym Mod1+Shift+9         exec --no-startup-id "~/repository/bash-collection/nitrogen-profile 3"
+bindsym Mod1+Shift+0         exec --no-startup-id "~/repository/bash-collection/nitrogen-profile 4"
+bindsym Mod1+Shift+j         exec --no-startup-id "~/repository/bash-collection/nitrogen-profile 5"
+bindsym Mod1+Shift+l         exec --no-startup-id "~/repository/bash-collection/nitrogen-profile 6"
+bindsym Mod1+Shift+y         exec --no-startup-id "~/repository/bash-collection/nitrogen-profile 7"
+bindsym Mod1+Shift+semicolon exec --no-startup-id "~/repository/bash-collection/nitrogen-profile 8"
+bindsym Mod1+Shift+h         exec --no-startup-id "~/repository/bash-collection/nitrogen-profile 9"
+bindsym Mod1+Shift+o         exec --no-startup-id "~/repository/bash-collection/nitrogen-profile 10"
 
 # change focus
 bindsym Mod1+$left  focus left
@@ -87,10 +93,10 @@ bindsym Mod1+$up    focus up
 bindsym Mod1+$right focus right
 
 # alternatively, you can use the cursor keys:
-bindsym Mod1+Left  focus left
-bindsym Mod1+Down  focus down
-bindsym Mod1+Up    focus up
-bindsym Mod1+Right focus right
+bindsym Mod1+Left   focus left
+bindsym Mod1+Down   focus down
+bindsym Mod1+Up     focus up
+bindsym Mod1+Right  focus right
 
 # move focused window
 bindsym Mod1+Shift+$left  move left
