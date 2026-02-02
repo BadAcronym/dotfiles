@@ -1,0 +1,837 @@
+{
+  "__VERSION__": "215",
+  "Main": {
+    "Controls": [
+      {
+        "Calibration": [
+          [
+            0,
+            0
+          ],
+          [
+            10,
+            150
+          ],
+          [
+            20,
+            324
+          ],
+          [
+            30,
+            497
+          ],
+          [
+            40,
+            657
+          ],
+          [
+            50,
+            806
+          ],
+          [
+            60,
+            949
+          ],
+          [
+            70,
+            1073
+          ],
+          [
+            80,
+            1203
+          ],
+          [
+            90,
+            1325
+          ],
+          [
+            100,
+            1442
+          ]
+        ],
+        "Enable": true,
+        "ForceApply": false,
+        "Identifier": "/lpc/it8689e/control/0",
+        "IsHidden": false,
+        "ManualControl": false,
+        "ManualControlValue": 50,
+        "MinimumPercent": 0,
+        "Name": "CPU Fan",
+        "NickName": "CPU Fan",
+        "PairedFanSensor": {
+          "Identifier": "/lpc/it8689e/fan/0",
+          "IsHidden": false,
+          "Name": "CPU Fan",
+          "NickName": "CPU Fan"
+        },
+        "SelectedCommandStepDown": 8.0,
+        "SelectedCommandStepUp": 8.0,
+        "SelectedFanCurve": {
+          "CommandMode": 0,
+          "IgnoreHysteresisAtLimits": true,
+          "IsHidden": false,
+          "MaximumCommand": 100,
+          "MaximumTemperature": 120.0,
+          "MinimumTemperature": 20.0,
+          "Name": "CPU Graph",
+          "OneWayHysteresis": false,
+          "Points": [
+            "70.5,0",
+            "90.2,100"
+          ],
+          "SelectedHysteresis": 2.0,
+          "SelectedResponseTime": 1,
+          "SelectedTempSource": {
+            "Identifier": "/amdcpu/0/temperature/2",
+            "IsHidden": false,
+            "Name": "Core (Tctl/Tdie)",
+            "NickName": "Core (Tctl/Tdie)"
+          }
+        },
+        "SelectedOffset": 0,
+        "SelectedStart": 18,
+        "SelectedStop": 6
+      },
+      {
+        "Calibration": [
+          [
+            10,
+            0
+          ],
+          [
+            20,
+            383
+          ],
+          [
+            30,
+            560
+          ],
+          [
+            40,
+            740
+          ],
+          [
+            50,
+            872
+          ],
+          [
+            60,
+            997
+          ],
+          [
+            70,
+            1107
+          ],
+          [
+            80,
+            1213
+          ],
+          [
+            90,
+            1311
+          ],
+          [
+            100,
+            1372
+          ]
+        ],
+        "Enable": true,
+        "ForceApply": false,
+        "Identifier": "/lpc/it8689e/control/1",
+        "IsHidden": false,
+        "ManualControl": false,
+        "ManualControlValue": 50,
+        "MinimumPercent": 0,
+        "Name": "System Fan #1",
+        "NickName": "System Fan #1",
+        "PairedFanSensor": {
+          "Identifier": "/lpc/it8689e/fan/1",
+          "IsHidden": false,
+          "Name": "System Fan #1",
+          "NickName": "System Fan #1"
+        },
+        "SelectedCommandStepDown": 8.0,
+        "SelectedCommandStepUp": 8.0,
+        "SelectedFanCurve": {
+          "CommandMode": 0,
+          "IgnoreHysteresisAtLimits": true,
+          "IsHidden": false,
+          "MaximumCommand": 100,
+          "MaximumTemperature": 120.0,
+          "MinimumTemperature": 20.0,
+          "Name": "CPU Graph",
+          "OneWayHysteresis": false,
+          "Points": [
+            "70.5,0",
+            "90.2,100"
+          ],
+          "SelectedHysteresis": 2.0,
+          "SelectedResponseTime": 1,
+          "SelectedTempSource": {
+            "Identifier": "/amdcpu/0/temperature/2",
+            "IsHidden": false,
+            "Name": "Core (Tctl/Tdie)",
+            "NickName": "Core (Tctl/Tdie)"
+          }
+        },
+        "SelectedOffset": 0,
+        "SelectedStart": 31,
+        "SelectedStop": 16
+      },
+      {
+        "Calibration": [
+          [
+            0,
+            0
+          ],
+          [
+            10,
+            143
+          ],
+          [
+            20,
+            365
+          ],
+          [
+            30,
+            524
+          ],
+          [
+            40,
+            668
+          ],
+          [
+            50,
+            797
+          ],
+          [
+            60,
+            913
+          ],
+          [
+            70,
+            1010
+          ],
+          [
+            80,
+            1107
+          ],
+          [
+            90,
+            1198
+          ],
+          [
+            100,
+            1291
+          ]
+        ],
+        "Enable": true,
+        "ForceApply": false,
+        "Identifier": "/lpc/it8689e/control/2",
+        "IsHidden": false,
+        "ManualControl": false,
+        "ManualControlValue": 50,
+        "MinimumPercent": 0,
+        "Name": "System Fan #2",
+        "NickName": "System Fan #2",
+        "PairedFanSensor": {
+          "Identifier": "/lpc/it8689e/fan/2",
+          "IsHidden": false,
+          "Name": "System Fan #2",
+          "NickName": "System Fan #2"
+        },
+        "SelectedCommandStepDown": 8.0,
+        "SelectedCommandStepUp": 8.0,
+        "SelectedFanCurve": {
+          "CommandMode": 0,
+          "IgnoreHysteresisAtLimits": true,
+          "IsHidden": false,
+          "MaximumCommand": 100,
+          "MaximumTemperature": 120.0,
+          "MinimumTemperature": 20.0,
+          "Name": "CPU Graph",
+          "OneWayHysteresis": false,
+          "Points": [
+            "70.5,0",
+            "90.2,100"
+          ],
+          "SelectedHysteresis": 2.0,
+          "SelectedResponseTime": 1,
+          "SelectedTempSource": {
+            "Identifier": "/amdcpu/0/temperature/2",
+            "IsHidden": false,
+            "Name": "Core (Tctl/Tdie)",
+            "NickName": "Core (Tctl/Tdie)"
+          }
+        },
+        "SelectedOffset": 0,
+        "SelectedStart": 12,
+        "SelectedStop": 6
+      },
+      {
+        "Calibration": [
+          [
+            10,
+            0
+          ],
+          [
+            20,
+            392
+          ],
+          [
+            30,
+            547
+          ],
+          [
+            40,
+            680
+          ],
+          [
+            50,
+            794
+          ],
+          [
+            60,
+            902
+          ],
+          [
+            70,
+            997
+          ],
+          [
+            80,
+            1088
+          ],
+          [
+            90,
+            1173
+          ],
+          [
+            100,
+            1227
+          ]
+        ],
+        "Enable": true,
+        "ForceApply": false,
+        "Identifier": "/lpc/it8689e/control/3",
+        "IsHidden": false,
+        "ManualControl": false,
+        "ManualControlValue": 50,
+        "MinimumPercent": 0,
+        "Name": "System Fan #3",
+        "NickName": "System Fan #3",
+        "PairedFanSensor": {
+          "Identifier": "/lpc/it8689e/fan/3",
+          "IsHidden": false,
+          "Name": "System Fan #3",
+          "NickName": "System Fan #3"
+        },
+        "SelectedCommandStepDown": 8.0,
+        "SelectedCommandStepUp": 8.0,
+        "SelectedFanCurve": {
+          "CommandMode": 0,
+          "IgnoreHysteresisAtLimits": true,
+          "IsHidden": false,
+          "MaximumCommand": 100,
+          "MaximumTemperature": 120.0,
+          "MinimumTemperature": 20.0,
+          "Name": "CPU Graph",
+          "OneWayHysteresis": false,
+          "Points": [
+            "70.5,0",
+            "90.2,100"
+          ],
+          "SelectedHysteresis": 2.0,
+          "SelectedResponseTime": 1,
+          "SelectedTempSource": {
+            "Identifier": "/amdcpu/0/temperature/2",
+            "IsHidden": false,
+            "Name": "Core (Tctl/Tdie)",
+            "NickName": "Core (Tctl/Tdie)"
+          }
+        },
+        "SelectedOffset": 0,
+        "SelectedStart": 34,
+        "SelectedStop": 16
+      },
+      {
+        "Calibration": [
+          [
+            0,
+            0
+          ],
+          [
+            10,
+            140
+          ],
+          [
+            20,
+            303
+          ],
+          [
+            30,
+            479
+          ],
+          [
+            40,
+            635
+          ],
+          [
+            50,
+            782
+          ],
+          [
+            60,
+            921
+          ],
+          [
+            70,
+            1042
+          ],
+          [
+            80,
+            1168
+          ],
+          [
+            90,
+            1289
+          ],
+          [
+            100,
+            1400
+          ]
+        ],
+        "Enable": true,
+        "ForceApply": false,
+        "Identifier": "/lpc/it8689e/control/4",
+        "IsHidden": false,
+        "ManualControl": false,
+        "ManualControlValue": 50,
+        "MinimumPercent": 0,
+        "Name": "System Fan #4 / Pump",
+        "NickName": "System Fan #4 / Pump",
+        "PairedFanSensor": {
+          "Identifier": "/lpc/it8689e/fan/4",
+          "IsHidden": false,
+          "Name": "System Fan #4 / Pump",
+          "NickName": "System Fan #4 / Pump"
+        },
+        "SelectedCommandStepDown": 8.0,
+        "SelectedCommandStepUp": 8.0,
+        "SelectedFanCurve": {
+          "CommandMode": 0,
+          "IgnoreHysteresisAtLimits": true,
+          "IsHidden": false,
+          "MaximumCommand": 100,
+          "MaximumTemperature": 120.0,
+          "MinimumTemperature": 20.0,
+          "Name": "CPU Graph",
+          "OneWayHysteresis": false,
+          "Points": [
+            "70.5,0",
+            "90.2,100"
+          ],
+          "SelectedHysteresis": 2.0,
+          "SelectedResponseTime": 1,
+          "SelectedTempSource": {
+            "Identifier": "/amdcpu/0/temperature/2",
+            "IsHidden": false,
+            "Name": "Core (Tctl/Tdie)",
+            "NickName": "Core (Tctl/Tdie)"
+          }
+        },
+        "SelectedOffset": 0,
+        "SelectedStart": 18,
+        "SelectedStop": 6
+      },
+      {
+        "Calibration": [
+          [
+            0,
+            0
+          ],
+          [
+            10,
+            148
+          ],
+          [
+            20,
+            385
+          ],
+          [
+            30,
+            551
+          ],
+          [
+            40,
+            702
+          ],
+          [
+            50,
+            839
+          ],
+          [
+            60,
+            962
+          ],
+          [
+            70,
+            1066
+          ],
+          [
+            80,
+            1170
+          ],
+          [
+            90,
+            1269
+          ],
+          [
+            100,
+            1366
+          ]
+        ],
+        "Enable": true,
+        "ForceApply": false,
+        "Identifier": "/lpc/it8689e/control/5",
+        "IsHidden": false,
+        "ManualControl": false,
+        "ManualControlValue": 50,
+        "MinimumPercent": 0,
+        "Name": "CPU Optional Fan",
+        "NickName": "CPU Optional Fan",
+        "PairedFanSensor": {
+          "Identifier": "/lpc/it8689e/fan/5",
+          "IsHidden": false,
+          "Name": "CPU Optional Fan",
+          "NickName": "CPU Optional Fan"
+        },
+        "SelectedCommandStepDown": 8.0,
+        "SelectedCommandStepUp": 8.0,
+        "SelectedFanCurve": {
+          "CommandMode": 0,
+          "IgnoreHysteresisAtLimits": true,
+          "IsHidden": false,
+          "MaximumCommand": 100,
+          "MaximumTemperature": 120.0,
+          "MinimumTemperature": 20.0,
+          "Name": "CPU Graph",
+          "OneWayHysteresis": false,
+          "Points": [
+            "70.5,0",
+            "90.2,100"
+          ],
+          "SelectedHysteresis": 2.0,
+          "SelectedResponseTime": 1,
+          "SelectedTempSource": {
+            "Identifier": "/amdcpu/0/temperature/2",
+            "IsHidden": false,
+            "Name": "Core (Tctl/Tdie)",
+            "NickName": "Core (Tctl/Tdie)"
+          }
+        },
+        "SelectedOffset": 0,
+        "SelectedStart": 12,
+        "SelectedStop": 6
+      },
+      {
+        "Calibration": [
+          [
+            0,
+            0
+          ],
+          [
+            30,
+            1216
+          ],
+          [
+            40,
+            1456
+          ],
+          [
+            50,
+            1816
+          ],
+          [
+            60,
+            2171
+          ],
+          [
+            70,
+            2534
+          ],
+          [
+            80,
+            2904
+          ],
+          [
+            90,
+            3260
+          ],
+          [
+            100,
+            3555
+          ]
+        ],
+        "Enable": true,
+        "ForceApply": false,
+        "Identifier": "NVApiWrapper/0-AD104-A/control/0",
+        "IsHidden": false,
+        "ManualControl": false,
+        "ManualControlValue": 50,
+        "MinimumPercent": 0,
+        "Name": "Control 1 - NVIDIA GeForce RTX 4070",
+        "NickName": "Control 1 - NVIDIA GeForce RTX 4070",
+        "PairedFanSensor": {
+          "Identifier": "NVApiWrapper/0-AD104-A/fan/0",
+          "IsHidden": false,
+          "Name": "Fan 1 - NVIDIA GeForce RTX 4070",
+          "NickName": "Control 1 - NVIDIA GeForce RTX 4070"
+        },
+        "SelectedCommandStepDown": 8.0,
+        "SelectedCommandStepUp": 8.0,
+        "SelectedFanCurve": {
+          "CommandMode": 0,
+          "IgnoreHysteresisAtLimits": true,
+          "IsHidden": false,
+          "MaximumCommand": 100,
+          "MaximumTemperature": 120.0,
+          "MinimumTemperature": 20.0,
+          "Name": "GPU Graph",
+          "OneWayHysteresis": false,
+          "Points": [
+            "60.33397156219592,0",
+            "90.6,100"
+          ],
+          "SelectedHysteresis": 2.0,
+          "SelectedResponseTime": 1,
+          "SelectedTempSource": {
+            "Identifier": "NVApiWrapper/0-AD104-A/sensor/0",
+            "IsHidden": false,
+            "Name": "GPU",
+            "NickName": "GPU"
+          }
+        },
+        "SelectedOffset": 0,
+        "SelectedStart": 9,
+        "SelectedStop": 6
+      },
+      {
+        "Calibration": [
+          [
+            0,
+            0
+          ],
+          [
+            30,
+            1248
+          ],
+          [
+            40,
+            1448
+          ],
+          [
+            50,
+            1810
+          ],
+          [
+            60,
+            2177
+          ],
+          [
+            70,
+            2540
+          ],
+          [
+            80,
+            2888
+          ],
+          [
+            90,
+            3264
+          ],
+          [
+            100,
+            3595
+          ]
+        ],
+        "Enable": true,
+        "ForceApply": false,
+        "Identifier": "NVApiWrapper/0-AD104-A/control/1",
+        "IsHidden": false,
+        "ManualControl": false,
+        "ManualControlValue": 50,
+        "MinimumPercent": 0,
+        "Name": "Control 2 - NVIDIA GeForce RTX 4070",
+        "NickName": "Control 2 - NVIDIA GeForce RTX 4070",
+        "PairedFanSensor": {
+          "Identifier": "NVApiWrapper/0-AD104-A/fan/1",
+          "IsHidden": false,
+          "Name": "Fan 2 - NVIDIA GeForce RTX 4070",
+          "NickName": "Control 2 - NVIDIA GeForce RTX 4070"
+        },
+        "SelectedCommandStepDown": 8.0,
+        "SelectedCommandStepUp": 8.0,
+        "SelectedFanCurve": {
+          "CommandMode": 0,
+          "IgnoreHysteresisAtLimits": true,
+          "IsHidden": false,
+          "MaximumCommand": 100,
+          "MaximumTemperature": 120.0,
+          "MinimumTemperature": 20.0,
+          "Name": "GPU Graph",
+          "OneWayHysteresis": false,
+          "Points": [
+            "60.33397156219592,0",
+            "90.6,100"
+          ],
+          "SelectedHysteresis": 2.0,
+          "SelectedResponseTime": 1,
+          "SelectedTempSource": {
+            "Identifier": "NVApiWrapper/0-AD104-A/sensor/0",
+            "IsHidden": false,
+            "Name": "GPU",
+            "NickName": "GPU"
+          }
+        },
+        "SelectedOffset": 0,
+        "SelectedStart": 9,
+        "SelectedStop": 6
+      }
+    ],
+    "CustomSensors": [],
+    "Fahrenheit": false,
+    "FanCurves": [
+      {
+        "CommandMode": 0,
+        "IgnoreHysteresisAtLimits": true,
+        "IsHidden": false,
+        "MaximumCommand": 100,
+        "MaximumTemperature": 120.0,
+        "MinimumTemperature": 20.0,
+        "Name": "CPU Graph",
+        "OneWayHysteresis": false,
+        "Points": [
+          "70.5,0",
+          "90.2,100"
+        ],
+        "SelectedHysteresis": 2.0,
+        "SelectedResponseTime": 1,
+        "SelectedTempSource": {
+          "Identifier": "/amdcpu/0/temperature/2",
+          "IsHidden": false,
+          "Name": "Core (Tctl/Tdie)",
+          "NickName": "Core (Tctl/Tdie)"
+        }
+      },
+      {
+        "CommandMode": 0,
+        "IgnoreHysteresisAtLimits": true,
+        "IsHidden": false,
+        "MaximumCommand": 100,
+        "MaximumTemperature": 120.0,
+        "MinimumTemperature": 20.0,
+        "Name": "GPU Graph",
+        "OneWayHysteresis": false,
+        "Points": [
+          "60.33397156219592,0",
+          "90.6,100"
+        ],
+        "SelectedHysteresis": 2.0,
+        "SelectedResponseTime": 1,
+        "SelectedTempSource": {
+          "Identifier": "NVApiWrapper/0-AD104-A/sensor/0",
+          "IsHidden": false,
+          "Name": "GPU",
+          "NickName": "GPU"
+        }
+      }
+    ],
+    "FanSensors": [
+      {
+        "Identifier": "/lpc/it8689e/fan/0",
+        "IsHidden": false,
+        "Name": "CPU Fan",
+        "NickName": "CPU Fan"
+      },
+      {
+        "Identifier": "/lpc/it8689e/fan/1",
+        "IsHidden": false,
+        "Name": "System Fan #1",
+        "NickName": "System Fan #1"
+      },
+      {
+        "Identifier": "/lpc/it8689e/fan/2",
+        "IsHidden": false,
+        "Name": "System Fan #2",
+        "NickName": "System Fan #2"
+      },
+      {
+        "Identifier": "/lpc/it8689e/fan/3",
+        "IsHidden": false,
+        "Name": "System Fan #3",
+        "NickName": "System Fan #3"
+      },
+      {
+        "Identifier": "/lpc/it8689e/fan/4",
+        "IsHidden": false,
+        "Name": "System Fan #4 / Pump",
+        "NickName": "System Fan #4 / Pump"
+      },
+      {
+        "Identifier": "/lpc/it8689e/fan/5",
+        "IsHidden": false,
+        "Name": "CPU Optional Fan",
+        "NickName": "CPU Optional Fan"
+      },
+      {
+        "Identifier": "NVApiWrapper/0-AD104-A/fan/0",
+        "IsHidden": false,
+        "Name": "Fan 1 - NVIDIA GeForce RTX 4070",
+        "NickName": "Control 1 - NVIDIA GeForce RTX 4070"
+      },
+      {
+        "Identifier": "NVApiWrapper/0-AD104-A/fan/1",
+        "IsHidden": false,
+        "Name": "Fan 2 - NVIDIA GeForce RTX 4070",
+        "NickName": "Control 2 - NVIDIA GeForce RTX 4070"
+      }
+    ],
+    "HideCalibration": false,
+    "HideFanSpeedCards": true,
+    "HorizontalUIOrientation": false,
+    "PrimaryColor": "#FF000000",
+    "SecondaryColor": "#FFFFFE00",
+    "SelectedTheme": "",
+    "ShowHiddenCards": true,
+    "SyncThemeWithWindows": true,
+    "SyncTrayIconColorWithWindows": true,
+    "TemperatureSensors": [],
+    "TrayIconColor": null,
+    "TrayIcons": []
+  },
+  "Sensors": {
+    "AdlxWrapperSettings": {
+      "Enabled": true
+    },
+    "DisabledPlugins": [],
+    "DisableStorageSensors": true,
+    "LibreHardwareMonitorSettings": {
+      "Controller": false,
+      "CPU": true,
+      "EmbeddedEC": true,
+      "GPU": true,
+      "InpOut": false,
+      "Memory": false,
+      "Motherboard": true,
+      "PSU": true,
+      "Storage": false,
+      "ZeroRPMOverride": true
+    },
+    "NvAPIWrapperSettings": {
+      "Enabled": true,
+      "ZeroRPMOverride": true
+    },
+    "SensorCount": 25
+  }
+}
