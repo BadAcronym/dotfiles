@@ -32,7 +32,7 @@ xrandr  \
         --output HDMI-1    --mode "2560x1440_75"  --pos 5120x0 --rotate right  \
         --output HDMI-2    --mode "2560x1440_75"  --pos 0x1440                 \
         --output DP-1      --mode "2560x1440_75"  --pos 0x0                    \
-        --output DVI-I-1-1 --mode "1024x600_60"   --pos 6560x0                 \
+        # --output DVI-I-1-1 --mode "1024x600_60"   --pos 6560x0                 \
 
 mount //192.168.0.217/Fede
 
