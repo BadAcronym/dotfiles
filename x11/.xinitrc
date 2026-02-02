@@ -43,4 +43,6 @@ xrandr  \
         --output DP-1   --auto --pos 0x0                    \
 
 nitrogen --restore &
+picom -b --config ~/.config/picom/picom.conf &
+~/repository/bash-collection/start-aw.sh &
 exec sxwm
