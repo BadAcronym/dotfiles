@@ -1,5 +1,6 @@
 #!/bin/sh
 unset XCURSOR_THEME
+[[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
 
 # for 1x 1440p75Hz display over VirtualBox
 # xrandr --newmode "2560x1440_75.00" 397.25  2560 2760 3040 3520  1440 1443 1448 1506 -hsync +vsync

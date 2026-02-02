@@ -6,6 +6,7 @@ Xft.dpi:        96
 Xft.scale:      2
 Xft.lcdfilter:  lcddefault
 
-Xft.serif.family:      Fira Code Nerd Font Regular
-Xft.sans.serif.family: Fira Code Nerd Font Regular
-Xft.monospace.family:  Fira Code Nerd Font Mono
+Xft.font:              FiraCode Nerd Font
+Xft.serif.family:      FiraCode Nerd Font
+Xft.sans.serif.family: FiraCode Nerd Font
+Xft.monospace.family:  FiraCode Nerd Font Mono
