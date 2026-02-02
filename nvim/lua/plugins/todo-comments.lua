@@ -1,14 +1,25 @@
 return {
 	"folke/todo-comments.nvim",
 	lazy = true,
-	event = "LspAttach",
-	dependencies = { "nvim-lua/plenary.nvim", "nvim-telescope/telescope.nvim" },
+    event =
+    {
+        "BufRead",
+        "BufNewFile"
+    },
+	dependencies =
+    {
+        "nvim-lua/plenary.nvim",
+        "nvim-telescope/telescope.nvim"
+    },
     main = "todo-comments",
-	opts = {
-		highlight = {
+	opts =
+    {
+		highlight =
+        {
 			comments_only = true,
 		},
-		keywords = {
+		keywords =
+        {
 			BUG   = { icon = " ", color = "error",   alt = { "FIXME",       "FIXIT",        "ISSUE"    }},
 			TODO  = { icon = "t ", color = "todo",    alt = { "TASK",        "ASSIGNMENT",   "DO"       }},
 			HACK  = { icon = " ", color = "warning", alt = { "SKETCHY",     "PROTOTYPE",    "JANKY"    }},
@@ -23,7 +34,8 @@ return {
 			LOOK  = { icon = "🌐", color = "lookup",  alt = { "INVESTIGATE", "LOOKUP",       "RESEARCH" }},
 		},
         merge_keywords = true,
-        colors = {
+        colors =
+        {
             error   = { "DiagnosticError",   "ErrorMsg",   "#DA3530" },
             warn    = { "DiagnosticWarn",    "WarningMsg", "#FBBF24" },
             hack    = { "DiagnosticWarn",                  "#AA5025" },
@@ -40,11 +52,19 @@ return {
         },
 	},
 	keys = {
-		{ "]]t", "<cmd>lua require('todo-comments').jump_next()<CR>" },
-		{ "[[t", "<cmd>lua require('todo-comments').jump_prev()<CR>" },
+		{
+            "]]t", "<cmd>lua require('todo-comments').jump_next()<CR>"
+        },
+		{
+            "[[t", "<cmd>lua require('todo-comments').jump_prev()<CR>"
+        },
 
-		{ "]t", "<cmd>lua require('todo-comments').jump_next({ keywords = { 'TODO' } })<CR>" },
-		{ "[t", "<cmd>lua require('todo-comments').jump_prev({ keywords = { 'TODO' } })<CR>" },
+		{
+            "]t", "<cmd>lua require('todo-comments').jump_next({ keywords = { 'TODO' } })<CR>"
+        },
+		{
+            "[t", "<cmd>lua require('todo-comments').jump_prev({ keywords = { 'TODO' } })<CR>"
+        },
 
 		{
 			"]c",
@@ -91,7 +111,11 @@ return {
 			"<cmd>lua require('todo-comments').jump_prev({ keywords = { 'PERF', 'PERFORMANCE', 'OPTIMIZE', 'OPTIM' } })<CR>",
 		},
 
-		{ "<leader>tl", "<cmd>TodoTelescope<CR>" },
-		{ "<leader>tq", "<cmd>TodoQuickFix<CR>" },
+		{
+            "<leader>tl", "<cmd>TodoTelescope<CR>"
+        },
+		{
+            "<leader>tq", "<cmd>TodoQuickFix<CR>"
+        },
 	},
 }
