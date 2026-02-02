@@ -18,6 +18,13 @@ vim.lsp.config("clangd", {
 })
 vim.lsp.enable("clangd")
 
+vim.lsp.config("jdtls", {
+    capabilities = capabilities,
+    cmd = {"jdtls"},
+    filetypes = {"java"},
+})
+vim.lsp.enable("jdtls")
+
 vim.lsp.config("glsl_analyzer", {
     capabilities = capabilities,
     filetypes = { "glsl", "hlsl"},
