@@ -125,6 +125,11 @@ window_rules:
         window_title: { regex: '.*? - Peek' }
       - window_process: { equals: 'Lively' }
         window_class: { regex: 'HwndWrapper' }
+    
+      # Ignore stuff I'm working on that doesn't allow resizing (yet)
+      - window_process: { equals: 'Cnake' }
+      # Because I like using .\vs2022 and am tired of moving it to main screen
+      - window_process: { equals: 'devenv' } 
 
 binding_modes:
   # When enabled, the focused window can be resized via arrow keys or HJKL.
