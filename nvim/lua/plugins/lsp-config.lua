@@ -43,7 +43,6 @@ return {
         },
 		--TODO: find out how to quickly jump to next reference/definition
 		config = function()
-			local lspconfig = require("lspconfig")
 			local capabilities = vim.tbl_deep_extend(
 				"force",
 				vim.lsp.protocol.make_client_capabilities(),
@@ -52,7 +51,7 @@ return {
 
 			capabilities.workspace.didChangeWatchedFiles.dynamicRegistration = false
 
-			lspconfig.clangd.setup({
+			vim.lsp.config('clangd', {
 				capabilities = capabilities,
 				cmd = {
                     "clangd",
@@ -62,27 +61,27 @@ return {
                 },
 			})
 
-			lspconfig.glsl_analyzer.setup({ capabilities = capabilities })
+			vim.lsp.config("glsl_analyzer", { capabilities = capabilities })
 
-			lspconfig.lua_ls.setup({ capabilities = capabilities })
+			vim.lsp.config("lua_ls", { capabilities = capabilities })
 
-			lspconfig.asm_lsp.setup({
+			vim.lsp.config("asm_lsp", {
 				capabilities = capabilities,
 				cmd = { "asm-lsp" },
 				filetypes = { "asm", "vmasm" },
 				root_dir = require("lspconfig.util").find_git_ancestor,
 			})
 
-			lspconfig.powershell_es.setup({
+			vim.lsp.config("powershell_es", {
 				capabilities = capabilities,
 				bundle_path = vim.fn.stdpath("data") .. "/mason/packages/powershell-editor-services/",
 			})
 
-			lspconfig.bashls.setup({ capabilities = capabilities })
+			vim.lsp.config("bashls", { capabilities = capabilities })
 
-			lspconfig.tinymist.setup({ capabilities = capabilities })
+			vim.lsp.config("tinymist", { capabilities = capabilities })
 
-			lspconfig.lemminx.setup({ capabilities = capabilities })
+			vim.lsp.config("lemminx", { capabilities = capabilities })
 
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
 			vim.keymap.set("n", "dec", vim.lsp.buf.declaration, {})
