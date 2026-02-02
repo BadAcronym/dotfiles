@@ -24,8 +24,10 @@ vim.cmd([[colorscheme gruvbox]])
 vim.api.nvim_create_autocmd("BufWritePre", {
 	pattern = "*",
 	callback = function()
-		vim.cmd([[%s/\_s*\%$//e]])
+		vim.cmd([[mkview]])
 		vim.cmd([[%s/\s\+$//e]])
 		vim.cmd([[%s/\n\{3,}/\r\r/e]])
+		vim.cmd([[%s/\_s*\%$//e]])
+		vim.cmd([[loadview]])
 	end,
 })
