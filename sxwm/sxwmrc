@@ -27,7 +27,8 @@ mod_key : alt
 # Application Launchers:
 bind : mod + Return : "wezterm"
 bind : mod + t : "qutebrowser"
-bind : ctrl + 0 : "rofi"
+bind : ctrl + 0 : "rofi -show recursivebrowser"
+bind : ctrl + backslash : "rofi -show drun"
 
 # Window Management:
 call : mod + shift + q : close_window
@@ -35,16 +36,16 @@ call : mod + c : centre_window
 call : mod + shift + x : quit
 
 # Focus Movement:
-call : mod + i : focus_next
-call : mod + n : focus_prev
+call : mod + n : focus_next
+call : mod + i : focus_prev
 
 # Monitor Focus:
 call : mod + period : focus_next_mon
 call : mod + comma : focus_prev_mon
 
 # Move Window Between Monitors:
-call : mod + shift + i : move_next_mon
-call : mod + shift + n : move_prev_mon
+call : mod + shift + n : move_next_mon
+call : mod + shift + i : move_prev_mon
 
 # Master/Stack Movement
 call : mod + shift + j : master_next
@@ -65,7 +66,7 @@ call : mod + shift + left : decrease_gaps
 # Floating/Fullscreen
 call : mod + space : toggle_floating
 call : mod + shift + space : global_floating
-call : mod + shift + f : fullscreen
+call : mod + f : fullscreen
 
 # Reload Config
 call : mod + shift + r : reload_config
