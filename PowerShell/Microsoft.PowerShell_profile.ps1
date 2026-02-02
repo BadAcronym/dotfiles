@@ -25,5 +25,5 @@ function Get-Graph {
     Invoke-RestMethod "wttr.in/$city`?format=v2"
 }
 
-oh-my-posh init pwsh --config (Join-Path -PATH $repo -ChildPath "\dotfiles\wt\Mandi.omp.json") | Invoke-Expression
+oh-my-posh init pwsh --config (Join-Path -PATH $repo -ChildPath "\dotfiles\PowerShell\Mandi.omp.json") | Invoke-Expression
 
