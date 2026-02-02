@@ -1,3 +1,4 @@
+-- FIX: there's something still not working about the lua server startup sometimes.
 return {
 	{
 		"williamboman/mason.nvim",
