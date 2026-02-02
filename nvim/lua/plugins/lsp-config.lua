@@ -20,12 +20,18 @@ return {
         lazy = false,
         config = function()
 
+            local capabilities = require("cmp_nvim_lsp").default_capabilities()
             local lspconfig = require("lspconfig")
 
-            lspconfig.lua_ls.setup({})
-            lspconfig.clangd.setup({})
+            lspconfig.lua_ls.setup({
+                capabilities = capabilities,
+            })
+            lspconfig.clangd.setup({
+                capabilities = capabilities,
+            })
 
-            require("lspconfig").powershell_es.setup({
+            lspconfig.powershell_es.setup({
+                capabilities = capabilities,
                 bundle_path = vim.fn.stdpath("data") .. "/mason/packages/powershell-editor-services/",
             })
             vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
