@@ -1,10 +1,12 @@
 return{
     "X3eRo0/dired.nvim",
-    dependencies = {
+    dependencies =
+    {
         "MunifTanjim/nui.nvim"
     },
     lazy = true,
-    keys = {
+    keys =
+    {
         { "<leader>fo", "<cmd>Dired<CR>" },
     },
     config = function()
