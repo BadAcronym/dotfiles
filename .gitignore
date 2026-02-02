@@ -1,5 +1,7 @@
 *.log
 CACHE
+lazy-lock.json
+
 winfetch/*
 !winfetch/default*
 
