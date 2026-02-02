@@ -26,7 +26,7 @@ return{
             post_hook = nil,
         },
         config = function()
-            require("comment").setup()
+            require("Comment").setup()
         end,
     },
 }
