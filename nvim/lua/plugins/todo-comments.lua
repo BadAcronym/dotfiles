@@ -12,7 +12,7 @@ return {
 			TODO  = { icon = " ", color = "info" },
 			HACK  = { icon = " ", color = "warning" },
 			WARN  = { icon = " ", color = "warning", alt = { "WARNING", "XXX" } },
-			PERF  = { icon = " ", alt = { "OPTIM", "PERFORMANCE", "OPTIMIZE" } },
+			PERF  = { icon = " ", color = "perf", alt = { "OPTIM", "PERFORMANCE", "OPTIMIZE" } },
 			NOTE  = { icon = " ", color = "hint", alt = { "INFO", "COMMENT", "HINT" } },
 			TEST  = { icon = "⏲ ", color = "test", alt = { "TESTING", "PASSED", "FAILED", "RESULT" } },
 			TODAY = { icon = "! ", color = "#AA20AA", alt = {"DAY", "CURRENT", "2DAY"} },
