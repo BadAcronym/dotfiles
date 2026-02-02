@@ -75,6 +75,6 @@ if(Test-Path $pwshCollectionPath)
     }
 }
 
-oh-my-posh init pwsh --config (Join-Path -PATH $env:Repo -ChildPath "/dotfiles/PowerShell/config.omp.json") | Invoke-Expression
+oh-my-posh init pwsh --config (Join-Path -PATH $env:Repo -ChildPath "/dotfiles/oh-my-posh/config.omp.json") | Invoke-Expression
 # Set-Location $env:Repo
 Set-Location ~
