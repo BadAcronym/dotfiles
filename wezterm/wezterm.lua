@@ -9,7 +9,7 @@ config.font = wezterm.font({
     family = "FiraCode Nerd Font Propo Med",
 })
 config.window_background_opacity = 0.85
-config.font_size = 13.75
+config.font_size = 14
 config.font_dirs = {fontdir}
 config.default_cursor_style = "SteadyBlock"
 
