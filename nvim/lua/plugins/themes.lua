@@ -31,24 +31,24 @@ return {
 				overrides = {
                     ["@label"] = { fg = "#FF1020"},
 
-                    ["@constant"] = { fg = "#F080FF"},
-                    ["@variable"] = { fg = "#209FAA"},
-                    ["@variable.member"] = { fg = "#30FFAA" },
-                    ["@variable.parameter"] = { fg = "#3090FF"},
+                    ["@constant"] = { fg = "#f080ff"},
+                    ["@variable"] = { fg = "#209faa"},
+                    ["@variable.member"] = { fg = "#30ffaa" },
+                    ["@variable.parameter"] = { fg = "#3090ff"},
 
-                    ["@keyword.conditional"] = { fg = "#D8B2FF" },
-                    ["@boolean"] = { fg = "#BB45FF" },
+                    ["@keyword.conditional"] = { fg = "#d8b2ff" },
+                    ["@boolean"] = { fg = "#bb45ff" },
 
-                    ["@number"] = { fg = "#3AAAE6" },
+                    ["@number"] = { fg = "#3aaae6" },
 
 
-                    ["@type"] = { fg = "#3AFFE6"},
-                    ["@type.builtin"] = { fg = "#3AFFE6"},
-                    ["@type.definition"] = { fg = "#3AFFE6"},
+                    ["@type"] = { fg = "#3affe6"},
+                    ["@type.builtin"] = { fg = "#3affe6"},
+                    ["@type.definition"] = { fg = "#3affe6"},
 
-                    ["@string"] = { fg = "#99DD20"},
-                    ["@string.regexp"] = { fg = "#F080FF"},
-                    ["@string.escape"] = { fg = "#F080FF"},
+                    ["@string"] = { fg = "#99dd20"},
+                    ["@string.regexp"] = { fg = "#f080ff"},
+                    ["@string.escape"] = { fg = "#f080ff"},
 
                     ["@punctuation.delimiter"] = { fg = "#FFFFFF"},
                     ["@punctuation.bracket"] = { fg = "#d65d0e"},
