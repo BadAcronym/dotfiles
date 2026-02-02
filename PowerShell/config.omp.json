@@ -3,7 +3,7 @@
     "blocks": [
       {
         "alignment": "left",
-        "newline": true,
+        "newline": false,
         "segments": [
           {
             "foreground": "#FFAB56",
@@ -13,20 +13,6 @@
             "style": "plain",
             "template": "[{{ .CurrentDate | date .Format }}]",
             "type": "time"
-          },
-          {
-            "type": "shell",
-            "style": "plain",
-            "foreground": "#E06C75",
-            "properties": {
-              "mapped_shell_names": {
-                "pwsh": "Shell",
-                "powershell": "Shell",
-                "cmd": "Cmd",
-                "bash": "Bash"
-              }
-            },
-            "template": " \ue795 {{ .Name }}"
           },
           {
             "foreground": "#00ff45",
@@ -79,7 +65,7 @@
       },
       {
         "alignment": "left",
-        "newline": true,
+        "newline": false,
         "segments": [
           {
             "foreground": "#61AFEF",
