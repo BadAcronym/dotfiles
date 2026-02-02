@@ -1,4 +1,9 @@
 return {
+    {
+        "xiyaowong/transparent.nvim",
+        lazy = false,
+
+    },
 	{
 		"folke/tokyonight.nvim",
 		lazy = false,
