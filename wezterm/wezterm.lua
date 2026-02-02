@@ -7,7 +7,7 @@ config.prefer_egl = true
 config.font = wezterm.font("FiraCode Nerd Font Propo SemBd")
 config.window_background_opacity = 0.80
 config.window_decorations = "NONE"
-config.font_size = 13
+config.font_size = 15
 config.default_cursor_style = "SteadyBlock"
 
 config.default_prog = { "pwsh" }
