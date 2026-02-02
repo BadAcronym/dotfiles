@@ -8,9 +8,10 @@ config.font = wezterm.font("Cascadia Code NF")
 config.color_scheme = "Dark Pastel"
 config.window_background_opacity = 0.5
 config.font_size = 14
-config.default_cursor_style = "BlinkingBlock"
-config.animation_fps = 1
-config.cursor_blink_rate = 500
+config.default_cursor_style = "SteadyBlock"
+-- config.force_reverse_video_cursor = true
+-- config.animation_fps = 1
+-- config.cursor_blink_rate = 500
 
 config.default_prog = { "pwsh.exe" }
 
