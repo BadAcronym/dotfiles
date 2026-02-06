@@ -8,8 +8,7 @@ return {
 				enable_cmp_integration = true,
 			})
 		end,
-		keys =
-        {
+		keys = {
 			{
 				"<leader>se",
 				"<cmd>lua require('telescope').load_extension('emoji').emoji()<CR>",

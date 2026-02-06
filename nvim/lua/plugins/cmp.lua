@@ -5,10 +5,10 @@ return {
 		event = { "BufRead", "BufNewFile" },
 	},
 	{
-
 		"L3MON4D3/LuaSnip",
 		lazy = true,
-		dependencies = {
+		dependencies =
+        {
 			"saadparwaiz1/cmp_luasnip",
 			"rafamadriz/friendly-snippets",
 		},
@@ -24,13 +24,15 @@ return {
 
 			local cmp = require("cmp")
 			cmp.setup({
-				snippet = {
+				snippet =
+                {
 					expand = function(args)
 						require("luasnip").lsp_expand(args.body)
 					end,
 				},
 
-				window = {
+				window =
+                {
 					completion = cmp.config.window.bordered(),
 					documentation = cmp.config.window.bordered(),
 				},
