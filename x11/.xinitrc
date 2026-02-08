@@ -43,5 +43,4 @@ setxkbmap us colemak
 
 nitrogen-profile random
 picom -b --config ~/.config/picom/picom.conf &
-~/repository/bash-collection/start-aw.sh &
 exec i3
