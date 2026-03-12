@@ -1,4 +1,5 @@
-return {
+return
+{
 	{
 		"hrsh7th/cmp-nvim-lsp",
 		lazy = true,
@@ -48,8 +49,12 @@ return {
 					{ name = "luasnip" },
 					{ name = "buffer", keyword_length = 5 },
 					{ name = "emoji" },
-				}),
-			})
-		end,
+                    { name = "path" },
+                })
+            })
+	    end,
 	},
+    {
+        "hrsh7th/cmp-path"
+    },
 }
