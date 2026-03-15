@@ -17,4 +17,5 @@ alias cdskse='cd ~/.local/share/Steam/steamapps/compatdata/489830/pfx/drive_c/us
 PS1='[\u@\h \W]\$ '
 
 eval "$(oh-my-posh init bash --config '/home/mandi/repository/dotfiles/oh-my-posh/config.omp.json')"
+sleep 0.05
 fastfetch
