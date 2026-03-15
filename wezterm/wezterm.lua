@@ -1,10 +1,10 @@
 local wezterm = require("wezterm")
 local config = {}
 
-config.initial_cols = 165
-config.initial_rows = 50
+config.initial_cols = 250
+config.initial_rows = 200
 
-config.front_end = "Software"
+config.front_end = "OpenGL"
 config.term = "xterm-256color"
 config.prefer_egl = true
 config.font = wezterm.font("FiraCode Nerd Font Propo SemBd")
