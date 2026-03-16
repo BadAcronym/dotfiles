@@ -220,6 +220,8 @@ bar {
         urgent_workspace   #2f343a #900000 #ffffff
         binding_mode       #2f343a #900000 #ffffff
     }
-        position top
+        position bottom
+        output HDMI-1
+        output HDMI-2
         status_command i3status
 }
