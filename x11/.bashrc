@@ -19,4 +19,4 @@ PS1='[\u@\h \W]\$ '
 eval "$(oh-my-posh init bash --config '/home/mandi/repository/dotfiles/oh-my-posh/config.omp.json')"
 # TODO: remove this sleep once I'm off of WezTerm
 sleep 0.05
-fetch
+fastfetch
