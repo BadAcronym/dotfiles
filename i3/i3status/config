@@ -8,7 +8,7 @@
 
 general {
         colors = true
-        interval = 1
+        interval = 5
 }
 
 order += "battery 0"
@@ -73,5 +73,5 @@ tztime date {
 }
 
 tztime local {
-        format = "%H:%M:%S"
+        format = "%H:%M"
 }
