@@ -10,7 +10,7 @@ config.prefer_egl = true
 config.font = wezterm.font("FiraCode Nerd Font Propo SemBd")
 config.window_background_opacity = 0.6
 config.window_decorations = "NONE"
-config.font_size = 18
+config.font_size = 24
 config.default_cursor_style = "SteadyBlock"
 
 config.hide_tab_bar_if_only_one_tab = true
