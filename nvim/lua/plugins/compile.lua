@@ -30,7 +30,7 @@ return
             error_regexp_table            = {},
             error_ignore_file_list        = {},
             error_threshold               = require("compile-mode").level.WARNING,
-            auto_jump_to_first_error      = true,
+            auto_jump_to_first_error      = false,
             error_locus_highlight         = 500,
             use_diagnostics               = true,
             recompile_no_fail             = false,
