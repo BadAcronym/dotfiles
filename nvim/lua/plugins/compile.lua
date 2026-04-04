@@ -11,6 +11,7 @@ return
     keys =
     {
         { "<C-c>", "<cmd>Compile<CR><CR>" },
+        { "<leader><C-c>", "<cmd>Compile<CR>" },
         -- TODO: do something here for NextError
     },
     config = function()
