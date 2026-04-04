@@ -10,7 +10,8 @@ return
     },
     keys =
     {
-        { "<C-c>", "<cmd>Compile<CR><CR>" },
+        { "<C-c>", "<cmd>Compile ./run release --compile-only<CR><CR>" },
+        { "<C-r>", "<cmd>Compile ./run release<CR><CR>" },
         { "<leader><C-c>", "<cmd>Compile<CR>" },
         -- TODO: do something here for NextError
     },
@@ -21,11 +22,11 @@ return
         {
             default_command =
             {
-                c = "./run"
+                c = ""
             },
             default_command               = "./run",
             baleia_setup                  = true,
-            bang_expansion                = true,
+            bang_expansion                = false,
             directory_change_matchers     = {},
             error_regexp_table            = {},
             error_ignore_file_list        = {},
