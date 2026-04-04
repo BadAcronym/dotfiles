@@ -21,5 +21,6 @@ vim.o.undodir     = os.getenv("HOME") .. "/.cache/nvim/undodir"
 vim.opt.fillchars = "eob: "
 
 vim.keymap.set({"n", "v"}, "<C-h>", "<C-u>")
+vim.keymap.set({"n", "v"}, "f", "<C-r>")
 
 vim.keymap.set('t', '<Esc>', [[<C-\><C-n>]])
