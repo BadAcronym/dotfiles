@@ -20,7 +20,9 @@ vim.o.undodir     = os.getenv("HOME") .. "/.cache/nvim/undodir"
 
 vim.opt.fillchars = "eob: "
 
-vim.keymap.set({"n", "v"}, "<C-h>", "<C-u>")
-vim.keymap.set({"n", "v"}, "f", "<C-r>")
+vim.keymap.set({"n", "v"}, "<C-h>", "<C-u>")  --move
+vim.keymap.set({"n", "v"}, "f", "<C-r>")      --redo
+vim.keymap.set({"n", "v"}, "q", "<cmd>q<CR>") --quit buffer
+vim.keymap.set({"n", "v"}, "<leader>r", "qq") --record macro
 
 vim.keymap.set('t', '<Esc>', [[<C-\><C-n>]])
