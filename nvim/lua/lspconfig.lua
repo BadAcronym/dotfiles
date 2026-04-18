@@ -63,6 +63,12 @@ vim.lsp.config("lemminx", {
 })
 vim.lsp.enable("lemminx")
 
+vim.lsp.config("texlab", {
+    capabilities = capabilities,
+    filetypes = {"tex", "bib"},
+})
+vim.lsp.enable("texlab")
+
 vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
 vim.keymap.set("n", "dec", vim.lsp.buf.declaration, {})
 vim.keymap.set("n", "def", vim.lsp.buf.definition, {})
