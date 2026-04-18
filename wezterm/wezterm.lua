@@ -1,8 +1,8 @@
 local wezterm = require("wezterm")
 local config = {}
 
-config.initial_cols = 250
-config.initial_rows = 200
+config.initial_cols = 150
+config.initial_rows = 50
 
 config.front_end = "OpenGL"
 config.term = "xterm-256color"
