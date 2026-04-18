@@ -1,10 +1,10 @@
 return
 {
     "ellisonleao/gruvbox.nvim",
-    lazy = false,
+    lazy     = false,
     priority = 1000,
-    config = true,
-    config = function()
+    config   = true,
+    config   = function()
         require("gruvbox").setup({
             terminal_colors = true,
             undercurl       = true,
@@ -44,6 +44,8 @@ return
                 ["shVariable"]                 = { fg = "#75EEFF" },
                 ["shDerefVar"]                 = { fg = "#75EEFF" },
                 ["PreProc"]                    = { fg = "#75EEFF" },
+                ["typstMarkupUrl"]             = { fg = "#75EEFF" },
+                ["typstMarkupHeading"]         = { fg = "#8EDF7C" },
                 ["cDefine"]                    = { fg = "#8EDF7C" },
                 ["@lsp.type.macro.c"]          = { fg = "#8EDF7C" },
                 ["Operator"]                   = { fg = "#EBDBB2" },
