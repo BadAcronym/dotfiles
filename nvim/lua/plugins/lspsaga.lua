@@ -1,7 +1,5 @@
 return {
-    --NOTE: fixes have not been merged into master yet
-    -- "nvimdev/lspsaga.nvim",
-    "leeguooooo/lspsaga.nvim",
+    "nvimdev/lspsaga.nvim",
     keys = {
         { "go", "<cmd>Lspsaga goto_definition<CR>",         mode = "n", noremap = true, silent = true },
         { "gh", "<cmd>Lspsaga finder<CR>",                  mode = "n", noremap = true, silent = true },
