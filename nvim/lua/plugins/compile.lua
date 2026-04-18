@@ -22,7 +22,8 @@ return
         {
             default_command =
             {
-                c = ""
+                c   = "./run",
+                tex = "./compile",
             },
             default_command               = "./run",
             baleia_setup                  = true,
