@@ -1,56 +1,71 @@
-return {
-	{
-		"ellisonleao/gruvbox.nvim",
-		lazy = false,
-		priority = 1000,
-		config = function()
-			require("gruvbox").setup({
-				terminal_colors = true,
-				undercurl = true,
-				underline = true,
-				bold = true,
-				italic = {
-					strings = false,
-					emphasis = true,
-					comments = true,
-					operators = false,
-					folds = true,
-				},
-				strikethrough = true,
-				invert_selection = false,
-				invert_signs = false,
-				invert_tabline = false,
-				invert_intend_guides = false,
-				inverse = true,
-				contrast = "hard",
-				palette_overrides = {},
-				overrides = {
-					["String"] = { fg = "#99FF20" },
-					["@string"] = { fg = "#99FF20" },
-
-					["Type"] = { fg = "#9090FF" },
-					["Function"] = { fg = "#EED030" },
-
-					["Identifier"] = { fg = "#75EEFF" },
-
-					["@variable"] = { fg = "#00AAD0" },
-					["@variable.parameter"] = {
-						italic = true,
-						fg = "#b9d3eb",
-					},
-					["@lsp.type.parameter"] = {
-						italic = true,
-						fg = "#b9d3eb",
-					},
-
-					["@constant"] = { fg = "#00AAD0" },
-
-					["Boolean"] = { fg = "#FF20FF" },
-					["StorageClass"] = { fg = "#E950A0" },
-				},
-				dim_inactive = false,
-				transparent_mode = true,
-			})
-		end,
-	},
+return
+{
+    "ellisonleao/gruvbox.nvim",
+    lazy = false,
+    priority = 1000,
+    config = true,
+    config = function()
+        require("gruvbox").setup({
+            terminal_colors = true,
+            undercurl       = true,
+            underline       = true,
+            bold            = true,
+            italic =
+            {
+                strings   = false,
+                emphasis  = true,
+                comments  = true,
+                operators = false,
+                folds     = true,
+            },
+            strikethrough        = true,
+            invert_selection     = false,
+            invert_signs         = false,
+            invert_tabline       = false,
+            invert_intend_guides = false,
+            inverse              = true,
+            contrast             = "hard",
+            dim_inactive         = false,
+            transparent_mode     = true,
+            palette_overrides    = {},
+            overrides = {
+                ["String"]                     = { fg = "#99FF20" },
+                ["@string"]                    = { fg = "#99FF20" },
+                ["shQuote"]                    = { fg = "#99FF20" },
+                ["Type"]                       = { fg = "#AA95FF" },
+                ["shFunctionKey"]              = { fg = "#AA95FF" },
+                ["Function"]                   = { fg = "#FFCF2F" },
+                ["shCmdSubRegion"]             = { fg = "#FFCF2F" },
+                ["shArithmetic"]               = { fg = "#FFCF2F" },
+                ["shArithregion"]              = { fg = "#FFCF2F" },
+                ["shDerefVarArray"]            = { fg = "#FFCF2F" },
+                ["shDerefSimple"]              = { fg = "#75EEFF" },
+                ["shVar"]                      = { fg = "#75EEFF" },
+                ["shVariable"]                 = { fg = "#75EEFF" },
+                ["shDerefVar"]                 = { fg = "#75EEFF" },
+                ["PreProc"]                    = { fg = "#75EEFF" },
+                ["cDefine"]                    = { fg = "#8EDF7C" },
+                ["@lsp.type.macro.c"]          = { fg = "#8EDF7C" },
+                ["Operator"]                   = { fg = "#EBDBB2" },
+                ["shFunction"]                 = { fg = "#EBDBB2" },
+                ["@punctuation.bracket.lua"]   = { fg = "#EBDBB2" },
+                ["@punctuation.delimiter.lua"] = { fg = "#EBDBB2" },
+                ["@constructor.lua"]           = { fg = "#EBDBB2" },
+                ["shVarAssign"]                = { fg = "#EBDBB2" },
+                ["cOperator"]                  = { fg = "#FB4934" },
+                ["cStatement"]                 = { fg = "#FB4934" },
+                ["shTestOpr"]                  = { fg = "#FB4934" },
+                ["StorageClass"]               = { fg = "#FB4934" },
+                ["Boolean"]                    = { fg = "#FF20FF" },
+                ["@variable.parameter"] = {
+                    italic = true,
+                    fg = "#EBDBB2",
+                },
+                ["@lsp.type.parameter"] = {
+                    italic = true,
+                    fg = "#EBDBB2",
+                },
+            },
+        })
+    end
 }
