@@ -1,34 +1,32 @@
 return
 {
 	{
-        -- NOTE: remove this once you're sure it's not
-        -- not needed anymore
-		-- "nvim-treesitter/nvim-treesitter",
-		-- lazy  = false,
-		-- build = ":TSUpdate",
-  --       config = function()
-  --           require("nvim-treesitter.configs").setup({
-  --               auto_install = true,
-  --               highlight =
-  --               {
-  --                   enable = true,
-  --                   additional_vim_regex_highlighting = false
-  --               },
-  --               ensure_installed = {
-  --                   "c",
-  --                   "bash",
-  --                   "glsl",
-  --                   "markdown",
-  --                   "lua",
-  --                   "vim",
-  --                   "html",
-  --                   "json",
-  --                   "xml",
-  --                   "yaml",
-  --               },
-  --               indent = { enable = true },
-  --           })
-  --       end
+		"nvim-treesitter/nvim-treesitter",
+		lazy  = false,
+		build = ":TSUpdate",
+        config = function()
+            require("nvim-treesitter.configs").setup({
+                auto_install = true,
+                highlight =
+                {
+                    enable = true,
+                    additional_vim_regex_highlighting = false
+                },
+                ensure_installed = {
+                    "c",
+                    "bash",
+                    "glsl",
+                    "markdown",
+                    "lua",
+                    "vim",
+                    "html",
+                    "json",
+                    "xml",
+                    "yaml",
+                },
+                indent = { enable = true },
+            })
+        end
 	},
 	{
 		"nvim-treesitter/nvim-treesitter-context",

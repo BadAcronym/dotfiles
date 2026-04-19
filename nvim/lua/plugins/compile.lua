@@ -11,7 +11,7 @@ return
     keys =
     {
         { "<C-c>", "<cmd>Compile ./run release --compile-only<CR><CR>" },
-        { "<C-r>", "<cmd>Compile ./run release<CR><CR>" },
+        { "<C-r>", "<cmd>Compile ./run<CR><CR>" },
         { "<leader><C-c>", "<cmd>Compile<CR>" },
         -- TODO: do something here for NextError
     },
@@ -23,7 +23,7 @@ return
             default_command =
             {
                 c   = "./run",
-                tex = "./compile",
+                typ = "./run"
             },
             default_command               = "./run",
             baleia_setup                  = true,
