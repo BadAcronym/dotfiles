@@ -13,9 +13,9 @@ vim.opt.guicursor     = "n-v-c-i:block-Cursor/lcursor"
 vim.opt.cursorline    = true
 vim.opt.cursorlineopt = "line"
 -- perfect size for two split terminals, side-by-side with my current wezterm config!
-vim.opt.textwidth     = 87
+vim.opt.textwidth     = 88
 -- always 1 more than textwidth.
-vim.opt.colorcolumn   = "88"
+vim.opt.colorcolumn   = "89"
 
 vim.o.swapfile    = false
 vim.o.undofile    = true
