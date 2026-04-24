@@ -1,26 +1,31 @@
-return {
+return
+{
 	{
 		"numToStr/Comment.nvim",
-		lazy = true,
+		lazy  = true,
 		event = { "BufRead", "BufNewFile" },
-		opts = {
+		opts  = {
 			padding = true,
 			sticky  = true,
 			ignore  = nil,
-			toggler = {
+			toggler =
+            {
 				line  = "gcc",
 				block = "gbc",
 			},
-			opleader = {
+			opleader =
+            {
 				line  = "gc",
 				block = "gb",
 			},
-			extra = {
+			extra =
+            {
 				above = "gcO",
 				below = "gco",
 				eol   = "gcA",
 			},
-			mappings = {
+			mappings =
+            {
 				basic = true,
 				extra = true,
 			},

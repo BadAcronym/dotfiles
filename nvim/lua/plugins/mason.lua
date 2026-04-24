@@ -1,6 +1,7 @@
-return{
+return
+{
     "williamboman/mason.nvim",
-    lazy = true,
+    lazy  = true,
     event = { "BufReadPre", "BufNewFile" },
     config = function()
         require("mason").setup()

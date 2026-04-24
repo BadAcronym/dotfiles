@@ -1,14 +1,17 @@
-return {
+return
+{
 	{
 		"allaman/emoji.nvim",
 		lazy = true,
 		ft = "md",
 		config = function()
-			require("emoji").setup({
+			require("emoji").setup(
+            {
 				enable_cmp_integration = true,
 			})
 		end,
-		keys = {
+		keys =
+        {
 			{
 				"<leader>se",
 				"<cmd>lua require('telescope').load_extension('emoji').emoji()<CR>",

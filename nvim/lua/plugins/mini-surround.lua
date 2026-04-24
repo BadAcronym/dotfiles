@@ -1,9 +1,12 @@
-return {
+return
+{
     "echasnovski/mini.surround",
-    opts = {
+    opts =
+    {
         custom_surroundings = nil,
-        highlight_duration = 500,
-        mappings = {
+        highlight_duration  = 500,
+        mappings =
+        {
             add            = "sa",
             delete         = "sd",
             find           = "sf",

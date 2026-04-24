@@ -5,7 +5,8 @@ return
     priority = 1000,
     config   = true,
     config   = function()
-        require("gruvbox").setup({
+        require("gruvbox").setup(
+        {
             terminal_colors = true,
             undercurl       = true,
             underline       = true,

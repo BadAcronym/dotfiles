@@ -1,9 +1,11 @@
-return {
+return
+{
 	"NiklasV1/nvim-colorizer.lua",
-	lazy = true,
+	lazy  = true,
 	event = {"BufReadPre", "BufNewFile"},
 	config = function()
-		require("colorizer").setup({
+		require("colorizer").setup(
+        {
 			"*",
             css = { rgb_fn = true },
 		})

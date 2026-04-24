@@ -1,6 +1,8 @@
-return {
+return
+{
     "nvimdev/lspsaga.nvim",
-    keys = {
+    keys =
+    {
         { "go", "<cmd>Lspsaga goto_definition<CR>",         mode = "n", noremap = true, silent = true },
         { "gh", "<cmd>Lspsaga finder<CR>",                  mode = "n", noremap = true, silent = true },
         { "<leader>pk", "<cmd>Lspsaga peek_definition<CR>", mode = "n", noremap = true, silent = true },

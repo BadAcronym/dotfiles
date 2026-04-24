@@ -1,9 +1,11 @@
-return {
+return
+{
     {
         "nvim-telescope/telescope.nvim",
-        event = { "BufRead", "BufNewFile" },
+        event        = { "BufRead", "BufNewFile" },
         dependencies = { "nvim-lua/plenary.nvim" },
-        keys = {
+        keys =
+        {
             { "<leader>fb", ":Telescope file_browser<cr>" },
             { "<leader>fg", "<cmd>lua require('telescope.builtin').live_grep()<CR>" },
             { "<leader>fd", "<cmd>lua require('telescope.builtin').diagnostics()<CR>" },
@@ -15,13 +17,17 @@ return {
         },
         config = function()
             require("telescope").setup({
-                pickers = {
-                    colorscheme = {
+                pickers =
+                {
+                    colorscheme =
+                    {
                         enable_preview = true,
                     },
-                    find_files = {
+                    find_files =
+                    {
                         hidden = true,
-                        find_command = {
+                        find_command =
+                        {
                             "rg",
                             "--files",
                             "--glob",
@@ -34,18 +40,17 @@ return {
             })
 
             require("telescope").load_extension("zoxide")
-
             require("telescope").load_extension("ui-select")
         end,
     },
-
     {
         "nvim-telescope/telescope-ui-select.nvim",
         lazy = true,
         config = function()
             require("telescope").setup({
                 extensions = {
-                    ["ui-select"] = {
+                    ["ui-select"] =
+                    {
                         require("telescope.themes").get_dropdown({}),
                     },
                 },

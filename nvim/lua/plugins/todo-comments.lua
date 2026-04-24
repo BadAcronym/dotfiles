@@ -1,6 +1,7 @@
-return {
+return
+{
 	"folke/todo-comments.nvim",
-	lazy = true,
+	lazy  = true,
     event =
     {
         "BufRead",
@@ -51,71 +52,23 @@ return {
             default = { "Identifier",                      "#7C3AED" },
         },
 	},
-	keys = {
-		{
-            "]]t", "<cmd>lua require('todo-comments').jump_next()<CR>"
-        },
-		{
-            "[[t", "<cmd>lua require('todo-comments').jump_prev()<CR>"
-        },
-
-		{
-            "]t", "<cmd>lua require('todo-comments').jump_next({ keywords = { 'TODO' } })<CR>"
-        },
-		{
-            "[t", "<cmd>lua require('todo-comments').jump_prev({ keywords = { 'TODO' } })<CR>"
-        },
-
-		{
-			"]c",
-			"<cmd>lua require('todo-comments').jump_next({ keywords = { 'NOTE', 'INFO', 'HINT', 'COMMENT' } })<CR>",
-		},
-		{
-			"[c",
-			"<cmd>lua require('todo-comments').jump_prev({ keywords = { 'NOTE', 'INFO', 'HINT', 'COMMENT' } })<CR>",
-		},
-
-		{
-			"]f",
-			"<cmd>lua require('todo-comments').jump_next({ keywords = { 'FIX', 'FIXME', 'BUG', 'FIXIT', 'ISSUE', 'ERROR' } })<CR>",
-		},
-		{
-			"[f",
-			"<cmd>lua require('todo-comments').jump_prev({ keywords = { 'FIX', 'FIXME', 'BUG', 'FIXIT', 'ISSUE', 'ERROR' } })<CR>",
-		},
-
-		{
-			"]w",
-			"<cmd>lua require('todo-comments').jump_next({ keywords = { 'HACK', 'WARNING', 'XXX' } })<CR>",
-		},
-		{
-			"[w",
-			"<cmd>lua require('todo-comments').jump_prev({ keywords = { 'HACK', 'WARNING', 'XXX' } })<CR>",
-		},
-
-		{
-			"]r",
-			"<cmd>lua require('todo-comments').jump_next({ keywords = { 'TEST', 'RESULT', 'TESTING', 'PASSED', 'FAILED' } })<CR>",
-		},
-		{
-			"[r",
-			"<cmd>lua require('todo-comments').jump_prev({ keywords = { 'TEST', 'RESULT', 'TESTING', 'PASSED', 'FAILED' } })<CR>",
-		},
-
-		{
-			"]p",
-			"<cmd>lua require('todo-comments').jump_next({ keywords = { 'PERF', 'PERFORMANCE', 'OPTIMIZE', 'OPTIM' } })<CR>",
-		},
-		{
-			"[p",
-			"<cmd>lua require('todo-comments').jump_prev({ keywords = { 'PERF', 'PERFORMANCE', 'OPTIMIZE', 'OPTIM' } })<CR>",
-		},
-
-		{
-            "<leader>tl", "<cmd>TodoTelescope<CR>"
-        },
-		{
-            "<leader>tq", "<cmd>TodoQuickFix<CR>"
-        },
-	},
+	keys =
+    {
+		{ "]]t", "<cmd>lua require('todo-comments').jump_next()<CR>" },
+		{ "[[t", "<cmd>lua require('todo-comments').jump_prev()<CR>" },
+        { "]t", "<cmd>lua require('todo-comments').jump_next({ keywords = { 'TODO' } })<CR>" },
+        { "[t", "<cmd>lua require('todo-comments').jump_prev({ keywords = { 'TODO' } })<CR>" },
+        { "]c", "<cmd>lua require('todo-comments').jump_next({ keywords = { 'NOTE', 'INFO', 'HINT', 'COMMENT' } })<CR>", },
+		{ "[c", "<cmd>lua require('todo-comments').jump_prev({ keywords = { 'NOTE', 'INFO', 'HINT', 'COMMENT' } })<CR>", },
+		{ "]f", "<cmd>lua require('todo-comments').jump_next({ keywords = { 'FIX', 'FIXME', 'BUG', 'FIXIT', 'ISSUE', 'ERROR' } })<CR>", },
+		{ "[f", "<cmd>lua require('todo-comments').jump_prev({ keywords = { 'FIX', 'FIXME', 'BUG', 'FIXIT', 'ISSUE', 'ERROR' } })<CR>", },
+		{ "]w", "<cmd>lua require('todo-comments').jump_next({ keywords = { 'HACK', 'WARNING', 'XXX' } })<CR>", },
+		{ "[w", "<cmd>lua require('todo-comments').jump_prev({ keywords = { 'HACK', 'WARNING', 'XXX' } })<CR>", },
+        { "]r", "<cmd>lua require('todo-comments').jump_next({ keywords = { 'TEST', 'RESULT', 'TESTING', 'PASSED', 'FAILED' } })<CR>", },
+		{ "[r", "<cmd>lua require('todo-comments').jump_prev({ keywords = { 'TEST', 'RESULT', 'TESTING', 'PASSED', 'FAILED' } })<CR>", },
+		{ "]p", "<cmd>lua require('todo-comments').jump_next({ keywords = { 'PERF', 'PERFORMANCE', 'OPTIMIZE', 'OPTIM' } })<CR>", },
+		{ "[p", "<cmd>lua require('todo-comments').jump_prev({ keywords = { 'PERF', 'PERFORMANCE', 'OPTIMIZE', 'OPTIM' } })<CR>", },
+		{ "<leader>tl", "<cmd>TodoTelescope<CR>" },
+        { "<leader>tq", "<cmd>TodoQuickFix<CR>" },
+    },
 }

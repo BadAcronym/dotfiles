@@ -4,7 +4,8 @@ return
     lazy = false,
     branch = "main",
     config = function()
-        require('mini.align').setup({
+        require('mini.align').setup(
+        {
             mappings =
             {
                 start              = 'ga',

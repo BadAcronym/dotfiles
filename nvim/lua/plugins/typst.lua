@@ -1,4 +1,5 @@
-return {
+return
+{
 	{
 		"chomosuke/typst-preview.nvim",
 		lazy = true,

@@ -7,7 +7,8 @@ return
         { "<leader>bl", "<cmd>BlameToggle<CR>" },
     },
     config = function()
-        require('blame').setup({
+        require('blame').setup(
+        {
             date_format             = "%d.%m.%Y",
             virtual_style           = "right_align",
             relative_date_if_recent = true,

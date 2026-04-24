@@ -1,4 +1,5 @@
-return{
+return
+{
     -- HACK: different fork for bulk renaming support,
     -- switch back once X3eRo0 has integrated it fully
     -- "X3eRo0/dired.nvim",
