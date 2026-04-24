@@ -13,7 +13,6 @@ return
         { "<C-c>", "<cmd>Compile ./run release --compile-only<CR><CR>" },
         { "<C-r>", "<cmd>Compile ./run<CR><CR>" },
         { "<leader><C-c>", "<cmd>Compile<CR>" },
-        -- TODO: do something here for NextError
     },
     config = function()
         ---@module "compile-mode"
@@ -34,7 +33,7 @@ return
             error_threshold               = require("compile-mode").level.WARNING,
             auto_jump_to_first_error      = false,
             error_locus_highlight         = 500,
-            use_diagnostics               = true,
+            use_diagnostics               = false,
             recompile_no_fail             = false,
             ask_about_save                = true,
             ask_to_interrupt              = true,
@@ -47,7 +46,7 @@ return
             hidden_buffer                 = false,
             focus_compilation_buffer      = true,
             auto_scroll                   = true,
-            use_circular_error_navigation = false,
+            use_circular_error_navigation = true,
             debug                         = false,
             use_pseudo_terminal           = false,
         }
