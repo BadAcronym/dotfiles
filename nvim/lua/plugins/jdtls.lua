@@ -1,4 +1,0 @@
-return
-{
-    "mfusenegger/nvim-jdtls"
-}
