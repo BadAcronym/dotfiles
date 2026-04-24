@@ -53,7 +53,7 @@ vim.lsp.enable('bashls')
 
 vim.lsp.config("tinymist", {
     capabilities = capabilities,
-    filetypes = { "typst" },
+    filetypes = { "typ", "typst" },
 })
 vim.lsp.enable("tinymist")
 
