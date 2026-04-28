@@ -12,6 +12,7 @@ return
             local ensureInstalled =
             {
                 'c',
+                'cpp',
                 'vim',
                 'lua',
                 'bash',
