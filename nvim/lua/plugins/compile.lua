@@ -44,7 +44,7 @@ return
             clear_environment             = false,
             input_word_completion         = true,
             hidden_buffer                 = false,
-            focus_compilation_buffer      = true,
+            focus_compilation_buffer      = false,
             auto_scroll                   = true,
             use_circular_error_navigation = true,
             debug                         = false,
