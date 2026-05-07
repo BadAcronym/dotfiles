@@ -10,9 +10,9 @@ return
     },
     keys =
     {
-        { "<C-c>", "<cmd>Compile ./run release --compile-only<CR><CR>" },
-        { "<C-r>", "<cmd>Compile ./run<CR><CR>" },
-        { "<leader><C-c>", "<cmd>Compile<CR>" },
+        { "<C-c>", "<cmd>vertical Compile ./run release --compile-only<CR><CR>" },
+        { "<C-r>", "<cmd>vertical Compile ./run<CR><CR>" },
+        { "<leader><C-c>", "<cmd>vertical Compile<CR>" },
     },
     config = function()
         ---@module "compile-mode"
