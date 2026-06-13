@@ -7,8 +7,8 @@
 # If the above line is not correctly displayed, fix your editor first!
 
 general {
-        colors = true
-        interval = 5
+    colors = true
+    interval = 1
 }
 
 order += "battery 0"
@@ -20,58 +20,71 @@ order += "disk /"
 order += "cpu_usage"
 order += "memory"
 order += "tztime date"
+order += "tztime phoenix"
+order += "tztime asu"
 order += "tztime local"
 
 path_exists uni-qis {
-        path = "/proc/sys/net/ipv4/conf/wgtuk-Full-Arch"
-        format_down = ""
+    path = "/proc/sys/net/ipv4/conf/wgtuk-Full-Arch"
+    format_down = ""
 }
 
 path_exists uk-edi {
-        path = "/proc/sys/net/ipv4/conf/uk-edi"
-        format_down = ""
+    path = "/proc/sys/net/ipv4/conf/uk-edi"
+    format_down = ""
 }
 
 battery 0 {
-        format = "%status %percentage (%emptytime %consumption)"
-        format_down = ""
-        status_chr = "🔌CHR"
-        status_bat = "BAT"
-        status_unk = "UNK"
-        status_full = "🔋FULL"
-        low_threshold = "25"
-        threshold_type = "percentage"
-        format_percentage = "%.02f%s"
+    format = "%status %percentage (%emptytime %consumption)"
+    format_down = ""
+    status_chr = "🔌CHR"
+    status_bat = "BAT"
+    status_unk = "UNK"
+    status_full = "🔋FULL"
+    low_threshold = "25"
+    threshold_type = "percentage"
+    format_percentage = "%.02f%s"
 }
 
 ethernet _first_ {
-        format_up = "E: (%speed)"
-        format_down = ""
+    format_up = "E: (%speed)"
+    format_down = ""
 }
 
 wireless _first_ {
-        format_up = "W:%quality @ %bitrate, %frequency"
-        format_down = ""
+    format_up = "W:%quality @ %bitrate, %frequency"
+    format_down = ""
 }
 
 disk "/" {
-        format = "free: %avail"
+    format = "free: %avail"
 }
 
 cpu_usage {
-        format = "CPU: %usage"
+    format = "CPU: %usage"
 }
 
 memory {
-        format = "MEM: %used/%available"
-        threshold_degraded = "1G"
-        format_degraded = "MEMORY < %available"
+    format = "MEM: %used/%available"
+    threshold_degraded = "1G"
+    format_degraded = "MEMORY < %available"
 }
 
 tztime date {
-        format = "%d.%m.%Y"
+    format = "%d.%m.%Y"
 }
 
 tztime local {
-        format = "%H:%M"
+    timezone = "Europe/Berlin"
+    format = "🇩🇪: %H:%M"
+}
+
+tztime asu {
+    timezone = "America/Asuncion"
+    format = "🇵🇾: %H:%M"
+}
+
+tztime phoenix {
+    timezone = "America/Phoenix"
+    format = "🐦‍🔥: %H:%M"
 }
