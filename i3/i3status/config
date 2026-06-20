@@ -1,16 +1,9 @@
-# i3status configuration file.
-# see "man i3status" for documentation.
-
-# It is important that this file is edited as UTF-8.
-# The following line should contain a sharp s:
-# ß
-# If the above line is not correctly displayed, fix your editor first!
-
 general {
     colors = true
-    interval = 1
+    interval = 5
 }
 
+order += "external_script weather"
 order += "battery 0"
 order += "path_exists uni-qis"
 order += "path_exists uk-edi"
@@ -24,14 +17,10 @@ order += "tztime phoenix"
 order += "tztime asu"
 order += "tztime local"
 
-path_exists uni-qis {
-    path = "/proc/sys/net/ipv4/conf/wgtuk-Full-Arch"
-    format_down = ""
-}
-
-path_exists uk-edi {
-    path = "/proc/sys/net/ipv4/conf/uk-edi"
-    format_down = ""
+external_script weather {
+    format = "{output}"
+    script_path = "$HOME/repository/bash-collection/weather-anonymous"
+    cache_timeout = 30
 }
 
 battery 0 {
@@ -44,6 +33,16 @@ battery 0 {
     low_threshold = "25"
     threshold_type = "percentage"
     format_percentage = "%.02f%s"
+}
+
+path_exists uni-qis {
+    path = "/proc/sys/net/ipv4/conf/wgtuk-Full-Arch"
+    format_down = ""
+}
+
+path_exists uk-edi {
+    path = "/proc/sys/net/ipv4/conf/uk-edi"
+    format_down = ""
 }
 
 ethernet _first_ {
@@ -74,9 +73,9 @@ tztime date {
     format = "%d.%m.%Y"
 }
 
-tztime local {
-    timezone = "Europe/Berlin"
-    format = "🇩🇪: %H:%M"
+tztime phoenix {
+    timezone = "America/Phoenix"
+    format = "🐦‍🔥: %H:%M"
 }
 
 tztime asu {
@@ -84,7 +83,7 @@ tztime asu {
     format = "🇵🇾: %H:%M"
 }
 
-tztime phoenix {
-    timezone = "America/Phoenix"
-    format = "🐦‍🔥: %H:%M"
+tztime local {
+    timezone = "Europe/Berlin"
+    format = "🇩🇪: %H:%M"
 }
