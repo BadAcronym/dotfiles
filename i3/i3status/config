@@ -20,7 +20,7 @@ order += "tztime local"
 external_script weather {
     format = "{output}"
     script_path = "$HOME/repository/bash-collection/weather-anonymous"
-    cache_timeout = 30
+    cache_timeout = 300
 }
 
 battery 0 {
