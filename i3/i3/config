@@ -225,6 +225,7 @@ bar {
         position bottom
         output HDMI-A-0
         output HDMI-A-1
+        output DisplayPort-1
         status_command py3status
         i3bar_command /usr/bin/i3bar
 }
