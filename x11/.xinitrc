@@ -1,5 +1,8 @@
 #!/bin/sh
 
+unset XCURSOR_THEME
+[[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
+
 if [[ -d /etc/X11/xinit/xinitrc.d ]]
 then
     for file in /etc/X11/xinit/xinitrc.d/?*.sh
@@ -9,14 +12,11 @@ then
     unset file
 fi
 
-unset XCURSOR_THEME
-[[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
-
 # for 4-Monitor setup:
 # Display Arrangement:
-# DisplayPort-1            HD
-#          DisplayPort-0   MI
-# HDMI-A-1          -1
+# DisplayPort-1                   HDM
+#                 DisplayPort-0    I-
+# HDMI-A-1                        A-0
 
 # CVT-RB
 xrandr --newmode "3840x2160_144" 1332.75 3840 3888 3920 4000 2160 2163 2168 2314 +HSync -VSync
