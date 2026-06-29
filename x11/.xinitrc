@@ -3,14 +3,59 @@
 unset XCURSOR_THEME
 [[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
 
-if [[ -d /etc/X11/xinit/xinitrc.d ]]
+## from /etc/X11/xinit/xinitrc
+prefix="/usr"
+exec_prefix="${prefix}"
+xrdb="xrdb"
+xinitdir="/etc/X11/xinit"
+xclock="xclock"
+xterm="xterm"
+twm="twm"
+xmodmap="xmodmap"
+
+userresources="$HOME/.Xresources"
+usermodmap="$HOME/.Xmodmap"
+sysresources="$xinitdir/.Xresources"
+sysmodmap="$xinitdir/.Xmodmap"
+
+if [[ -f "$sysresources" ]]
 then
-    for file in /etc/X11/xinit/xinitrc.d/?*.sh
-    do
-        [ -x "$file" ] && . "$file"
-    done
-    unset file
+    if [[ -x /usr/bin/cpp ]]
+    then
+        "$xrdb" -merge "$sysresources"
+    else
+        "$xrdb" -nocpp -merge "$sysresources"
+    fi
 fi
+
+if [[ -f "$sysmodmap" ]]
+then
+    "$xmodmap" "$sysmodmap"
+fi
+
+if [[ -f "$userresources" ]]
+then
+    if [[ -x /usr/bin/cpp ]]
+    then "$xrdb" -merge "$userresources"
+    else
+        "$xrdb" -nocpp -merge "$userresources"
+    fi
+fi
+
+if [[ -f "$usermodmap" ]]
+then
+    "$xmodmap" "$usermodmap"
+fi
+
+if [[ -d "$xinitdir"/xinitrc.d ]]
+then
+    for f in "$xinitdir/xinitrc.d"/?*.sh
+    do
+        [ -x "$f" ] && . "$f"
+    done
+    unset f
+fi
+##
 
 # for 4-Monitor setup:
 # Display Arrangement:
@@ -58,4 +103,5 @@ $HOME/repository/bash-collection/nitrogen-profile random
 picom -b --config ~/.config/picom/picom.conf &
 
 setxkbmap us colemak
+
 exec i3
