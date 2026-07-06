@@ -14,6 +14,7 @@ order += "cpu_usage"
 order += "memory"
 order += "tztime date"
 order += "tztime phoenix"
+order += "tztime canada"
 order += "tztime asu"
 order += "tztime local"
 
@@ -76,6 +77,11 @@ tztime date {
 tztime phoenix {
     timezone = "America/Phoenix"
     format = "🐦‍🔥: %H:%M"
+}
+
+tztime canada {
+    timezone = "America/Toronto"
+    format = "🇨🇦: %H:%M"
 }
 
 tztime asu {
