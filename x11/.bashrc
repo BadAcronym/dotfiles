@@ -17,5 +17,5 @@ alias cdskseini='cd ~/.local/share/Steam/steamapps/compatdata/489830/pfx/drive_c
 #for when oh-my-posh is unavailable
 PS1='[\u@\h \W]\$ '
 
-eval "$(oh-my-posh init bash --config '/home/mandi/repository/dotfiles/oh-my-posh/config.omp.json')"
 gitfluss
+eval "$(oh-my-posh init bash --config '/home/mandi/repository/dotfiles/oh-my-posh/config.omp.json')"
