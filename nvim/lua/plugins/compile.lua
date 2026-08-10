@@ -10,8 +10,8 @@ return
     },
     keys =
     {
-        { "<C-c>", "<cmd>vertical Compile ./run release --compile-only<CR><CR>" },
-        { "<C-r>", "<cmd>vertical Compile ./run<CR><CR>" },
+        { "<C-c>", "<cmd>vertical Compile ./run release --compile-only<CR>" },
+        { "<C-r>", "<cmd>vertical Compile ./run<CR>" },
         { "<leader><C-c>", "<cmd>vertical Compile<CR>" },
     },
     config = function()
