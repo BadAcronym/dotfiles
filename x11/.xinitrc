@@ -92,9 +92,9 @@ xrandr --addmode HDMI-A-1      "2560x1440_75"
 
 xrandr  \
         --fb 7840x2880                                                              \
-        --output DisplayPort-0 --mode "3840x2160_144" --pos 2560x360                \
+        --output DisplayPort-0 --mode "3840x2160_144" --pos 2560x480                \
         --output DisplayPort-1 --mode "2560x1440_75"  --pos 0x0                     \
-        --output HDMI-A-0      --mode "2560x1440_75"  --pos 6400x180 --rotate right \
+        --output HDMI-A-0      --mode "2560x1440_75"  --pos 6400x0 --rotate right   \
         --output HDMI-A-1      --mode "2560x1440_75"  --pos 0x1440
 
 mount //192.168.0.217/Fede
