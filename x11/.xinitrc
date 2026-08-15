@@ -99,7 +99,7 @@ xrandr  \
 
 mount //192.168.0.217/Fede
 
-$HOME/repository/bash-collection/nitrogen-profile random
+nitrogen --restore & 2>/dev/null
 picom -b --config ~/.config/picom/picom.conf &
 
 setxkbmap us colemak
