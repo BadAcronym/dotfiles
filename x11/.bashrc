@@ -27,5 +27,5 @@ export LESS_TERMCAP_us=$'\033[1;4;36m'
 #for when oh-my-posh is unavailable
 PS1='[\u@\h \W]\$ '
 
-gitfluss --noinfo --noprofile --years 0
+~/repository/gitfluss/bin/release/gitfluss --noinfo --noprofile --years 0
 eval "$(oh-my-posh init bash --config '/home/mandi/repository/dotfiles/oh-my-posh/config.omp.json')"
