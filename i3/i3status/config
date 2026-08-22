@@ -47,12 +47,12 @@ path_exists uk-edi {
 }
 
 ethernet _first_ {
-    format_up = "E: (%speed)"
+    format_up = "E: (%speed) @ %ip"
     format_down = ""
 }
 
 wireless _first_ {
-    format_up = "W:%quality @ %bitrate, %frequency"
+    format_up = "W:%quality / %bitrate / %frequency @ %ip"
     format_down = ""
 }
 
