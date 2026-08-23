@@ -3,6 +3,7 @@ local config = {}
 
 config.initial_cols = 150
 config.initial_rows = 50
+config.audible_bell = "Disabled"
 
 config.front_end = "OpenGL"
 config.term = "xterm-256color"
