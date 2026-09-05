@@ -104,6 +104,6 @@ picom -b --config ~/.config/picom/picom.conf &
 
 setxkbmap us colemak
 
-qdbus org.kde.kwalletd6 /modules/kwalletd6 open kdewallet 0 $0
+qdbus org.kde.kwalletd6 /modules/kwalletd6 open kdewallet 0 $0 &
 
 exec i3
