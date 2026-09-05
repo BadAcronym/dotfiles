@@ -8,7 +8,10 @@ config.audible_bell = "Disabled"
 config.front_end = "OpenGL"
 config.term = "xterm-256color"
 config.prefer_egl = true
-config.font = wezterm.font("FiraCode Nerd Font Propo SemBd")
+config.font = wezterm.font_with_fallback({
+                  "FiraCode Nerd Font Propo SemBd",
+                  "Noto Sans Symbols 2",
+              })
 config.window_background_opacity = 0.6
 config.window_decorations = "NONE"
 config.font_size = 24
