@@ -75,7 +75,7 @@ $HOME/repository/bash-collection/displaymode 4mon
 mount //192.168.0.217/Fede
 mount //192.168.0.217/Shared
 
-nitrogen --restore & 2>/dev/null
+nitrogen --restore 2>/dev/null &
 picom -b --config ~/.config/picom/picom.conf &
 
 setxkbmap us colemak
