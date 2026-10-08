@@ -63,14 +63,14 @@ xrandr --newmode "3840x2160_146" 1352.5 3840 3888 3920 4000 2160 2163 2168 2316 
 xrandr --newmode "3840x2160_240" 2331.75 3840 3888 3920 4000 2160 2163 2168 2429 +HSync -VSync
 xrandr --newmode "2560x1440_75"  304.25 2560 2608 2640 2720 1440 1443 1448 1492 +HSync -VSync
 
-xrandr --addmode DisplayPort-0 "3840x2160_146"
-xrandr --addmode DisplayPort-0 "3840x2160_240"
+xrandr --addmode DP-1 "3840x2160_146"
+xrandr --addmode DP-1 "3840x2160_240"
 
-xrandr --addmode DisplayPort-1 "2560x1440_75"
-xrandr --addmode HDMI-A-0      "2560x1440_75"
-xrandr --addmode HDMI-A-1      "2560x1440_75"
+xrandr --addmode DP-2   "2560x1440_75"
+xrandr --addmode HDMI-1 "2560x1440_75"
+xrandr --addmode HDMI-2 "2560x1440_75"
 
-$HOME/repository/bash-collection/displaymode 4mon
+$HOME/repository/bash-collection/displaymode $(cat $HOME/.displaymode)
 
 mount //192.168.0.217/Fede
 mount //192.168.0.217/Shared
