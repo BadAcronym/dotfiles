@@ -64,12 +64,15 @@ bindsym Mod1+Return exec --no-startup-id wezterm
 # kill focused window
 bindsym Mod1+Shift+q kill
 
-bindsym ctrl+0 exec --no-startup-id "rofi -show recursivebrowser -theme android_notification"
+bindsym ctrl+0         exec --no-startup-id "rofi -show recursivebrowser -theme android_notification"
 bindsym ctrl+backslash exec --no-startup-id "rofi -show drun -theme android_notification"
 
-bindsym Mod1+Shift+s         exec --no-startup-id "~/repository/bash-collection/take-screenshot"
-bindsym Mod1+Shift+h         exec --no-startup-id "~/repository/bash-collection/nitrogen-profile random"
-bindsym Mod1+Shift+o         exec --no-startup-id "~/repository/bash-collection/streamer-mode"
+bindsym Mod1+Shift+s   exec --no-startup-id "~/repository/bash-collection/take-screenshot"
+bindsym Mod1+Shift+h   exec --no-startup-id "~/repository/bash-collection/nitrogen-profile random"
+bindsym Mod1+Shift+o   exec --no-startup-id "~/repository/bash-collection/streamer-mode"
+
+bindsym Mod1+Shift+backslash  exec --no-startup-id "~/repository/bash-collection/displaymode gaming"
+bindsym Mod1+Shift+apostrophe exec --no-startup-id "~/repository/bash-collection/displaymode 4mon"
 
 bindsym Mod1+space   exec --no-startup-id "playerctl play-pause"
 bindsym Mod1+Shift+g exec --no-startup-id "~/repository/lib/boomer"
