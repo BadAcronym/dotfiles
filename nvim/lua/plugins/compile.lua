@@ -25,7 +25,9 @@ return
                 typ = "./run"
             },
             default_command               = "./run",
-            baleia_setup                  = true,
+            -- depr?
+            -- baleia_setup                  = true,
+            ansi_color = {kind = "render"},
             bang_expansion                = false,
             directory_change_matchers     = {},
             error_regexp_table            = {},
