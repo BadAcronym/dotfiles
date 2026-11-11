@@ -24,8 +24,10 @@ export LESS_TERMCAP_so=$'\033[01;34m'
 export LESS_TERMCAP_ue=$'\033[0m'
 export LESS_TERMCAP_us=$'\033[1;4;36m'
 
-#for when oh-my-posh is unavailable
+# for when oh-my-posh is unavailable
 PS1='[\u@\h \W]\$ '
 
-~/repository/gitfluss/bin/release/gitfluss --noinfo --noprofile --years 1
+# for when I actually fix the rewrite.
+# ~/repository/gitfluss/bin/release/gitfluss --noinfo --noprofile --years 1
+~/repository/lib/gitfluss --noinfo --noprofile --years 1
 eval "$(oh-my-posh init bash --config '/home/mandi/repository/dotfiles/oh-my-posh/config.omp.json')"
